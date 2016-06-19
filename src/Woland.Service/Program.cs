@@ -6,6 +6,7 @@
     {
         public static void Main(string[] args)
         {
+            Console.WriteLine("ala ma kota");
             Console.WriteLine("Hello World!");
         }
     }
