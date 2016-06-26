@@ -9,6 +9,8 @@ namespace Woland.Service
     using Domain;
     using Microsoft.Practices.Unity;
 
+    using Woland.Service.Business;
+
     /// <summary>
     /// Application entry point class.
     /// </summary>
@@ -24,6 +26,12 @@ namespace Woland.Service
         {
             using (var container = new UnityContainer())
             {
+                var provider = container.Resolve<JobServeLeadsProvider>();
+                var resule = provider.GetLatestLeads("C#", "London");
+
+
+                return;
+
                 UnityConfiguration.ConfigureBindings(container);
                 var log = container.Resolve<IServiceLog>();
                 var service = container.Resolve<IService>();

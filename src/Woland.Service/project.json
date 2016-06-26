@@ -10,7 +10,8 @@
       "version": "1.0.0-rc2-3002702"
     },
     "StyleCop.Analyzers": "1.0.0",
-    "Unity": "4.0.1"
+    "Unity": "4.0.1",
+    "HtmlAgilityPack": "1.4.9"
   },
   "frameworks": {
     "netcoreapp1.0": {

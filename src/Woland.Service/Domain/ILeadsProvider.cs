@@ -20,20 +20,17 @@ namespace Woland.Service.Domain
     public interface ILeadsProvider
     {
         /// <summary>
-        /// Gets the <see cref="JobLead"/> form the underlying data source.
+        /// Gets the latest <see cref="JobLead"/> form the underlying data source.
         /// </summary>
-        /// <param name="from">
-        /// The lower bound of the job leads search.
-        /// </param>
-        /// <param name="to">
-        /// The upper bound of the job leads search.
-        /// </param>
         /// <param name="keyword">
-        /// The keyword that is used to search for jobs.
+        ///     The keyword that is used to search for jobs.
+        /// </param>
+        /// <param name="location">
+        ///     The geographical location of the lead.
         /// </param>
         /// <returns>
         /// The list of leads.
         /// </returns>
-        IEnumerable<JobLead> GetLeads(DateTime from, DateTime to, string keyword);
+        IEnumerable<JobLead> GetLatestLeads(string keyword, string location);
     }
 }
