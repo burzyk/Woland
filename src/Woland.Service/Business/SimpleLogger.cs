@@ -1,23 +1,15 @@
-//-----------------------------------------------------------------------
-// <copyright file="SimpleLogger.cs" company="burzyk">
-//     Copyright (c) burzyk. All rights reserved.
-// </copyright>
-//-----------------------------------------------------------------------
 namespace Woland.Service.Business
 {
     using System;
-    using Woland.Service.Domain;
+    using Domain;
 
-    /// <inheritDoc />
     public class SimpleLogger : IServiceLog
     {
-        /// <inheritDoc />
         public void Error(string format, params object[] args)
         {
             this.Log("ERROR", format, args);
         }
 
-        /// <inheritDoc />
         public void Info(string format, params object[] args)
         {
             this.Log("INFO", format, args);

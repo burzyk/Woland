@@ -2,14 +2,18 @@
   "version": "1.0.0",
   "buildOptions": {
     "emitEntryPoint": true,
-    "xmlDoc": true
+    "xmlDoc": false,
+    "additionalArguments": [ "/additionalfile:stylecop.json" ]
   },
   "dependencies": {
     "Microsoft.NETCore.App": {
       "type": "platform",
       "version": "1.0.0-rc2-3002702"
     },
-    "StyleCop.Analyzers": "1.0.0",
+    "StyleCop.Analyzers": {
+      "version": "1.0.0",
+      "type": "build"
+    },
     "Unity": "4.0.1",
     "HtmlAgilityPack": "1.4.9"
   },

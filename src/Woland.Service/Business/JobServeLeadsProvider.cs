@@ -1,13 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="JobServeLeadsProvider.cs" company="">
-//   
-// </copyright>
-// <summary>
-//   Defines the JobServeLeadsProvider type.
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
-namespace Woland.Service.Business
+﻿namespace Woland.Service.Business
 {
     using System;
     using System.Collections.Generic;
@@ -17,26 +8,18 @@ namespace Woland.Service.Business
 
     using HtmlAgilityPack;
 
-    using Woland.Service.Domain;
-    using Woland.Service.Domain.Entities;
+    using Domain;
+    using Domain.Entities;
 
-    /// <summary>
-    /// JobServe implementation of the <see cref="ILeadsProvider"/> interface.
-    /// </summary>
     public class JobServeLeadsProvider : ILeadsProvider
     {
-        /// <summary>
-        /// Gets the latest <see cref="JobLead"/> form JobServe.
-        /// </summary>
-        /// <param name="keyword">
-        ///     The keyword that is used to search for jobs.
-        /// </param>
-        /// <param name="location">
-        ///     The geographical location of the lead.
-        /// </param>
-        /// <returns>
-        /// The list of leads.
-        /// </returns>
+        private readonly IWebClient webClient;
+
+        public JobServeLeadsProvider(IWebClient webClient)
+        {
+            this.webClient = webClient;
+        }
+
         public IEnumerable<JobLead> GetLatestLeads(string keyword, string location)
         {
             using (var client = new HttpClient())

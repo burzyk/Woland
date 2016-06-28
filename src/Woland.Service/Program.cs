@@ -1,27 +1,13 @@
-﻿//-----------------------------------------------------------------------
-// <copyright file="Program.cs" company="burzyk">
-//     Copyright (c) burzyk. All rights reserved.
-// </copyright>
-//-----------------------------------------------------------------------
-namespace Woland.Service
+﻿namespace Woland.Service
 {
     using System;
     using Domain;
     using Microsoft.Practices.Unity;
 
-    using Woland.Service.Business;
+    using Business;
 
-    /// <summary>
-    /// Application entry point class.
-    /// </summary>
     public static class Program
     {
-        /// <summary>
-        /// Application entry point method.
-        /// </summary>
-        /// <param name="args">
-        /// Runtime arguments passed to the application.
-        /// </param>
         public static void Main(string[] args)
         {
             using (var container = new UnityContainer())
