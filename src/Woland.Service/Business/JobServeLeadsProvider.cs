@@ -13,6 +13,8 @@
 
     public class JobServeLeadsProvider : ILeadsProvider
     {
+        private const string JobServeAddress = "http://www.jobserve.com/";
+
         private readonly IWebClient webClient;
 
         public JobServeLeadsProvider(IWebClient webClient)
@@ -36,23 +38,51 @@
                     new KeyValuePair<string, string>("ChangeMode", "false"),
                 };
 
-                var searchResult =
-                    client.PostAsync("http://www.jobserve.com/gb/en/mob/jobsearch", new FormUrlEncodedContent(form))
-                        .Result.Content.ReadAsStringAsync()
-                        .Result;
+                var searchResult = this.webClient.Post($"{JobServeAddress}/gb/en/mob/jobsearch", new FormUrlEncodedContent(form));
+                var searchResultPage = this.GetHtmlDocument(searchResult);
 
-                var searchResultPage = new HtmlDocument();
-                searchResultPage.LoadHtml(searchResult);
-                var links =
-                    searchResultPage.DocumentNode.Descendants("a")
-                        .Select(x => x.Attributes.Contains("href") ? x.Attributes["href"].Value : null)
-                        .Where(x => x != null)
-                        .ToList();
-                var pages = links.Where(x => Regex.IsMatch(x, "^/gb/en/mob/jobsearch/results/")).Distinct().ToList();
-                var jobLinks = links.Where(x => Regex.IsMatch(x, "^/gb/en/mob/job/")).ToList();
+                var links = this.ExtractLinks(searchResultPage);
+
+                var pages = links
+                    .Where(x => Regex.IsMatch(x, "^/gb/en/mob/jobsearch/results/"))
+                    .Distinct()
+                    .Select(x => this.webClient.Get($"{JobServeAddress}{x}"))
+                    .Select(this.GetHtmlDocument)
+                    .Concat(new[] { searchResultPage })
+                    .ToList();
+                var jobLinks = pages
+                    .SelectMany(this.ExtractLinks)
+                    .Where(x => Regex.IsMatch(x, "^/gb/en/mob/job/"))
+                    .Select(x => Regex.Replace(x, @"^(.*?)(\?.+)?$", "$1"))
+                    .Take(3)
+                    .Select(x => this.webClient.Get($"{JobServeAddress}{x}"))
+                    .Select(this.GetHtmlDocument)
+                    .Select(this.ConvertToLead)
+                    .ToList();
 
                 return null;
             }
+        }
+
+        private JobLead ConvertToLead(HtmlDocument jobPage)
+        {
+            return null;
+        }
+
+        private HtmlDocument GetHtmlDocument(string html)
+        {
+            var result = new HtmlDocument();
+            result.LoadHtml(html);
+
+            return result;
+        }
+
+        private IList<string> ExtractLinks(HtmlDocument document)
+        {
+            return document.DocumentNode.Descendants("a")
+                .Select(x => x.Attributes.Contains("href") ? x.Attributes["href"].Value : null)
+                .Where(x => x != null)
+                .ToList();
         }
     }
 }

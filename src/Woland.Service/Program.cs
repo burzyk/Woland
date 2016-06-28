@@ -12,6 +12,8 @@
         {
             using (var container = new UnityContainer())
             {
+                UnityConfiguration.ConfigureBindings(container);
+
                 var provider = container.Resolve<JobServeLeadsProvider>();
                 var resule = provider.GetLatestLeads("C#", "London");
 
