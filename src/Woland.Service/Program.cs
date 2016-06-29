@@ -13,14 +13,6 @@
             using (var container = new UnityContainer())
             {
                 UnityConfiguration.ConfigureBindings(container);
-
-                var provider = container.Resolve<JobServeLeadsProvider>();
-                var resule = provider.GetLatestLeads("C#", "London");
-
-
-                return;
-
-                UnityConfiguration.ConfigureBindings(container);
                 var log = container.Resolve<IServiceLog>();
                 var service = container.Resolve<IService>();
 

@@ -8,7 +8,7 @@ namespace Woland.Service
     {
         public static void ConfigureBindings(IUnityContainer container)
         {
-            container.RegisterType<IService, ServiceImpl>(new ContainerControlledLifetimeManager());
+            container.RegisterType<IService, SimpleService>(new ContainerControlledLifetimeManager());
             container.RegisterType<IServiceLog, SimpleLogger>(new ContainerControlledLifetimeManager());
             container.RegisterType<IWebClient, DefaultWebClient>();
         }
