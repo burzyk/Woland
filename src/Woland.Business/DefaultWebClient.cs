@@ -1,4 +1,4 @@
-﻿namespace Woland.Service.Business
+﻿namespace Woland.Business
 {
     using System;
     using System.Net.Http;
@@ -13,13 +13,13 @@
 
         private readonly ITimeProvider timeProvider;
 
-        private readonly IDataContext context;
+        private readonly IDataRepository repository;
 
-        public DefaultWebClient(IServiceLog log, ITimeProvider timeProvider, IDataContext context)
+        public DefaultWebClient(IServiceLog log, ITimeProvider timeProvider, IDataRepository repository)
         {
             this.log = log;
             this.timeProvider = timeProvider;
-            this.context = context;
+            this.repository = repository;
         }
 
         public string Get(string url)
@@ -40,7 +40,7 @@
 
         private HttpClient CreateClient()
         {
-            return new HttpClient(new LoggingMessageHandler(new HttpClientHandler(), this.log, this.timeProvider, this.context));
+            return new HttpClient(new LoggingMessageHandler(new HttpClientHandler(), this.log, this.timeProvider, this.repository));
         }
 
         private class LoggingMessageHandler : DelegatingHandler
@@ -49,14 +49,14 @@
 
             private readonly ITimeProvider timeProvider;
 
-            private readonly IDataContext context;
+            private readonly IDataRepository repository;
 
-            public LoggingMessageHandler(HttpMessageHandler innerHandler, IServiceLog log, ITimeProvider timeProvider, IDataContext context)
+            public LoggingMessageHandler(HttpMessageHandler innerHandler, IServiceLog log, ITimeProvider timeProvider, IDataRepository repository)
                 : base(innerHandler)
             {
                 this.log = log;
                 this.timeProvider = timeProvider;
-                this.context = context;
+                this.repository = repository;
             }
 
             protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
@@ -78,8 +78,12 @@
                         Response = response.ToString(),
                         ResponseCode = (int)response.StatusCode
                     };
-                    this.context.WebRequestLogs.Add(logEntry);
-                    this.context.SaveChanges();
+
+                    using (var tx = this.repository.BeginTransaction())
+                    {
+                        this.repository.Add(logEntry);
+                        tx.Commit();
+                    }
 
                     this.log.Info("Request logged");
                 }

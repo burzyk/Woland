@@ -1,4 +1,4 @@
-﻿namespace Woland.Service.Domain.Entities
+﻿namespace Woland.Domain.Entities
 {
     public abstract class BaseEntity
     {

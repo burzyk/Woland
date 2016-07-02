@@ -1,7 +1,7 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.0-*",
   "buildOptions": {
-    "emitEntryPoint": true,
+    "emitEntryPoint": false,
     "xmlDoc": false
   },
   "dependencies": {
@@ -12,18 +12,11 @@
     "StyleCop.Analyzers": {
       "version": "1.0.0",
       "type": "build"
-    },
-    "Woland.Business": "1.0.0",
-    "Woland.Domain": "1.0.0",
-    "Woland.DataAccess": "1.0.0",
-    "Unity": "4.0.1"
+    }
   },
   "frameworks": {
     "netcoreapp1.0": {
-      "imports": [
-        "dnxcore50",
-        "portable-net45+win8"
-      ]
+      "imports": "dnxcore50"
     }
   }
 }

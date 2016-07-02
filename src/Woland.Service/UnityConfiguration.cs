@@ -1,6 +1,7 @@
 namespace Woland.Service
 {
     using Business;
+    using DataAccess;
     using Domain;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Options;
@@ -14,7 +15,8 @@ namespace Woland.Service
             container.RegisterType<IServiceLog, SimpleLogger>(new ContainerControlledLifetimeManager());
             container.RegisterType<ISettingsProvider, JsonSettingsProvider>(new ContainerControlledLifetimeManager());
 
-            container.RegisterType<IDataContext, EfDataContext>(new HierarchicalLifetimeManager());
+            container.RegisterType<IDataRepository, EfDataRepository>(new HierarchicalLifetimeManager());
+            container.RegisterType<EfDataContext>(new HierarchicalLifetimeManager());
 
             container.RegisterType<IWebClient, DefaultWebClient>();
             container.RegisterType<ITimeProvider, UtcTimeProvider>();

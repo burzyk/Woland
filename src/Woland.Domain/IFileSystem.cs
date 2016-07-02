@@ -1,4 +1,4 @@
-﻿namespace Woland.Service.Domain
+﻿namespace Woland.Domain
 {
     public interface IFileSystem
     {

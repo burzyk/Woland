@@ -1,4 +1,4 @@
-namespace Woland.Service.Business
+namespace Woland.Business
 {
     using System;
     using Domain;

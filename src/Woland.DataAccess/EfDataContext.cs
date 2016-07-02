@@ -1,11 +1,10 @@
-﻿namespace Woland.Service.Business
+﻿namespace Woland.DataAccess
 {
-    using System.Net;
     using Domain;
     using Domain.Entities;
     using Microsoft.EntityFrameworkCore;
 
-    public class EfDataContext : DbContext, IDataContext
+    public class EfDataContext : DbContext
     {
         private readonly string connectionString;
 

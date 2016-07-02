@@ -1,4 +1,4 @@
-namespace Woland.Service.Domain.Entities
+namespace Woland.Domain.Entities
 {
     using System;
     using System.ComponentModel.DataAnnotations;

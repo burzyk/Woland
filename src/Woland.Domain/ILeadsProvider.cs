@@ -1,8 +1,6 @@
-﻿namespace Woland.Service.Domain
+﻿namespace Woland.Domain
 {
-    using System;
     using System.Collections.Generic;
-
     using Entities;
 
     public interface ILeadsProvider

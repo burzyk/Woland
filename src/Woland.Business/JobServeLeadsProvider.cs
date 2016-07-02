@@ -1,17 +1,14 @@
-﻿namespace Woland.Service.Business
+﻿namespace Woland.Business
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
     using System.Globalization;
     using System.Linq;
     using System.Net.Http;
     using System.Text.RegularExpressions;
-
-    using HtmlAgilityPack;
-
     using Domain;
     using Domain.Entities;
+    using HtmlAgilityPack;
 
     public class JobServeLeadsProvider : ILeadsProvider
     {
