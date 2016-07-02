@@ -9,9 +9,9 @@
     {
         private readonly string connectionString;
 
-        public EfDataContext(string connectionString)
+        public EfDataContext(ISettingsProvider settings)
         {
-            this.connectionString = connectionString;
+            this.connectionString = settings.ConnectionString;
         }
 
         public DbSet<WebRequestLog> WebRequestLogs { get; set; }
