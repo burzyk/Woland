@@ -1,0 +1,3 @@
+﻿{
+  "connectionString": "Server=.\\SQLEXPRESS;Database=Woland;Integrated Security=True"
+}

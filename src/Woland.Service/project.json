@@ -16,7 +16,8 @@
     },
     "Unity": "4.0.1",
     "HtmlAgilityPack": "1.4.9",
-    "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0"
+    "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0",
+    "Newtonsoft.Json": "8.0.3"
   },
   "frameworks": {
     "netcoreapp1.0": {
