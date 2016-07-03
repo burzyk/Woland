@@ -34,9 +34,13 @@
 
         public string ConnectionString => this.settings.Value.ConnectionString;
 
+        public TimeSpan WebClientDelay => TimeSpan.FromMilliseconds(this.settings.Value.WebClientDelay);
+
         private class InternalSettings
         {
             public string ConnectionString { get; set; }
+
+            public int WebClientDelay { get; set; } = 3000;
         }
     }
 }

@@ -15,11 +15,14 @@
 
         private readonly IDataRepository repository;
 
-        public DefaultWebClient(ILog log, ITimeProvider timeProvider, IDataRepository repository)
+        private readonly ISettingsProvider settings;
+
+        public DefaultWebClient(ILog log, ITimeProvider timeProvider, IDataRepository repository, ISettingsProvider settings)
         {
             this.log = log;
             this.timeProvider = timeProvider;
             this.repository = repository;
+            this.settings = settings;
         }
 
         public string Get(string url)
@@ -40,7 +43,29 @@
 
         private HttpClient CreateClient()
         {
-            return new HttpClient(new LoggingMessageHandler(new HttpClientHandler(), this.log, this.timeProvider, this.repository));
+            HttpMessageHandler handler = new HttpClientHandler();
+
+            handler = new LoggingMessageHandler(handler, this.log, this.timeProvider, this.repository);
+            handler = new ThrottlingHandler(handler, this.settings);
+
+            return new HttpClient(handler);
+        }
+
+        private class ThrottlingHandler : DelegatingHandler
+        {
+            private readonly TimeSpan delay;
+
+            public ThrottlingHandler(HttpMessageHandler innerHandler, ISettingsProvider settings)
+                : base(innerHandler)
+            {
+                this.delay = settings.WebClientDelay;
+            }
+
+            protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+            {
+                Thread.Sleep(this.delay);
+                return await base.SendAsync(request, cancellationToken);
+            }
         }
 
         private class LoggingMessageHandler : DelegatingHandler
