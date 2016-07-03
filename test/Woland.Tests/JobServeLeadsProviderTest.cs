@@ -5,6 +5,7 @@
     using System.Linq;
     using System.Net.Http;
     using Business;
+    using Core;
     using Domain;
     using Microsoft.Practices.Unity;
     using Xunit;
