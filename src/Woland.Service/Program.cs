@@ -13,7 +13,7 @@
             using (var container = new UnityContainer())
             {
                 UnityConfiguration.ConfigureBindings(container);
-                var log = container.Resolve<IServiceLog>();
+                var log = container.Resolve<ILog>();
                 var service = container.Resolve<IService>();
 
                 log.Info("========== Initializing service ==========");

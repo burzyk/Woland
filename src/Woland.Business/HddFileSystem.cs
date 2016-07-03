@@ -5,22 +5,22 @@
 
     public class HddFileSystem : IFileSystem
     {
-        private readonly IServiceLog log;
+        private readonly ILog log;
 
-        public HddFileSystem(IServiceLog log)
+        public HddFileSystem(ILog log)
         {
             this.log = log;
         }
 
         public byte[] ReadFile(string fileName)
         {
-            this.log.Info("Reading file: '{0}'", fileName);
+            this.log.Info($"Reading file: '{fileName}'");
             return File.ReadAllBytes(fileName);
         }
 
         public void SaveFile(string fileName, byte[] content)
         {
-            this.log.Info("Saving file: '{0}'", fileName);
+            this.log.Info($"Saving file: '{fileName}'");
             var directory = Path.GetDirectoryName(fileName);
 
             if (!Directory.Exists(directory))

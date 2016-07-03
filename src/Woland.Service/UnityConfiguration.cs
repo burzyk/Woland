@@ -12,7 +12,7 @@ namespace Woland.Service
         public static void ConfigureBindings(IUnityContainer container)
         {
             container.RegisterType<IService, SimpleService>(new ContainerControlledLifetimeManager());
-            container.RegisterType<IServiceLog, SimpleLogger>(new ContainerControlledLifetimeManager());
+            container.RegisterType<ILog, SimpleLogger>(new ContainerControlledLifetimeManager());
             container.RegisterType<ISettingsProvider, JsonSettingsProvider>(new ContainerControlledLifetimeManager());
 
             container.RegisterType<IDataRepository, EfDataRepository>(new HierarchicalLifetimeManager());

@@ -18,9 +18,9 @@
 
         private readonly IWebClient webClient;
 
-        private readonly IServiceLog log;
+        private readonly ILog log;
 
-        public JobServeLeadsProvider(IWebClient webClient, IServiceLog log)
+        public JobServeLeadsProvider(IWebClient webClient, ILog log)
         {
             this.webClient = webClient;
             this.log = log;

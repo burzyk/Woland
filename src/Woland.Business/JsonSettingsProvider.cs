@@ -9,11 +9,11 @@
 
     public class JsonSettingsProvider : ISettingsProvider
     {
-        private readonly IServiceLog log;
+        private readonly ILog log;
 
         private readonly Lazy<InternalSettings> settings;
 
-        public JsonSettingsProvider(IServiceLog log)
+        public JsonSettingsProvider(ILog log)
         {
             this.log = log;
             this.settings = new Lazy<InternalSettings>(() =>
@@ -26,7 +26,7 @@
                 var defaultConfigLocation = Path.Combine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), "config.json");
                 var configFileName = indexOfConfig != -1 && indexOfConfig + 1 < args.Count ? args[indexOfConfig + 1] : defaultConfigLocation;
 
-                this.log.Info("Using configuration file: '{0}'", configFileName);
+                this.log.Info($"Using configuration file: '{configFileName}'");
 
                 return JsonConvert.DeserializeObject<InternalSettings>(File.ReadAllText(configFileName));
             });

@@ -11,7 +11,7 @@
             var container = new UnityContainer();
             UnityConfiguration.ConfigureBindings(container);
 
-            container.RegisterInstance<IServiceLog>(new NullLog());
+            container.RegisterInstance<ILog>(new NullLog());
 
             return container;
         }

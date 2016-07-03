@@ -9,13 +9,13 @@
 
     public class DefaultWebClient : IWebClient
     {
-        private readonly IServiceLog log;
+        private readonly ILog log;
 
         private readonly ITimeProvider timeProvider;
 
         private readonly IDataRepository repository;
 
-        public DefaultWebClient(IServiceLog log, ITimeProvider timeProvider, IDataRepository repository)
+        public DefaultWebClient(ILog log, ITimeProvider timeProvider, IDataRepository repository)
         {
             this.log = log;
             this.timeProvider = timeProvider;
@@ -45,13 +45,13 @@
 
         private class LoggingMessageHandler : DelegatingHandler
         {
-            private readonly IServiceLog log;
+            private readonly ILog log;
 
             private readonly ITimeProvider timeProvider;
 
             private readonly IDataRepository repository;
 
-            public LoggingMessageHandler(HttpMessageHandler innerHandler, IServiceLog log, ITimeProvider timeProvider, IDataRepository repository)
+            public LoggingMessageHandler(HttpMessageHandler innerHandler, ILog log, ITimeProvider timeProvider, IDataRepository repository)
                 : base(innerHandler)
             {
                 this.log = log;
@@ -89,7 +89,7 @@
                 }
                 catch (Exception ex)
                 {
-                    this.log.Error("Unable to save the request: {0}", ex);
+                    this.log.Error($"Unable to save the request: {ex}");
                 }
 
                 return response;
