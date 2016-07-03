@@ -4,7 +4,7 @@
     {
         public static void Main(string[] args)
         {
-            new ProgressiveLeadsImporterTests().ImporterWithEmptyRepoTest();
+            new LatestLeadsImporterTests().ImporterWithEmptyRepoTest();
         }
     }
 }

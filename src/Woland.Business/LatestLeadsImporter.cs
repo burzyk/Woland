@@ -6,7 +6,7 @@
     using Domain;
     using Domain.Entities;
 
-    public class ProgressiveLeadsImporter : ILeadsImporter
+    public class LatestLeadsImporter : ILeadsImporter
     {
         private readonly int importDelta;
 
@@ -14,11 +14,11 @@
 
         private readonly IDataRepository repository;
 
-        public ProgressiveLeadsImporter(ILog log, IDataRepository repository, ISettingsProvider settings)
+        public LatestLeadsImporter(ILog log, IDataRepository repository, ISettingsProvider settings)
         {
             this.log = log;
             this.repository = repository;
-            this.importDelta = settings.ProgressiveImporterDelta;
+            this.importDelta = settings.ImporterDelta;
         }
 
         public void Import(string keyword, string location, IList<ILeadsProvider> providers)
@@ -49,7 +49,6 @@
                 .FirstOrDefault() ?? new JobLead();
             this.log.Info($"Last available lead: {lastLead.Title ?? "N/A"}");
 
-            var leads = new List<JobLead>();
             var i = 0;
             var importDone = false;
 
@@ -58,22 +57,17 @@
                 var delta = provider.GetLatestLeads(keyword, location, i, this.importDelta).ToList();
                 var filtred = delta.TakeWhile(x => !this.LeadsEqual(x, lastLead)).ToList();
 
-                leads.AddRange(filtred);
+                using (var tx = this.repository.BeginTransaction())
+                {
+                    this.log.Info("Saving leads to the repository ...");
+                    filtred.ForEach(x => this.repository.Add(x));
+
+                    tx.Commit();
+                }
 
                 i += this.importDelta;
                 importDone = !delta.Any() || delta.Count != filtred.Count;
             } while (!importDone);
-
-
-            this.log.Info($"Imported: {leads.Count} leads");
-
-            using (var tx = this.repository.BeginTransaction())
-            {
-                this.log.Info("Saving leads to the repository ...");
-                leads.ForEach(x => this.repository.Add(x));
-
-                tx.Commit();
-            }
         }
 
         private bool LeadsEqual(JobLead first, JobLead second)

@@ -8,6 +8,6 @@
 
         TimeSpan WebClientDelay { get; }
 
-        int ProgressiveImporterDelta { get; }
+        int ImporterDelta { get; }
     }
 }

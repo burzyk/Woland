@@ -9,7 +9,7 @@
     using Moq;
     using Xunit;
 
-    public class ProgressiveLeadsImporterTests : BaseTest
+    public class LatestLeadsImporterTests : BaseTest
     {
         [Fact]
         public void ImporterWithEmptyRepoTest()
@@ -50,9 +50,9 @@
             repo.Setup(x => x.Add(It.IsAny<JobLead>())).Callback<JobLead>(originalLeads.Add).Returns<JobLead>(x => x);
 
             var settings = new Mock<ISettingsProvider>();
-            settings.Setup(x => x.ProgressiveImporterDelta).Returns(3);
+            settings.Setup(x => x.ImporterDelta).Returns(3);
 
-            var importer = new ProgressiveLeadsImporter(new NullLog(), repo.Object, settings.Object);
+            var importer = new LatestLeadsImporter(new NullLog(), repo.Object, settings.Object);
             importer.Import("C#", "London", new[] { new StaticLeadsProvider() });
 
             return originalLeads;
