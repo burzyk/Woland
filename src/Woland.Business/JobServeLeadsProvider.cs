@@ -18,9 +18,12 @@
 
         private readonly IWebClient webClient;
 
-        public JobServeLeadsProvider(IWebClient webClient)
+        private readonly IServiceLog log;
+
+        public JobServeLeadsProvider(IWebClient webClient, IServiceLog log)
         {
             this.webClient = webClient;
+            this.log = log;
         }
 
         public IEnumerable<JobLead> GetLatestLeads(string keyword, string location, int index, int count)
@@ -37,6 +40,7 @@
                 new KeyValuePair<string, string>("ChangeMode", "false"),
             };
 
+            this.log.Info($"Getting Job leads from JobServe: keyword: {keyword}, location: {location}, index: {index}, count: {count}");
             var searchResult = this.webClient.Post($"{JobServeAddress}/gb/en/mob/jobsearch", new FormUrlEncodedContent(form));
             var searchResultPage = this.GetHtmlDocument(searchResult);
 
@@ -59,6 +63,8 @@
                 .Select(this.GetHtmlDocument)
                 .Select(this.ConvertToLead)
                 .ToList();
+
+            this.log.Info($"Found: {leads.Count} leads");
 
             foreach (var lead in leads)
             {
@@ -94,7 +100,7 @@
                 Body = jobPage.DocumentNode
                     .Descendants("div")
                     .Where(x => x.GetAttributeValue("class", string.Empty) == "jobdesc")
-                    .Select(x => x.WriteContentTo())
+                    .Select(x => x.WriteContentTo().Trim())
                     .FirstOrDefault(),
                 AgencyName = this.GetValueByLabel(jobPage, "Employment Business", "Company"),
                 FullName = this.GetValueByLabel(jobPage, "Contact"),

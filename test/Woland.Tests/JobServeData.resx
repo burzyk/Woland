@@ -1,0 +1,2596 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="JobLead1" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="utf-8" /&gt;
+	&lt;title&gt;IT Business/Solutions Analyst - London - &amp;#163;400 - 500 p/day - London - 01/07/2016 22:17:25&lt;/title&gt;
+	
+		&lt;meta name="viewport" content="width=device-width" /&gt;
+	&lt;link rel="canonical" href="/gb/en/search-jobs-in-London,-London,-United-Kingdom/IT-BUSINESS-SOLUTIONS-ANALYST-LONDON-400-500-P-DAY-3842279F367B28C9/" /&gt;
+	&lt;link rel="apple-touch-icon" href="http://az274887.vo.msecnd.net/images/apple-touch-icon.png" /&gt;
+	&lt;link rel="apple-touch-icon-precomposed" href="http://az274887.vo.msecnd.net/images/apple-touch-icon.png" /&gt;
+	&lt;link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" /&gt;
+	&lt;link type="text/css" rel="stylesheet" href="/gb/en/css/mob/layout.min.css" /&gt;
+	&lt;link type="text/css" rel="stylesheet" href="/gb/en/css/mob/style.min.css?v=1.0.60415.1101" /&gt;
+	
+	
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;div id="page"&gt;
+
+		
+
+
+
+&lt;header id="hdr"&gt;
+	&lt;div&gt;&lt;a href="/gb/en/mob" class="logo"&gt;&amp;nbsp;&lt;/a&gt;&lt;/div&gt;
+&lt;div class="user"&gt;
+&lt;a href="/gb/en/mob/Home/EnableCookie?returnUrl=%2Fgb%2Fen%2Fmob%2Fjob%2F3842279F367B28C9" id="useraction"&gt;Allow cookies&lt;/a&gt;&lt;/div&gt;
+&lt;div class="basket"&gt;&lt;a ID="basket" class="icon bask" href="/gb/en/mob/jobbasket"&gt;0&lt;/a&gt;&lt;/div&gt;
+
+&lt;div id="ntfy" class="hide"&gt;
+	&lt;span class="icon ntfy" style="display:none"&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;/header&gt;
+
+
+						&lt;div id="titlebar"&gt;
+	&lt;h3&gt;Job Details&lt;/h3&gt;
+&lt;/div&gt;
+					&lt;div id="actionbar"&gt;
+&lt;a class="acn" href="/gb/en/mob"&gt;Home&lt;/a&gt;&lt;a class="acn" href="/gb/en/mob/JobShare/Index/3842279F367B28C9?returnUrl=%2Fgb%2Fen%2Fmob%2Fjob%2F3842279F367B28C9"&gt;Share&lt;/a&gt;&lt;a style="display:none"  id="delete" href="javascript:void(0)" onclick="deletefrombasket('3842279F367B28C9')" class="acn"&gt;Remove From Basket&lt;/a&gt;&lt;a style="display:inline-block" id="add"  href="javascript:void(0)" onclick="addtobasket('3842279F367B28C9')" class="acn"&gt;Add To Basket&lt;/a&gt;&lt;a class="acn" href="/gb/en/mob/JobApplication?IDs=3842279F367B28C9"&gt;Apply&lt;/a&gt;
+&lt;/div&gt;
+		&lt;div id="cnt"&gt;
+			&lt;div id="over"&gt;
+	&lt;div class="mask"&gt;&lt;/div&gt;
+	&lt;div class="load"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;article class="job"&gt;
+	&lt;header&gt;
+		&lt;h3&gt;IT Business/Solutions Analyst - London - £400 - 500 p/day&lt;/h3&gt;
+		&lt;div&gt;London, UK - &amp;#163;400 - &amp;#163;500 per Day&lt;/div&gt;
+		&lt;div class="jobinfo"&gt;Contract&lt;/div&gt;
+	&lt;/header&gt;
+
+	&lt;div class="jobbody"&gt;
+
+			&lt;div class="visa required"&gt;Applicants must be eligible to work in the specified location&lt;/div&gt;
+		&lt;div class="jobdesc"&gt;
+&lt;P&gt;&lt;STRONG&gt; IT Business/Solutions Analyst - London - £400 - 500 p/day &lt;/STRONG&gt;&lt;/P&gt; &lt;P&gt; My client has an urgent requirement for an IT Business/Solutions Analyst who can work on a variety of key projects and initiatives to help them understand the exact needs and implications to the business of the work being undertaken and to provide detailed and accurate solutions back to the client/stakeholder. &lt;/P&gt; &lt;P&gt; It is critical that all applicants have an analytical approach to their work, as well as strong knowledge of the whole project delivery life cycle including planning, development, testing and implementation. &lt;/P&gt; &lt;P&gt; Key Skills/Experience Required:- &lt;/P&gt; &lt;UL&gt; &lt;LI&gt; Strong Business/Solutions Analysis experience &lt;/LI&gt; &lt;LI&gt; A strong analytical approach to work &lt;/LI&gt; &lt;LI&gt; Experience of the Project Delivery Life Cycle &lt;/LI&gt; &lt;LI&gt; Experience of the SDLC (Software Development Life Cycle) &lt;/LI&gt; &lt;LI&gt; Ability to liaise with stakeholders in order to elicit, analyse, communicate customer requirements &lt;/LI&gt; &lt;LI&gt; Strong requirement gathering experience &lt;/LI&gt; &lt;LI&gt; Ability to perform detailed business and systems process analysis &lt;/LI&gt; &lt;LI&gt; Excellent documentation skills including; impact analysis, wireframes, story-boards, technical/functional specifications etc. &lt;/LI&gt; &lt;LI&gt; Any previous experience of working on Digital or CRM projects would be highly desirable &lt;/LI&gt; &lt;LI&gt; Excellent communication skills and experience of dealing with senior stakeholders &lt;/LI&gt; &lt;LI&gt; Ability to manage meetings, reviews, release planning and workshops as required &lt;/LI&gt; &lt;LI&gt; Experience of SQL, MATLAB, SharePoint, C#, .NET &lt;/LI&gt; &lt;LI&gt; Proven Agile experience &lt;/LI&gt; &lt;/UL&gt; &lt;P&gt; In line with the Conduct Regulations 2003, when advertising permanent vacancies JNC Recruitment are acting as an Employment Agency, and when advertising temporary/contract vacancies JNC Recruitment are acting as an Employment Business. &lt;/P&gt;		&lt;/div&gt;
+		&lt;div class="jobinfo"&gt;
+
+ &lt;div&gt;
+		 &lt;label for="Job_LocationCountryText"&gt;Location&lt;/label&gt;
+		 London, UK
+				&lt;/div&gt;
+
+
+&lt;div&gt;
+&lt;label for="Job_IndustriesText"&gt;Industry&lt;/label&gt;				IT
+	 &lt;/div&gt;
+
+
+
+  &lt;div&gt;
+		 &lt;label for="Job_StartDate"&gt;Start Date&lt;/label&gt;
+		 ASAP
+	 &lt;/div&gt;
+
+				&lt;div&gt;
+					&lt;label for="Job_Duration"&gt;Duration&lt;/label&gt;
+					3 - 6 months
+				&lt;/div&gt;
+
+				&lt;div&gt;
+					&lt;label for="Job_Rate"&gt;Rate&lt;/label&gt;
+					&amp;#163;400 - &amp;#163;500 per Day
+				&lt;/div&gt;
+
+				&lt;div&gt;
+					&lt;label&gt;Employment Business&lt;/label&gt;
+					JNC Recruitment Ltd
+				&lt;/div&gt;
+
+  &lt;div&gt;
+		 &lt;label for="Job_Contact"&gt;Contact&lt;/label&gt;
+		 Jon Hunter
+	 &lt;/div&gt;
+
+ &lt;div&gt;
+		 &lt;label for="Job_Telephone"&gt;Telephone&lt;/label&gt;
+		 
+	&lt;a href="tel:01273774738"&gt;01273 774738&lt;/a&gt;
+
+	 &lt;/div&gt;
+
+
+  &lt;div&gt;
+		 &lt;label for="Job_EmailLink"&gt;Email&lt;/label&gt;
+		 &lt;a href="mailto:Jon.Hunter.6F61F.42D2E@apps.jobserve.com?Subject=RE: Job Vacancy &amp;#39;JS/JNC/JH/01071&amp;#39; (via JobServe)"&gt;Contact This Employment Business&lt;/a&gt;&lt;span&gt;&lt;/span&gt;
+	 &lt;/div&gt;
+
+  &lt;div&gt;
+		 &lt;label for="Job_Reference"&gt;Job Reference&lt;/label&gt;
+		 JS/JNC/JH/01071
+	 &lt;/div&gt;
+
+  &lt;div&gt;
+		 &lt;label for="Job_PostedDateTimeStr"&gt;Posted Date&lt;/label&gt;
+		 01/07/2016 22:17:25
+	 &lt;/div&gt;
+
+ 		 &lt;div&gt;
+		 &lt;label for="Job_PermaLinkFull"&gt;Permalink&lt;/label&gt;
+		 &lt;a href="http://www.jobserve.com/Enpzg" target="_blank"&gt;http://www.jobserve.com/Enpzg&lt;/a&gt;
+	 &lt;/div&gt;
+
+		&lt;/div&gt;
+		&lt;/div&gt;
+&lt;/article&gt;
+
+	&lt;div class="formbuttons"&gt;
+			&lt;form method="get" action="/gb/en/mob/JobApplication"&gt;
+				&lt;input type="hidden" name="IDs" value="3842279F367B28C9" /&gt;
+				&lt;input type="hidden" name="searchURL" /&gt;
+				&lt;button type="submit" class="fat"&gt;Apply&lt;/button&gt;
+			&lt;/form&gt;
+	&lt;/div&gt;
+
+
+
+		&lt;/div&gt;
+&lt;footer id="foot"&gt;
+		&lt;nav&gt;
+&lt;ul class="navlinks"&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/home"&gt;&lt;span&gt;Home&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/Candidate/Settings?returnUrl=%2fgb%2fen%2fmob%2fjob%2f3842279F367B28C9"&gt;&lt;span&gt;Settings&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/Content/Contact"&gt;&lt;span&gt;Contact Us&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/Content/Legal"&gt;&lt;span&gt;Legal&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+		&lt;/nav&gt;
+	&lt;div class="flinks"&gt;&lt;a href="/gb/en/mob/Content/Help"&gt;Help&lt;/a&gt; &lt;a href="/gb/en/mob/Home/RequestDesktop"&gt;Desktop Site&lt;/a&gt;&lt;/div&gt;
+	&lt;div class="copy"&gt;Copyright &amp;#169; 2016 JobServe Ltd.&lt;/div&gt;
+&lt;/footer&gt;
+	&lt;/div&gt;
+	
+	&lt;script src="/scripts/jquery-1.9.1.min.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;script src="/scripts/mob/mob.min.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;script src="/scripts/utils.min.js" type="text/javascript"&gt;&lt;/script&gt;
+		
+
+
+		&lt;script type="text/javascript"&gt;
+			var basket = new Basket('/gb/en/mob/JobBasket');
+			var isadd = null;
+			var cookiesEnabled = false;
+
+			function addtobasket(jobid) {
+				if (cookiesEnabled) {
+					var jobcount = $('#basket').html();
+					if(jobcount &gt;= 25) 	{
+						alert('You have reached the basket limit of 25 jobs. To continue using the Job Basket you must apply for or delete some or all of the jobs in your basket.');
+					}
+					else {
+						isadd = true;
+						var jobids = [];
+						jobids.push(jobid);
+						basket.Add(jobids, updateui);
+					}            	
+				}
+				else
+					alert("You must allow cookies to continue");            
+			}
+
+			function deletefrombasket(jobid) {
+				isadd = false;
+				var jobids = [];
+				jobids.push(jobid);
+				basket.Delete(jobids, updateui);
+			}
+
+			function updateui(jobcount) {
+				$('#delete').toggle(isadd);
+				$('#add').toggle(!isadd);
+				$('#basket').html(jobcount);
+			}
+		&lt;/script&gt;
+
+	&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="JobLead2" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="utf-8" /&gt;
+	&lt;title&gt;Technical Lead Developer - Cognos - London, Greater London, England - 01/07/2016 20:10:02&lt;/title&gt;
+	
+		&lt;meta name="viewport" content="width=device-width" /&gt;
+	&lt;link rel="canonical" href="/gb/en/search-jobs-in-London,-London,-United-Kingdom/TECHNICAL-LEAD-DEVELOPER-COGNOS-F5C2D146F3690E1C/" /&gt;
+	&lt;link rel="apple-touch-icon" href="http://az274887.vo.msecnd.net/images/apple-touch-icon.png" /&gt;
+	&lt;link rel="apple-touch-icon-precomposed" href="http://az274887.vo.msecnd.net/images/apple-touch-icon.png" /&gt;
+	&lt;link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" /&gt;
+	&lt;link type="text/css" rel="stylesheet" href="/gb/en/css/mob/layout.min.css" /&gt;
+	&lt;link type="text/css" rel="stylesheet" href="/gb/en/css/mob/style.min.css?v=1.0.60415.1101" /&gt;
+	
+	
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;div id="page"&gt;
+
+		
+
+
+
+&lt;header id="hdr"&gt;
+	&lt;div&gt;&lt;a href="/gb/en/mob" class="logo"&gt;&amp;nbsp;&lt;/a&gt;&lt;/div&gt;
+&lt;div class="user"&gt;
+&lt;a href="/gb/en/mob/Home/EnableCookie?returnUrl=%2Fgb%2Fen%2Fmob%2Fjob%2FF5C2D146F3690E1C" id="useraction"&gt;Allow cookies&lt;/a&gt;&lt;/div&gt;
+&lt;div class="basket"&gt;&lt;a ID="basket" class="icon bask" href="/gb/en/mob/jobbasket"&gt;0&lt;/a&gt;&lt;/div&gt;
+
+&lt;div id="ntfy" class="hide"&gt;
+	&lt;span class="icon ntfy" style="display:none"&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;/header&gt;
+
+
+						&lt;div id="titlebar"&gt;
+	&lt;h3&gt;Job Details&lt;/h3&gt;
+&lt;/div&gt;
+					&lt;div id="actionbar"&gt;
+&lt;a class="acn" href="/gb/en/mob"&gt;Home&lt;/a&gt;&lt;a class="acn" href="/gb/en/mob/JobShare/Index/F5C2D146F3690E1C?returnUrl=%2Fgb%2Fen%2Fmob%2Fjob%2FF5C2D146F3690E1C"&gt;Share&lt;/a&gt;&lt;a style="display:none"  id="delete" href="javascript:void(0)" onclick="deletefrombasket('F5C2D146F3690E1C')" class="acn"&gt;Remove From Basket&lt;/a&gt;&lt;a style="display:inline-block" id="add"  href="javascript:void(0)" onclick="addtobasket('F5C2D146F3690E1C')" class="acn"&gt;Add To Basket&lt;/a&gt;&lt;a class="acn" href="/gb/en/mob/JobApplication?IDs=F5C2D146F3690E1C"&gt;Apply&lt;/a&gt;
+&lt;/div&gt;
+		&lt;div id="cnt"&gt;
+			&lt;div id="over"&gt;
+	&lt;div class="mask"&gt;&lt;/div&gt;
+	&lt;div class="load"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;article class="job"&gt;
+	&lt;header&gt;
+		&lt;h3&gt;Technical Lead Developer - Cognos&lt;/h3&gt;
+		&lt;div&gt;London, Greater London, England - Market related&lt;/div&gt;
+		&lt;div class="jobinfo"&gt;Contract&lt;/div&gt;
+	&lt;/header&gt;
+
+	&lt;div class="jobbody"&gt;
+
+		&lt;div class="jobdesc"&gt;
+&lt;P&gt;&lt;STRONG&gt;&lt;U&gt;Technical Lead Developer - Cognos, Interaction&lt;/U&gt;&lt;/STRONG&gt;&lt;/P&gt;&lt;P&gt;Technical Lead Developer - Cognos, Interaction - required by global Law firm to play major role in the upgrade of Cognos and Interaction. &lt;/P&gt;&lt;P&gt; Key Skills Required:&lt;/P&gt;&lt;UL&gt; &lt;LI&gt;Previous experience working in Legal sector with Cognos, Interaction, Thompson Reuters Elite, Worksite or Aderant Expert&lt;/LI&gt;&lt;LI&gt;Strong experience and understanding of SQL Server.&lt;/LI&gt;&lt;LI&gt;Prior experience with .NET, C#, HTML, CSS, JavaScript,&lt;/LI&gt;&lt;LI&gt;jQuery or JSON would also be highly advantageous.&lt;/LI&gt;&lt;LI&gt;Able to effectively communicate with a range of different people. &lt;/LI&gt;&lt;LI&gt;Experience with engaging and communication with 3rd party vendors.&lt;/LI&gt;&lt;LI&gt;Solution design, development and maintenance experience in a multiple office global organisation.&lt;/LI&gt;&lt;/UL&gt; &lt;P&gt; This is a technical lead role which will entail of liaising with 3rd party vendors and different teams within the business. The firm is looking for two Lead Developers to help play a key role in the upgrade of their Cognos and Interaction software.&lt;/P&gt;&lt;P&gt;This is a fantastic opportunity to work for a global Law firm with offices all around the continent.&lt;/P&gt;&lt;P&gt; &lt;STRONG&gt;&lt;U&gt;Technical Lead Developer - Cognos, Interaction&lt;/U&gt;&lt;/STRONG&gt;&lt;/P&gt;		&lt;/div&gt;
+		&lt;div class="jobinfo"&gt;
+
+ &lt;div&gt;
+		 &lt;label for="Job_LocationCountryText"&gt;Location&lt;/label&gt;
+		 London, Greater London, England
+				&lt;/div&gt;
+
+
+&lt;div&gt;
+				&lt;label&gt;Industries&lt;/label&gt;
+				IT, Finance
+	 &lt;/div&gt;
+
+
+
+
+
+				&lt;div&gt;
+					&lt;label for="Job_Rate"&gt;Rate&lt;/label&gt;
+					Market related
+				&lt;/div&gt;
+
+				&lt;div&gt;
+					&lt;label&gt;Employment Business&lt;/label&gt;
+					Information Technology Services
+				&lt;/div&gt;
+
+  &lt;div&gt;
+		 &lt;label for="Job_Contact"&gt;Contact&lt;/label&gt;
+		 Connor Morris
+	 &lt;/div&gt;
+
+
+
+  &lt;div&gt;
+		 &lt;label for="Job_EmailLink"&gt;Email&lt;/label&gt;
+		 &lt;a href="mailto:Connor.Morris.F2554.EC47B@apps.jobserve.com?Subject=RE: Job Vacancy &amp;#39;JS216/62/CM&amp;#39; (via JobServe)"&gt;Contact This Employment Business&lt;/a&gt;&lt;span&gt;&lt;/span&gt;
+	 &lt;/div&gt;
+
+  &lt;div&gt;
+		 &lt;label for="Job_Reference"&gt;Job Reference&lt;/label&gt;
+		 JS216/62/CM
+	 &lt;/div&gt;
+
+  &lt;div&gt;
+		 &lt;label for="Job_PostedDateTimeStr"&gt;Posted Date&lt;/label&gt;
+		 01/07/2016 20:10:02
+	 &lt;/div&gt;
+
+ 		 &lt;div&gt;
+		 &lt;label for="Job_PermaLinkFull"&gt;Permalink&lt;/label&gt;
+		 &lt;a href="http://www.jobserve.com/Enpue" target="_blank"&gt;http://www.jobserve.com/Enpue&lt;/a&gt;
+	 &lt;/div&gt;
+
+		&lt;/div&gt;
+		&lt;/div&gt;
+&lt;/article&gt;
+
+	&lt;div class="formbuttons"&gt;
+			&lt;form method="get" action="/gb/en/mob/JobApplication"&gt;
+				&lt;input type="hidden" name="IDs" value="F5C2D146F3690E1C" /&gt;
+				&lt;input type="hidden" name="searchURL" /&gt;
+				&lt;button type="submit" class="fat"&gt;Apply&lt;/button&gt;
+			&lt;/form&gt;
+	&lt;/div&gt;
+
+
+
+		&lt;/div&gt;
+&lt;footer id="foot"&gt;
+		&lt;nav&gt;
+&lt;ul class="navlinks"&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/home"&gt;&lt;span&gt;Home&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/Candidate/Settings?returnUrl=%2fgb%2fen%2fmob%2fjob%2fF5C2D146F3690E1C"&gt;&lt;span&gt;Settings&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/Content/Contact"&gt;&lt;span&gt;Contact Us&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/Content/Legal"&gt;&lt;span&gt;Legal&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+		&lt;/nav&gt;
+	&lt;div class="flinks"&gt;&lt;a href="/gb/en/mob/Content/Help"&gt;Help&lt;/a&gt; &lt;a href="/gb/en/mob/Home/RequestDesktop"&gt;Desktop Site&lt;/a&gt;&lt;/div&gt;
+	&lt;div class="copy"&gt;Copyright &amp;#169; 2016 JobServe Ltd.&lt;/div&gt;
+&lt;/footer&gt;
+	&lt;/div&gt;
+	
+	&lt;script src="/scripts/jquery-1.9.1.min.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;script src="/scripts/mob/mob.min.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;script src="/scripts/utils.min.js" type="text/javascript"&gt;&lt;/script&gt;
+		
+
+
+		&lt;script type="text/javascript"&gt;
+			var basket = new Basket('/gb/en/mob/JobBasket');
+			var isadd = null;
+			var cookiesEnabled = false;
+
+			function addtobasket(jobid) {
+				if (cookiesEnabled) {
+					var jobcount = $('#basket').html();
+					if(jobcount &gt;= 25) 	{
+						alert('You have reached the basket limit of 25 jobs. To continue using the Job Basket you must apply for or delete some or all of the jobs in your basket.');
+					}
+					else {
+						isadd = true;
+						var jobids = [];
+						jobids.push(jobid);
+						basket.Add(jobids, updateui);
+					}            	
+				}
+				else
+					alert("You must allow cookies to continue");            
+			}
+
+			function deletefrombasket(jobid) {
+				isadd = false;
+				var jobids = [];
+				jobids.push(jobid);
+				basket.Delete(jobids, updateui);
+			}
+
+			function updateui(jobcount) {
+				$('#delete').toggle(isadd);
+				$('#add').toggle(!isadd);
+				$('#basket').html(jobcount);
+			}
+		&lt;/script&gt;
+
+	&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="JobLead3" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="utf-8" /&gt;
+	&lt;title&gt;Application Security Analyst (Security Developer) - London - 01/07/2016 18:46:57&lt;/title&gt;
+	
+		&lt;meta name="viewport" content="width=device-width" /&gt;
+	&lt;link rel="canonical" href="/gb/en/search-jobs-in-London,-London,-United-Kingdom/APPLICATION-SECURITY-ANALYST-SECURITY-DEVELOPER-FF2CC047F505C68D/" /&gt;
+	&lt;link rel="apple-touch-icon" href="http://az274887.vo.msecnd.net/images/apple-touch-icon.png" /&gt;
+	&lt;link rel="apple-touch-icon-precomposed" href="http://az274887.vo.msecnd.net/images/apple-touch-icon.png" /&gt;
+	&lt;link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" /&gt;
+	&lt;link type="text/css" rel="stylesheet" href="/gb/en/css/mob/layout.min.css" /&gt;
+	&lt;link type="text/css" rel="stylesheet" href="/gb/en/css/mob/style.min.css?v=1.0.60415.1101" /&gt;
+	
+	
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;div id="page"&gt;
+
+		
+
+
+
+&lt;header id="hdr"&gt;
+	&lt;div&gt;&lt;a href="/gb/en/mob" class="logo"&gt;&amp;nbsp;&lt;/a&gt;&lt;/div&gt;
+&lt;div class="user"&gt;
+&lt;a href="/gb/en/mob/Home/EnableCookie?returnUrl=%2Fgb%2Fen%2Fmob%2Fjob%2FFF2CC047F505C68D" id="useraction"&gt;Allow cookies&lt;/a&gt;&lt;/div&gt;
+&lt;div class="basket"&gt;&lt;a ID="basket" class="icon bask" href="/gb/en/mob/jobbasket"&gt;0&lt;/a&gt;&lt;/div&gt;
+
+&lt;div id="ntfy" class="hide"&gt;
+	&lt;span class="icon ntfy" style="display:none"&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;/header&gt;
+
+
+						&lt;div id="titlebar"&gt;
+	&lt;h3&gt;Job Details&lt;/h3&gt;
+&lt;/div&gt;
+					&lt;div id="actionbar"&gt;
+&lt;a class="acn" href="/gb/en/mob"&gt;Home&lt;/a&gt;&lt;a class="acn" href="/gb/en/mob/JobShare/Index/FF2CC047F505C68D?returnUrl=%2Fgb%2Fen%2Fmob%2Fjob%2FFF2CC047F505C68D"&gt;Share&lt;/a&gt;&lt;a style="display:none"  id="delete" href="javascript:void(0)" onclick="deletefrombasket('FF2CC047F505C68D')" class="acn"&gt;Remove From Basket&lt;/a&gt;&lt;a style="display:inline-block" id="add"  href="javascript:void(0)" onclick="addtobasket('FF2CC047F505C68D')" class="acn"&gt;Add To Basket&lt;/a&gt;&lt;a class="acn" href="/gb/en/mob/JobApplication?IDs=FF2CC047F505C68D"&gt;Apply&lt;/a&gt;
+&lt;/div&gt;
+		&lt;div id="cnt"&gt;
+			&lt;div id="over"&gt;
+	&lt;div class="mask"&gt;&lt;/div&gt;
+	&lt;div class="load"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;article class="job"&gt;
+	&lt;header&gt;
+		&lt;h3&gt;Application Security Analyst (Security Developer)&lt;/h3&gt;
+		&lt;div&gt;London, UK - &amp;#163;500 - &amp;#163;550 per day&lt;/div&gt;
+		&lt;div class="jobinfo"&gt;Contract&lt;/div&gt;
+	&lt;/header&gt;
+
+	&lt;div class="jobbody"&gt;
+
+		&lt;div class="jobdesc"&gt;
+&lt;P&gt;An Application Security Analyst is required to join one of my clients who are a leading global bank. The role will focus on integrating security practices within IT development teams, and supporting applications comply with the Application Security Baseline. This is an exciting opportunity to work with interesting security challenges in an environment with many different development platforms, communications technologies, and advanced trading systems.&lt;br/&gt;&lt;br/&gt;The role encompasses a number of activities &amp; responsibilities:&lt;br/&gt;&lt;br/&gt;*To promote and support Source Code Analysis (HP/Fortify 360) within the Software Development Lifecycle of development teams. Will involve working with developers to integrate SCA into their build environments and to assist with the identification, tracking, and remediation of vulnerabilities.&lt;br/&gt;&lt;br/&gt;*Organise and manage the penetration testing of Internet facing applications using 3rd party vendors, and ideally have the skills to perform some level of penetration testing independently on request.&lt;br/&gt;&lt;br/&gt;*To provide expertise on discovered vulnerabilities and to mediate/arbitrate disputes between developers and an offshore security testing team on the criticality of vulnerabilities.&lt;br/&gt;&lt;br/&gt;*To drive, track, and assist application development teams comply with the Application Security baseline. Work with development teams on subjects such as strong authentication, encryption, data protection/leakage, etc.&lt;br/&gt;&lt;br/&gt;*To strengthen development practices and improve overall development security through the highlighting of good practices and development methodologies.&lt;br/&gt; &lt;br/&gt;*Provide guidance on security tools and resources, performing on-going evaluation of developer training material and communication based on repeat vulnerabilities. &lt;br/&gt;&lt;br/&gt;*Monitor public sources of vulnerability information for anything that might affect the division's applications or the corporate network.&lt;br/&gt;&lt;br/&gt;*Maintain an internal vulnerability tracker with up to date information regarding any historical and current vulnerabilities. Contribute to the internal Wiki with relevant information for both the IT Security Team and the wider developer community.&lt;br/&gt;&lt;br/&gt;Essential Skills&lt;br/&gt;&lt;br/&gt;*Excellent understanding of development security and its implementation in systems: identification, authentication, access control and provisioning, alignment of jurisdiction to business process&lt;br/&gt;*Familiarity with common security vulnerabilities (eg OWASP Top 10)&lt;br/&gt;*Strong technical skills required to understand vulnerabilities in detail and how to resolve/mitigate them. &lt;br/&gt;*Excellent knowledge of programming best practices, design patterns, etc.&lt;br/&gt;*Excellent problem solving skills, being able to develop approaches to complex technology and strategy problems, building consensus across diverse interest groups and working within constraints of practical delivery yet able to think beyond the requirements of immediate issues.&lt;br/&gt;*Well-developed written communication skills with the ability to summarise key issues, conclusions and recommendations in report form. Target audiences will include regulatory authorities and internal/external auditors.&lt;br/&gt;*The candidate will be a forward thinking individual with the ability to look beyond immediate problems and issues, but with a solid practical delivery focus.&lt;br/&gt;*Highly skilled and able to demonstrate value to the development community at a practical level, working alongside developers, production staff and technical architects on a collaborative basis&lt;br/&gt;*The ability to manage independent responsibilities and projects while working closely with the security, architecture and development communities; the candidate must be well organised, self motivating and a good communicator&lt;br/&gt;*A pragmatist with the strength of character to lead divergent interests to common ground and the best outcome &lt;br/&gt;*Able to communicate effectively across a wide range of seniorities from entry level developer to senior management.&lt;br/&gt;*A technologist, with an interest in emergent technologies and practices, with the ability to understand and communicate how these could fit within the technology estate&lt;br/&gt;*Approachable and willing to share their expertise and experience in order to assist the development of teams and individuals&lt;br/&gt;&lt;br/&gt;Desirable&lt;br/&gt;&lt;br/&gt;*Development experience, preferably in Microsoft Visual Studio, .NET and Java&lt;br/&gt;*Experience of specific security products and technologies: CA Siteminder, 2 factor authentication, Kerberos/SAML authentication solutions&lt;br/&gt;*Experience of the development lifecycle within .NET, C# and/or Java projects&lt;br/&gt;*Hands-on penetration testing experience &lt;br/&gt;*Experience with source code analysis products (HP/Fortify)&lt;br/&gt;*Knowledge of Web Application Firewalls: how to apply them and to define effective custom rules &lt;br/&gt;*Competent in technical interviewing&lt;br/&gt;*Familiarity with product adoption lifecycles, with an understanding of the different methods technologies, products and approaches can be introduced to an enterprise and the merits of each&lt;/P&gt;		&lt;/div&gt;
+		&lt;div class="jobinfo"&gt;
+
+ &lt;div&gt;
+		 &lt;label for="Job_LocationCountryText"&gt;Location&lt;/label&gt;
+		 London, UK
+				&lt;/div&gt;
+
+
+&lt;div&gt;
+				&lt;label&gt;Industries&lt;/label&gt;
+				IT, Finance
+	 &lt;/div&gt;
+
+
+
+  &lt;div&gt;
+		 &lt;label for="Job_StartDate"&gt;Start Date&lt;/label&gt;
+		 18/07/2016
+	 &lt;/div&gt;
+
+				&lt;div&gt;
+					&lt;label for="Job_Duration"&gt;Duration&lt;/label&gt;
+					6 Months
+				&lt;/div&gt;
+
+				&lt;div&gt;
+					&lt;label for="Job_Rate"&gt;Rate&lt;/label&gt;
+					&amp;#163;500 - &amp;#163;550 per day
+				&lt;/div&gt;
+
+				&lt;div&gt;
+					&lt;label&gt;Employment Business&lt;/label&gt;
+					Apollo Solutions Ltd
+				&lt;/div&gt;
+
+  &lt;div&gt;
+		 &lt;label for="Job_Contact"&gt;Contact&lt;/label&gt;
+		 Jason Henderson
+	 &lt;/div&gt;
+
+ &lt;div&gt;
+		 &lt;label for="Job_Telephone"&gt;Telephone&lt;/label&gt;
+		 
+	&lt;a href="tel:02031673167"&gt;020 3167 3167&lt;/a&gt;
+
+	 &lt;/div&gt;
+
+
+
+  &lt;div&gt;
+		 &lt;label for="Job_Reference"&gt;Job Reference&lt;/label&gt;
+		 JS-JHBAN01
+	 &lt;/div&gt;
+
+  &lt;div&gt;
+		 &lt;label for="Job_PostedDateTimeStr"&gt;Posted Date&lt;/label&gt;
+		 01/07/2016 18:46:57
+	 &lt;/div&gt;
+
+ 		 &lt;div&gt;
+		 &lt;label for="Job_PermaLinkFull"&gt;Permalink&lt;/label&gt;
+		 &lt;a href="http://www.jobserve.com/Eno7L" target="_blank"&gt;http://www.jobserve.com/Eno7L&lt;/a&gt;
+	 &lt;/div&gt;
+
+		&lt;/div&gt;
+		&lt;/div&gt;
+&lt;/article&gt;
+
+	&lt;div class="formbuttons"&gt;
+			&lt;form method="get" action="/gb/en/mob/JobApplication"&gt;
+				&lt;input type="hidden" name="IDs" value="FF2CC047F505C68D" /&gt;
+				&lt;input type="hidden" name="searchURL" /&gt;
+				&lt;button type="submit" class="fat"&gt;Apply&lt;/button&gt;
+			&lt;/form&gt;
+	&lt;/div&gt;
+
+
+
+		&lt;/div&gt;
+&lt;footer id="foot"&gt;
+		&lt;nav&gt;
+&lt;ul class="navlinks"&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/home"&gt;&lt;span&gt;Home&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/Candidate/Settings?returnUrl=%2fgb%2fen%2fmob%2fjob%2fFF2CC047F505C68D"&gt;&lt;span&gt;Settings&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/Content/Contact"&gt;&lt;span&gt;Contact Us&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/Content/Legal"&gt;&lt;span&gt;Legal&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+		&lt;/nav&gt;
+	&lt;div class="flinks"&gt;&lt;a href="/gb/en/mob/Content/Help"&gt;Help&lt;/a&gt; &lt;a href="/gb/en/mob/Home/RequestDesktop"&gt;Desktop Site&lt;/a&gt;&lt;/div&gt;
+	&lt;div class="copy"&gt;Copyright &amp;#169; 2016 JobServe Ltd.&lt;/div&gt;
+&lt;/footer&gt;
+	&lt;/div&gt;
+	
+	&lt;script src="/scripts/jquery-1.9.1.min.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;script src="/scripts/mob/mob.min.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;script src="/scripts/utils.min.js" type="text/javascript"&gt;&lt;/script&gt;
+		
+
+
+		&lt;script type="text/javascript"&gt;
+			var basket = new Basket('/gb/en/mob/JobBasket');
+			var isadd = null;
+			var cookiesEnabled = false;
+
+			function addtobasket(jobid) {
+				if (cookiesEnabled) {
+					var jobcount = $('#basket').html();
+					if(jobcount &gt;= 25) 	{
+						alert('You have reached the basket limit of 25 jobs. To continue using the Job Basket you must apply for or delete some or all of the jobs in your basket.');
+					}
+					else {
+						isadd = true;
+						var jobids = [];
+						jobids.push(jobid);
+						basket.Add(jobids, updateui);
+					}            	
+				}
+				else
+					alert("You must allow cookies to continue");            
+			}
+
+			function deletefrombasket(jobid) {
+				isadd = false;
+				var jobids = [];
+				jobids.push(jobid);
+				basket.Delete(jobids, updateui);
+			}
+
+			function updateui(jobcount) {
+				$('#delete').toggle(isadd);
+				$('#add').toggle(!isadd);
+				$('#basket').html(jobcount);
+			}
+		&lt;/script&gt;
+
+	&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="MainResponse" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="utf-8" /&gt;
+	&lt;title&gt;JobServe - Find your next job&lt;/title&gt;
+	
+		&lt;meta name="viewport" content="width=device-width" /&gt;
+	&lt;link rel="canonical" href="/gb/en/JobListing.aspx?shid=37B6233495B9238815" /&gt;
+	&lt;link rel="apple-touch-icon" href="http://az274887.vo.msecnd.net/images/apple-touch-icon.png" /&gt;
+	&lt;link rel="apple-touch-icon-precomposed" href="http://az274887.vo.msecnd.net/images/apple-touch-icon.png" /&gt;
+	&lt;link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" /&gt;
+	&lt;link type="text/css" rel="stylesheet" href="/gb/en/css/mob/layout.min.css" /&gt;
+	&lt;link type="text/css" rel="stylesheet" href="/gb/en/css/mob/style.min.css?v=1.0.60415.1101" /&gt;
+	
+	
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;div id="page"&gt;
+
+		
+
+
+&lt;header id="hdr"&gt;
+	&lt;div&gt;&lt;a href="/gb/en/mob" class="logo"&gt;&amp;nbsp;&lt;/a&gt;&lt;/div&gt;
+&lt;div class="user"&gt;
+&lt;a href="/gb/en/mob/Home/EnableCookie?returnUrl=%2Fgb%2Fen%2Fmob%2Fjobsearch%2Fresults%2F37B6233495B9238815%3Fpage%3D1" id="useraction"&gt;Allow cookies&lt;/a&gt;&lt;/div&gt;
+&lt;div class="basket"&gt;&lt;a ID="basket" class="icon bask" href="/gb/en/mob/jobbasket"&gt;0&lt;/a&gt;&lt;/div&gt;
+
+&lt;div id="ntfy" class="hide"&gt;
+	&lt;span class="icon ntfy" style="display:none"&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;/header&gt;
+
+
+						&lt;div id="titlebar"&gt;
+	&lt;h3&gt;Search Results&lt;/h3&gt;
+&lt;/div&gt;
+					&lt;div id="actionbar"&gt;
+	&lt;a class="acn" href="/gb/en/mob/jobsearch/37B6233495B9238815"&gt;Refine Search&lt;/a&gt;&lt;a class="acn" href="/gb/en/mob/JobSavedSearch/Add/37B6233495B9238815?returnUrl=%2Fgb%2Fen%2Fmob%2Fjobsearch%2Fresults%2F37B6233495B9238815%3Fpage%3D1"&gt;Save Search&lt;/a&gt;
+&lt;/div&gt;
+		&lt;div id="cnt"&gt;
+			
+	&lt;div class="results jsr paged"&gt;
+		&lt;div class="summary"&gt;
+			&lt;span class='resultnumber'&gt;137&lt;/span&gt; jobs found for &lt;span class='searchval'&gt;C#&lt;/span&gt; in &lt;span class='searchval'&gt;London&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;div class="pager"&gt;
+		&lt;span class="prev"&gt;« Prev&lt;/span&gt;
+	&lt;span class="pages"&gt;
+					&lt;span class="current"&gt;1&lt;/span&gt;
+			&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=2"&gt;2&lt;/a&gt;
+			&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=3"&gt;3&lt;/a&gt;
+			&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=4"&gt;4&lt;/a&gt;
+			&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=5"&gt;5&lt;/a&gt;
+	&lt;/span&gt;
+		&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=2" class="next"&gt;Next »&lt;/a&gt;
+&lt;/div&gt;
+
+		&lt;ul&gt;
+				
+
+	&lt;li id="J3842279F367B28C9" &gt;
+		&lt;a href="/gb/en/mob/job/3842279F367B28C9?shid=37B6233495B9238815&amp;amp;page=1" &gt;
+			&lt;span class="position"&gt;IT Business/Solutions Analyst - London - £400 - 500 p/day&lt;/span&gt;
+				&lt;span&gt;&amp;#163;400 - &amp;#163;500 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;1 day ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JF5C2D146F3690E1C" &gt;
+		&lt;a href="/gb/en/mob/job/F5C2D146F3690E1C?shid=37B6233495B9238815&amp;amp;page=1" &gt;
+			&lt;span class="position"&gt;Technical Lead Developer - Cognos&lt;/span&gt;
+				&lt;span&gt;Market related&lt;/span&gt;
+				&lt;span&gt;London, Greater London, England&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;1 day ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JFF2CC047F505C68D" &gt;
+		&lt;a href="/gb/en/mob/job/FF2CC047F505C68D?shid=37B6233495B9238815&amp;amp;page=1" &gt;
+			&lt;span class="position"&gt;Application Security Analyst (Security Developer)&lt;/span&gt;
+				&lt;span&gt;&amp;#163;500 - &amp;#163;550 per day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;1 day ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JFA93EAB3F0988CD1" &gt;
+		&lt;a href="/gb/en/mob/job/FA93EAB3F0988CD1?shid=37B6233495B9238815&amp;amp;page=1" &gt;
+			&lt;span class="position"&gt;Tooling Architect (DevOps) - SC clearance preferred - London - 5 Months+&lt;/span&gt;
+				&lt;span&gt;Market&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;1 day ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J609FDB44CE865142" &gt;
+		&lt;a href="/gb/en/mob/job/609FDB44CE865142?shid=37B6233495B9238815&amp;amp;page=1" &gt;
+			&lt;span class="position"&gt;Tooling Architect (DevOps) - SC clearance preferred - London - 5 Months+&lt;/span&gt;
+				&lt;span&gt;Market&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;1 day ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J3D9AC35493ADF149" &gt;
+		&lt;a href="/gb/en/mob/job/3D9AC35493ADF149?shid=37B6233495B9238815&amp;amp;page=1" &gt;
+			&lt;span class="position"&gt;Web Senior Software Developer -C#&lt;/span&gt;
+				&lt;span&gt;&amp;#163;400.00 - &amp;#163;442.00 per day&lt;/span&gt;
+				&lt;span&gt;City of London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;1 day ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J107E84FC62B54AE9" &gt;
+		&lt;a href="/gb/en/mob/job/107E84FC62B54AE9?shid=37B6233495B9238815&amp;amp;page=1" &gt;
+			&lt;span class="position"&gt;C# Test Analyst&lt;/span&gt;
+				&lt;span&gt;&amp;#163;300.00 - &amp;#163;330.00 per day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;1 day ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JD45151104ABCF305" &gt;
+		&lt;a href="/gb/en/mob/job/D45151104ABCF305?shid=37B6233495B9238815&amp;amp;page=1" &gt;
+			&lt;span class="position"&gt;Agile Software Engineer/Evangelist&lt;/span&gt;
+				&lt;span&gt;&amp;#163;550 - &amp;#163;650 per Day + depending on experience&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J342D2F424A048587" &gt;
+		&lt;a href="/gb/en/mob/job/342D2F424A048587?shid=37B6233495B9238815&amp;amp;page=1" &gt;
+			&lt;span class="position"&gt;Automation Test Engineer&lt;/span&gt;
+				&lt;span&gt;Market Rate&lt;/span&gt;
+				&lt;span&gt;Bedfordshire&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J5E1E45A3C067AFAA" &gt;
+		&lt;a href="/gb/en/mob/job/5E1E45A3C067AFAA?shid=37B6233495B9238815&amp;amp;page=1" &gt;
+			&lt;span class="position"&gt;Agile Software Engineer/Evangelist&lt;/span&gt;
+				&lt;span&gt;&amp;#163;550 - &amp;#163;650 per day + depending on experience&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J5CB2B965A237ABB4" &gt;
+		&lt;a href="/gb/en/mob/job/5CB2B965A237ABB4?shid=37B6233495B9238815&amp;amp;page=1" &gt;
+			&lt;span class="position"&gt;SENIOR C# WPF DEVELOPER&lt;/span&gt;
+				&lt;span&gt;&amp;#163;450 - &amp;#163;550 per Day&lt;/span&gt;
+				&lt;span&gt;Surrey&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JC905D3B147C27185" &gt;
+		&lt;a href="/gb/en/mob/job/C905D3B147C27185?shid=37B6233495B9238815&amp;amp;page=1" &gt;
+			&lt;span class="position"&gt;.Net Developer - Microsoft Stack - Azure - ASP - C#&lt;/span&gt;
+				&lt;span&gt;&amp;#163;600-&amp;#163;675 a Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JBD2B5D1963008FCD" &gt;
+		&lt;a href="/gb/en/mob/job/BD2B5D1963008FCD?shid=37B6233495B9238815&amp;amp;page=1" &gt;
+			&lt;span class="position"&gt;.Net Developer&lt;/span&gt;
+				&lt;span&gt;&lt;/span&gt;
+				&lt;span&gt;Watford, Hertfordshire&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J83F2AF922D390D8A" &gt;
+		&lt;a href="/gb/en/mob/job/83F2AF922D390D8A?shid=37B6233495B9238815&amp;amp;page=1" &gt;
+			&lt;span class="position"&gt;Front End/UI Developer&lt;/span&gt;
+				&lt;span&gt;&amp;#163;500 - &amp;#163;600 per Day&lt;/span&gt;
+				&lt;span&gt;City of London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JC26381ECF452930C" &gt;
+		&lt;a href="/gb/en/mob/job/C26381ECF452930C?shid=37B6233495B9238815&amp;amp;page=1" &gt;
+			&lt;span class="position"&gt;Python Developer&lt;/span&gt;
+				&lt;span&gt;&amp;#163;500.00 - &amp;#163;600.00 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JFEB89EA6042BC046" &gt;
+		&lt;a href="/gb/en/mob/job/FEB89EA6042BC046?shid=37B6233495B9238815&amp;amp;page=1" &gt;
+			&lt;span class="position"&gt;Software Developer - Financial Services, .NET, ASP.NET, C#&lt;/span&gt;
+				&lt;span&gt;&amp;#163;450 - 550 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JE4F30C0F16E8D22B" &gt;
+		&lt;a href="/gb/en/mob/job/E4F30C0F16E8D22B?shid=37B6233495B9238815&amp;amp;page=1" &gt;
+			&lt;span class="position"&gt;Quant Developer/Trading/£550-£600 per day&lt;/span&gt;
+				&lt;span&gt;&amp;#163;550-&amp;#163;600 Per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J6C75AE4F1E0A00C9" &gt;
+		&lt;a href="/gb/en/mob/job/6C75AE4F1E0A00C9?shid=37B6233495B9238815&amp;amp;page=1" &gt;
+			&lt;span class="position"&gt;ASP.NET MVC Developer (full-stack) - LONDON - 6 month CONTRACT&lt;/span&gt;
+				&lt;span&gt;&amp;#163;400 - &amp;#163;500 per Day&lt;/span&gt;
+				&lt;span&gt;City of London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J6CC9AF0602101554" &gt;
+		&lt;a href="/gb/en/mob/job/6CC9AF0602101554?shid=37B6233495B9238815&amp;amp;page=1" &gt;
+			&lt;span class="position"&gt;Software Developer (.NET/ASP.NET/JavaScript/C#) Contract or Permanent (central London)&lt;/span&gt;
+				&lt;span&gt;&amp;#163;55k-&amp;#163;65k (Depending on Experience) + Benefits&lt;/span&gt;
+				&lt;span&gt;Central London&lt;/span&gt;
+				&lt;span&gt;Contract/Permanent&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JFAB4EB178431C1A1" &gt;
+		&lt;a href="/gb/en/mob/job/FAB4EB178431C1A1?shid=37B6233495B9238815&amp;amp;page=1" &gt;
+			&lt;span class="position"&gt;C#/C++ Developer - Banking - London&lt;/span&gt;
+				&lt;span&gt;&amp;#163;350 - &amp;#163;400 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J31375EA6233EB094" &gt;
+		&lt;a href="/gb/en/mob/job/31375EA6233EB094?shid=37B6233495B9238815&amp;amp;page=1" &gt;
+			&lt;span class="position"&gt;Build - DevOps Engineer&lt;/span&gt;
+				&lt;span&gt;&amp;#163;425-&amp;#163;443 Per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JF362E091E1636601" &gt;
+		&lt;a href="/gb/en/mob/job/F362E091E1636601?shid=37B6233495B9238815&amp;amp;page=1" &gt;
+			&lt;span class="position"&gt;Software Developer C#/EPiServer - 1 month Contract - London&lt;/span&gt;
+				&lt;span&gt;&amp;#163;350 - 450 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JB38B6B3D85407145" &gt;
+		&lt;a href="/gb/en/mob/job/B38B6B3D85407145?shid=37B6233495B9238815&amp;amp;page=1" &gt;
+			&lt;span class="position"&gt;.Net Developer (C#, ASP.NET, AWS, TDD, Cloud)&lt;/span&gt;
+				&lt;span&gt;&amp;#163;400 - &amp;#163;550 per Day&lt;/span&gt;
+				&lt;span&gt;City of London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JEFF1EEBED5CCE012" &gt;
+		&lt;a href="/gb/en/mob/job/EFF1EEBED5CCE012?shid=37B6233495B9238815&amp;amp;page=1" &gt;
+			&lt;span class="position"&gt;.Net Web Developer - Camberley&lt;/span&gt;
+				&lt;span&gt;&amp;#163;550.00 per Day&lt;/span&gt;
+				&lt;span&gt;Camberley, Surrey&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JA4CFB9229A12AB2E" &gt;
+		&lt;a href="/gb/en/mob/job/A4CFB9229A12AB2E?shid=37B6233495B9238815&amp;amp;page=1" &gt;
+			&lt;span class="position"&gt;Automation Tester- High Wycombe- Contract- 3 months- Selenium- XML- IVR&lt;/span&gt;
+				&lt;span&gt;&amp;#163;270/day&lt;/span&gt;
+				&lt;span&gt;High Wycombe, Buckinghamshire&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+
+		&lt;/ul&gt;
+		&lt;div class="pager"&gt;
+		&lt;span class="prev"&gt;« Prev&lt;/span&gt;
+	&lt;span class="pages"&gt;
+					&lt;span class="current"&gt;1&lt;/span&gt;
+			&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=2"&gt;2&lt;/a&gt;
+			&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=3"&gt;3&lt;/a&gt;
+			&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=4"&gt;4&lt;/a&gt;
+			&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=5"&gt;5&lt;/a&gt;
+	&lt;/span&gt;
+		&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=2" class="next"&gt;Next »&lt;/a&gt;
+&lt;/div&gt;
+
+	&lt;/div&gt;
+
+		&lt;/div&gt;
+&lt;footer id="foot"&gt;
+		&lt;nav&gt;
+&lt;ul class="navlinks"&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/home"&gt;&lt;span&gt;Home&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/Candidate/Settings?returnUrl=%2fgb%2fen%2fmob%2fjobsearch"&gt;&lt;span&gt;Settings&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/Content/Contact"&gt;&lt;span&gt;Contact Us&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/Content/Legal"&gt;&lt;span&gt;Legal&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+		&lt;/nav&gt;
+	&lt;div class="flinks"&gt;&lt;a href="/gb/en/mob/Content/Help"&gt;Help&lt;/a&gt; &lt;a href="/gb/en/mob/Home/RequestDesktop"&gt;Desktop Site&lt;/a&gt;&lt;/div&gt;
+	&lt;div class="copy"&gt;Copyright &amp;#169; 2016 JobServe Ltd.&lt;/div&gt;
+&lt;/footer&gt;
+	&lt;/div&gt;
+	
+	&lt;script src="/scripts/jquery-1.9.1.min.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;script src="/scripts/mob/mob.min.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;script src="/scripts/utils.min.js" type="text/javascript"&gt;&lt;/script&gt;
+		
+
+	&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="ResultPage2" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="utf-8" /&gt;
+	&lt;title&gt;JobServe - Find your next job&lt;/title&gt;
+	
+		&lt;meta name="viewport" content="width=device-width" /&gt;
+	&lt;link rel="canonical" href="/gb/en/JobListing.aspx?shid=37B6233495B9238815" /&gt;
+	&lt;link rel="apple-touch-icon" href="http://az274887.vo.msecnd.net/images/apple-touch-icon.png" /&gt;
+	&lt;link rel="apple-touch-icon-precomposed" href="http://az274887.vo.msecnd.net/images/apple-touch-icon.png" /&gt;
+	&lt;link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" /&gt;
+	&lt;link type="text/css" rel="stylesheet" href="/gb/en/css/mob/layout.min.css" /&gt;
+	&lt;link type="text/css" rel="stylesheet" href="/gb/en/css/mob/style.min.css?v=1.0.60415.1101" /&gt;
+	
+	
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;div id="page"&gt;
+
+		
+
+
+&lt;header id="hdr"&gt;
+	&lt;div&gt;&lt;a href="/gb/en/mob" class="logo"&gt;&amp;nbsp;&lt;/a&gt;&lt;/div&gt;
+&lt;div class="user"&gt;
+&lt;a href="/gb/en/mob/Home/EnableCookie?returnUrl=%2Fgb%2Fen%2Fmob%2Fjobsearch%2Fresults%2F37B6233495B9238815%3Fpage%3D2" id="useraction"&gt;Allow cookies&lt;/a&gt;&lt;/div&gt;
+&lt;div class="basket"&gt;&lt;a ID="basket" class="icon bask" href="/gb/en/mob/jobbasket"&gt;0&lt;/a&gt;&lt;/div&gt;
+
+&lt;div id="ntfy" class="hide"&gt;
+	&lt;span class="icon ntfy" style="display:none"&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;/header&gt;
+
+
+						&lt;div id="titlebar"&gt;
+	&lt;h3&gt;Search Results&lt;/h3&gt;
+&lt;/div&gt;
+					&lt;div id="actionbar"&gt;
+	&lt;a class="acn" href="/gb/en/mob/jobsearch/37B6233495B9238815"&gt;Refine Search&lt;/a&gt;&lt;a class="acn" href="/gb/en/mob/JobSavedSearch/Add/37B6233495B9238815?returnUrl=%2Fgb%2Fen%2Fmob%2Fjobsearch%2Fresults%2F37B6233495B9238815%3Fpage%3D2"&gt;Save Search&lt;/a&gt;
+&lt;/div&gt;
+		&lt;div id="cnt"&gt;
+			
+	&lt;div class="results jsr paged"&gt;
+		&lt;div class="summary"&gt;
+			&lt;span class='resultnumber'&gt;137&lt;/span&gt; jobs found for &lt;span class='searchval'&gt;C#&lt;/span&gt; in &lt;span class='searchval'&gt;London&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;div class="pager"&gt;
+		&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=1" class="prev"&gt;« Prev&lt;/a&gt;
+	&lt;span class="pages"&gt;
+					&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=1"&gt;1&lt;/a&gt;
+			&lt;span class="current"&gt;2&lt;/span&gt;
+			&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=3"&gt;3&lt;/a&gt;
+			&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=4"&gt;4&lt;/a&gt;
+			&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=5"&gt;5&lt;/a&gt;
+	&lt;/span&gt;
+		&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=3" class="next"&gt;Next »&lt;/a&gt;
+&lt;/div&gt;
+
+		&lt;ul&gt;
+				
+
+	&lt;li id="JB24AF3151C6F99F5" &gt;
+		&lt;a href="/gb/en/mob/job/B24AF3151C6F99F5?shid=37B6233495B9238815&amp;amp;page=2" &gt;
+			&lt;span class="position"&gt;JavaScritp/HTML5 Engineer - CONTRACT - £600/day&lt;/span&gt;
+				&lt;span&gt;&amp;#163;450 - &amp;#163;600 per Day&lt;/span&gt;
+				&lt;span&gt;Camberley, Surrey&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J9AE3F3BEE4EE79D1" &gt;
+		&lt;a href="/gb/en/mob/job/9AE3F3BEE4EE79D1?shid=37B6233495B9238815&amp;amp;page=2" &gt;
+			&lt;span class="position"&gt;.Net Developer (C#, Scrum, Web API)&lt;/span&gt;
+				&lt;span&gt;&amp;#163;400pday&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J563D1BF8F088D1DF" &gt;
+		&lt;a href="/gb/en/mob/job/563D1BF8F088D1DF?shid=37B6233495B9238815&amp;amp;page=2" &gt;
+			&lt;span class="position"&gt;.NET Developer - Contract - High Wycombe&lt;/span&gt;
+				&lt;span&gt;&amp;#163;300 per Day&lt;/span&gt;
+				&lt;span&gt;High Wycombe&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J1315E40C2924F2C3" &gt;
+		&lt;a href="/gb/en/mob/job/1315E40C2924F2C3?shid=37B6233495B9238815&amp;amp;page=2" &gt;
+			&lt;span class="position"&gt;C# .NET xVA Risk Developer - SQL Counterparty risk PNL - Investment Bank&lt;/span&gt;
+				&lt;span&gt;&amp;#163;500 - &amp;#163;750 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J847B109BD6782D2C" &gt;
+		&lt;a href="/gb/en/mob/job/847B109BD6782D2C?shid=37B6233495B9238815&amp;amp;page=2" &gt;
+			&lt;span class="position"&gt;DevOPs Consultant (continuous Delivery/.NET, C#)&lt;/span&gt;
+				&lt;span&gt;&amp;#163;250 - &amp;#163;300 per Day GBP&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J668F51B428A638D7" &gt;
+		&lt;a href="/gb/en/mob/job/668F51B428A638D7?shid=37B6233495B9238815&amp;amp;page=2" &gt;
+			&lt;span class="position"&gt;.NET Developer (C#, ASP.NET, JavaScript, T-SQL, SSIS)&lt;/span&gt;
+				&lt;span&gt;&amp;#163;300 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J819B29A9CF80C0CC" &gt;
+		&lt;a href="/gb/en/mob/job/819B29A9CF80C0CC?shid=37B6233495B9238815&amp;amp;page=2" &gt;
+			&lt;span class="position"&gt;C#, .Net, ASP.NET Developer - Insurance - London, City&lt;/span&gt;
+				&lt;span&gt;&amp;#163;400-425/Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JE4CF7922DA12A8D3" &gt;
+		&lt;a href="/gb/en/mob/job/E4CF7922DA12A8D3?shid=37B6233495B9238815&amp;amp;page=2" &gt;
+			&lt;span class="position"&gt;C# Developer&lt;/span&gt;
+				&lt;span&gt;&amp;#163;550.00 - &amp;#163;600.00 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JD88D16F3CAEA83C6" &gt;
+		&lt;a href="/gb/en/mob/job/D88D16F3CAEA83C6?shid=37B6233495B9238815&amp;amp;page=2" &gt;
+			&lt;span class="position"&gt;SharePoint Consultant&lt;/span&gt;
+				&lt;span&gt;Competitive Market Rates&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J9EA84BCF08B56AB2" &gt;
+		&lt;a href="/gb/en/mob/job/9EA84BCF08B56AB2?shid=37B6233495B9238815&amp;amp;page=2" &gt;
+			&lt;span class="position"&gt;C#. Net Developer/ASP.NET/WCF/Agile/MVC/PL/SQL/API/SOLID&lt;/span&gt;
+				&lt;span&gt;&amp;#163;400 Per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J829BCC0DF87C4138" &gt;
+		&lt;a href="/gb/en/mob/job/829BCC0DF87C4138?shid=37B6233495B9238815&amp;amp;page=2" &gt;
+			&lt;span class="position"&gt;Contract .NET engineer&lt;/span&gt;
+				&lt;span&gt;&amp;#163;425 - &amp;#163;500 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JB976259ACF6D1C33" &gt;
+		&lt;a href="/gb/en/mob/job/B976259ACF6D1C33?shid=37B6233495B9238815&amp;amp;page=2" &gt;
+			&lt;span class="position"&gt;Web Applications Developer - C#, .Net, ASP.NET, Insurance, SQL&lt;/span&gt;
+				&lt;span&gt;&amp;#163;400-420 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;2 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JC1BF9D210FCC1C84" &gt;
+		&lt;a href="/gb/en/mob/job/C1BF9D210FCC1C84?shid=37B6233495B9238815&amp;amp;page=2" &gt;
+			&lt;span class="position"&gt;Java C# Developer - Front Office&lt;/span&gt;
+				&lt;span&gt;&amp;#163;550-&amp;#163;700 Per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;3 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JBE7FD306C86A3A37" &gt;
+		&lt;a href="/gb/en/mob/job/BE7FD306C86A3A37?shid=37B6233495B9238815&amp;amp;page=2" &gt;
+			&lt;span class="position"&gt;DevOPs Consultant (continuous Delivery)&lt;/span&gt;
+				&lt;span&gt;300 per day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;3 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JD63872829C03E780" &gt;
+		&lt;a href="/gb/en/mob/job/D63872829C03E780?shid=37B6233495B9238815&amp;amp;page=2" &gt;
+			&lt;span class="position"&gt;Core C# Developer&lt;/span&gt;
+				&lt;span&gt;&lt;/span&gt;
+				&lt;span&gt;London, United Kingdom&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;3 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J8FF56B033976823D" &gt;
+		&lt;a href="/gb/en/mob/job/8FF56B033976823D?shid=37B6233495B9238815&amp;amp;page=2" &gt;
+			&lt;span class="position"&gt;Xamarin .NET/iOS Developer Contract London&lt;/span&gt;
+				&lt;span&gt;&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;3 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J0E6C172F70C906D9" &gt;
+		&lt;a href="/gb/en/mob/job/0E6C172F70C906D9?shid=37B6233495B9238815&amp;amp;page=2" &gt;
+			&lt;span class="position"&gt;SharePoint Developer - SharePoint 2010 &amp; 2013&lt;/span&gt;
+				&lt;span&gt;&amp;#163;220 - &amp;#163;235 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;3 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J54CB91563A6600E9" &gt;
+		&lt;a href="/gb/en/mob/job/54CB91563A6600E9?shid=37B6233495B9238815&amp;amp;page=2" &gt;
+			&lt;span class="position"&gt;SCRUM MASTER - CONTRACT - LONDON&lt;/span&gt;
+				&lt;span&gt;MARKET RATE&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;3 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JC8FD74095AEE997A" &gt;
+		&lt;a href="/gb/en/mob/job/C8FD74095AEE997A?shid=37B6233495B9238815&amp;amp;page=2" &gt;
+			&lt;span class="position"&gt;.Net Developer - EPiserver - CMS Developer - EPiserver Developer - C#&lt;/span&gt;
+				&lt;span&gt;&amp;#163;350 - 450 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;3 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J6D1B6D49B3701439" &gt;
+		&lt;a href="/gb/en/mob/job/6D1B6D49B3701439?shid=37B6233495B9238815&amp;amp;page=2" &gt;
+			&lt;span class="position"&gt;T-SQL Developer (SSIS, C#, ASP.NET, JavaScript)&lt;/span&gt;
+				&lt;span&gt;&amp;#163;300 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;3 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J317AC162374951F4" &gt;
+		&lt;a href="/gb/en/mob/job/317AC162374951F4?shid=37B6233495B9238815&amp;amp;page=2" &gt;
+			&lt;span class="position"&gt;Back-End Developers Umbraco HTML CSS&lt;/span&gt;
+				&lt;span&gt;&amp;#163;250 - &amp;#163;350 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;3 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JEF785C776DE92016" &gt;
+		&lt;a href="/gb/en/mob/job/EF785C776DE92016?shid=37B6233495B9238815&amp;amp;page=2" &gt;
+			&lt;span class="position"&gt;Digital Tester&lt;/span&gt;
+				&lt;span&gt;Up To &amp;#163;300pd&lt;/span&gt;
+				&lt;span&gt;Gatwick, West Sussex&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;3 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JEF140734E1472FB1" &gt;
+		&lt;a href="/gb/en/mob/job/EF140734E1472FB1?shid=37B6233495B9238815&amp;amp;page=2" &gt;
+			&lt;span class="position"&gt;Cross Asset Application Support Specialist - Investment Banking&lt;/span&gt;
+				&lt;span&gt;&amp;#163;500 a Day&lt;/span&gt;
+				&lt;span&gt;London- City&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;3 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JABB2A92C0D0D1901" &gt;
+		&lt;a href="/gb/en/mob/job/ABB2A92C0D0D1901?shid=37B6233495B9238815&amp;amp;page=2" &gt;
+			&lt;span class="position"&gt;.Net Developer - EPiserver - CMS Developer - EPiserver Developer - C#&lt;/span&gt;
+				&lt;span&gt;&amp;#163;350 - 400 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;3 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JA3CF340A293E888F" &gt;
+		&lt;a href="/gb/en/mob/job/A3CF340A293E888F?shid=37B6233495B9238815&amp;amp;page=2" &gt;
+			&lt;span class="position"&gt;Python Developer&lt;/span&gt;
+				&lt;span&gt;Competitive Rates&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;3 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+
+		&lt;/ul&gt;
+		&lt;div class="pager"&gt;
+		&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=1" class="prev"&gt;« Prev&lt;/a&gt;
+	&lt;span class="pages"&gt;
+					&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=1"&gt;1&lt;/a&gt;
+			&lt;span class="current"&gt;2&lt;/span&gt;
+			&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=3"&gt;3&lt;/a&gt;
+			&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=4"&gt;4&lt;/a&gt;
+			&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=5"&gt;5&lt;/a&gt;
+	&lt;/span&gt;
+		&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=3" class="next"&gt;Next »&lt;/a&gt;
+&lt;/div&gt;
+
+	&lt;/div&gt;
+
+		&lt;/div&gt;
+&lt;footer id="foot"&gt;
+		&lt;nav&gt;
+&lt;ul class="navlinks"&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/home"&gt;&lt;span&gt;Home&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/Candidate/Settings?returnUrl=%2fgb%2fen%2fmob%2fjobsearch%2fresults%2f37B6233495B9238815%3fPage%3d2"&gt;&lt;span&gt;Settings&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/Content/Contact"&gt;&lt;span&gt;Contact Us&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/Content/Legal"&gt;&lt;span&gt;Legal&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+		&lt;/nav&gt;
+	&lt;div class="flinks"&gt;&lt;a href="/gb/en/mob/Content/Help"&gt;Help&lt;/a&gt; &lt;a href="/gb/en/mob/Home/RequestDesktop"&gt;Desktop Site&lt;/a&gt;&lt;/div&gt;
+	&lt;div class="copy"&gt;Copyright &amp;#169; 2016 JobServe Ltd.&lt;/div&gt;
+&lt;/footer&gt;
+	&lt;/div&gt;
+	
+	&lt;script src="/scripts/jquery-1.9.1.min.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;script src="/scripts/mob/mob.min.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;script src="/scripts/utils.min.js" type="text/javascript"&gt;&lt;/script&gt;
+		
+
+	&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="ResultPage3" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="utf-8" /&gt;
+	&lt;title&gt;JobServe - Find your next job&lt;/title&gt;
+	
+		&lt;meta name="viewport" content="width=device-width" /&gt;
+	&lt;link rel="canonical" href="/gb/en/JobListing.aspx?shid=37B6233495B9238815" /&gt;
+	&lt;link rel="apple-touch-icon" href="http://az274887.vo.msecnd.net/images/apple-touch-icon.png" /&gt;
+	&lt;link rel="apple-touch-icon-precomposed" href="http://az274887.vo.msecnd.net/images/apple-touch-icon.png" /&gt;
+	&lt;link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" /&gt;
+	&lt;link type="text/css" rel="stylesheet" href="/gb/en/css/mob/layout.min.css" /&gt;
+	&lt;link type="text/css" rel="stylesheet" href="/gb/en/css/mob/style.min.css?v=1.0.60415.1101" /&gt;
+	
+	
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;div id="page"&gt;
+
+		
+
+
+&lt;header id="hdr"&gt;
+	&lt;div&gt;&lt;a href="/gb/en/mob" class="logo"&gt;&amp;nbsp;&lt;/a&gt;&lt;/div&gt;
+&lt;div class="user"&gt;
+&lt;a href="/gb/en/mob/Home/EnableCookie?returnUrl=%2Fgb%2Fen%2Fmob%2Fjobsearch%2Fresults%2F37B6233495B9238815%3Fpage%3D3" id="useraction"&gt;Allow cookies&lt;/a&gt;&lt;/div&gt;
+&lt;div class="basket"&gt;&lt;a ID="basket" class="icon bask" href="/gb/en/mob/jobbasket"&gt;0&lt;/a&gt;&lt;/div&gt;
+
+&lt;div id="ntfy" class="hide"&gt;
+	&lt;span class="icon ntfy" style="display:none"&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;/header&gt;
+
+
+						&lt;div id="titlebar"&gt;
+	&lt;h3&gt;Search Results&lt;/h3&gt;
+&lt;/div&gt;
+					&lt;div id="actionbar"&gt;
+	&lt;a class="acn" href="/gb/en/mob/jobsearch/37B6233495B9238815"&gt;Refine Search&lt;/a&gt;&lt;a class="acn" href="/gb/en/mob/JobSavedSearch/Add/37B6233495B9238815?returnUrl=%2Fgb%2Fen%2Fmob%2Fjobsearch%2Fresults%2F37B6233495B9238815%3Fpage%3D3"&gt;Save Search&lt;/a&gt;
+&lt;/div&gt;
+		&lt;div id="cnt"&gt;
+			
+	&lt;div class="results jsr paged"&gt;
+		&lt;div class="summary"&gt;
+			&lt;span class='resultnumber'&gt;137&lt;/span&gt; jobs found for &lt;span class='searchval'&gt;C#&lt;/span&gt; in &lt;span class='searchval'&gt;London&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;div class="pager"&gt;
+		&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=2" class="prev"&gt;« Prev&lt;/a&gt;
+	&lt;span class="pages"&gt;
+					&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=1"&gt;1&lt;/a&gt;
+			&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=2"&gt;2&lt;/a&gt;
+			&lt;span class="current"&gt;3&lt;/span&gt;
+			&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=4"&gt;4&lt;/a&gt;
+			&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=5"&gt;5&lt;/a&gt;
+	&lt;/span&gt;
+		&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=4" class="next"&gt;Next »&lt;/a&gt;
+&lt;/div&gt;
+
+		&lt;ul&gt;
+				
+
+	&lt;li id="JBE29B9D660B0E15B" &gt;
+		&lt;a href="/gb/en/mob/job/BE29B9D660B0E15B?shid=37B6233495B9238815&amp;amp;page=3" &gt;
+			&lt;span class="position"&gt;.NET Developer - C#, .NET, Agile, Team Lead&lt;/span&gt;
+				&lt;span&gt;&amp;#163;500 - &amp;#163;550 per Day + Flexible working&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;3 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J966D6DB6A0EC25DB" &gt;
+		&lt;a href="/gb/en/mob/job/966D6DB6A0EC25DB?shid=37B6233495B9238815&amp;amp;page=3" &gt;
+			&lt;span class="position"&gt;C# Developer - .Net, TDD, HTML5, JavaScript - Banking&lt;/span&gt;
+				&lt;span&gt;&amp;#163;500 - &amp;#163;550 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;3 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J0A478EFB4094E2C2" &gt;
+		&lt;a href="/gb/en/mob/job/0A478EFB4094E2C2?shid=37B6233495B9238815&amp;amp;page=3" &gt;
+			&lt;span class="position"&gt;.Net Developer - C#, AWS, F#, Agile, TDD&lt;/span&gt;
+				&lt;span&gt;&amp;#163;450 - &amp;#163;500 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;3 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J05F7658D1BFCD514" &gt;
+		&lt;a href="/gb/en/mob/job/05F7658D1BFCD514?shid=37B6233495B9238815&amp;amp;page=3" &gt;
+			&lt;span class="position"&gt;.NET/C#/MVC/WebAPI/JavaScript/TDD - Senior Developer&lt;/span&gt;
+				&lt;span&gt;&amp;#163;350 - &amp;#163;400 per Day&lt;/span&gt;
+				&lt;span&gt;Kent&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;3 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J2D272111D3148990" &gt;
+		&lt;a href="/gb/en/mob/job/2D272111D3148990?shid=37B6233495B9238815&amp;amp;page=3" &gt;
+			&lt;span class="position"&gt;.NET/C#/MVC5/WebAPI/JavaScript/Bootstrap - .NET Developer&lt;/span&gt;
+				&lt;span&gt;&amp;#163;375 - &amp;#163;400 per Day&lt;/span&gt;
+				&lt;span&gt;Central London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;3 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JB8EE2474BA95E860" &gt;
+		&lt;a href="/gb/en/mob/job/B8EE2474BA95E860?shid=37B6233495B9238815&amp;amp;page=3" &gt;
+			&lt;span class="position"&gt;C# Developer&lt;/span&gt;
+				&lt;span&gt;&amp;#163;550.00 - &amp;#163;600.00 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;3 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JBAEDBE9D80AE52CD" &gt;
+		&lt;a href="/gb/en/mob/job/BAEDBE9D80AE52CD?shid=37B6233495B9238815&amp;amp;page=3" &gt;
+			&lt;span class="position"&gt;C#/.NET Developer | Long term Contract | London&lt;/span&gt;
+				&lt;span&gt;&amp;#163;300 - &amp;#163;350 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;3 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J3F595AD23D7C9ED6" &gt;
+		&lt;a href="/gb/en/mob/job/3F595AD23D7C9ED6?shid=37B6233495B9238815&amp;amp;page=3" &gt;
+			&lt;span class="position"&gt;Contract, Senior JavaScript Developer, Markit Analytics&lt;/span&gt;
+				&lt;span&gt;&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;3 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J7A6FB1800C0E1990" &gt;
+		&lt;a href="/gb/en/mob/job/7A6FB1800C0E1990?shid=37B6233495B9238815&amp;amp;page=3" &gt;
+			&lt;span class="position"&gt;.NET Developer - MVC - £200-£250 per day - Fintech&lt;/span&gt;
+				&lt;span&gt;&amp;#163;200-&amp;#163;250 per day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;3 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JEDA54CFE7F5010CE" &gt;
+		&lt;a href="/gb/en/mob/job/EDA54CFE7F5010CE?shid=37B6233495B9238815&amp;amp;page=3" &gt;
+			&lt;span class="position"&gt;T-SQL Developer&lt;/span&gt;
+				&lt;span&gt;&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;3 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J515700D89302BC70" &gt;
+		&lt;a href="/gb/en/mob/job/515700D89302BC70?shid=37B6233495B9238815&amp;amp;page=3" &gt;
+			&lt;span class="position"&gt;C# Developer&lt;/span&gt;
+				&lt;span&gt;&amp;#163;550.00 - &amp;#163;650.00 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;3 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J9B331DCB7D4C5D3F" &gt;
+		&lt;a href="/gb/en/mob/job/9B331DCB7D4C5D3F?shid=37B6233495B9238815&amp;amp;page=3" &gt;
+			&lt;span class="position"&gt;Test Analyst | Automation Tester&lt;/span&gt;
+				&lt;span&gt;&amp;#163;350 - &amp;#163;400 per Day&lt;/span&gt;
+				&lt;span&gt;Cambridge&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;3 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JB938047DAB9DB099" &gt;
+		&lt;a href="/gb/en/mob/job/B938047DAB9DB099?shid=37B6233495B9238815&amp;amp;page=3" &gt;
+			&lt;span class="position"&gt;Senior Java/Senior Node JS Developer&lt;/span&gt;
+				&lt;span&gt;&amp;#163;400.00 - &amp;#163;450.00 per Day + Daily rate&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;3 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J819C968BD3AD123F" &gt;
+		&lt;a href="/gb/en/mob/job/819C968BD3AD123F?shid=37B6233495B9238815&amp;amp;page=3" &gt;
+			&lt;span class="position"&gt;Web Applications Developer - C#, .Net, ASP.NET, Insurance, SQL&lt;/span&gt;
+				&lt;span&gt;&amp;#163;400-420 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;3 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J0422BE965E85D2AE" &gt;
+		&lt;a href="/gb/en/mob/job/0422BE965E85D2AE?shid=37B6233495B9238815&amp;amp;page=3" &gt;
+			&lt;span class="position"&gt;.NET MVC KnockoutJS Developer&lt;/span&gt;
+				&lt;span&gt;&amp;#163;300 - 400 per Day&lt;/span&gt;
+				&lt;span&gt;London, Greater London, England&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;3 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JB52C10D1F739549E" &gt;
+		&lt;a href="/gb/en/mob/job/B52C10D1F739549E?shid=37B6233495B9238815&amp;amp;page=3" &gt;
+			&lt;span class="position"&gt;BizTalk Consultant - SOA Orchestration&lt;/span&gt;
+				&lt;span&gt;&amp;#163;350 - &amp;#163;400/Day&lt;/span&gt;
+				&lt;span&gt;Reading, Berkshire&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;4 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J44A28B27BA8BA3E8" &gt;
+		&lt;a href="/gb/en/mob/job/44A28B27BA8BA3E8?shid=37B6233495B9238815&amp;amp;page=3" &gt;
+			&lt;span class="position"&gt;Project Manager - Consulting background - £600pd&lt;/span&gt;
+				&lt;span&gt;&amp;#163;500 - &amp;#163;600 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;4 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JA3861EC319FB02AC" &gt;
+		&lt;a href="/gb/en/mob/job/A3861EC319FB02AC?shid=37B6233495B9238815&amp;amp;page=3" &gt;
+			&lt;span class="position"&gt;Build and Deployment Engineer&lt;/span&gt;
+				&lt;span&gt;&amp;#163;370 - &amp;#163;400 per day&lt;/span&gt;
+				&lt;span&gt;City of London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;4 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JA2FA189A108D7C51" &gt;
+		&lt;a href="/gb/en/mob/job/A2FA189A108D7C51?shid=37B6233495B9238815&amp;amp;page=3" &gt;
+			&lt;span class="position"&gt;.Net Developer&lt;/span&gt;
+				&lt;span&gt;&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;4 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J10C6EBB746678368" &gt;
+		&lt;a href="/gb/en/mob/job/10C6EBB746678368?shid=37B6233495B9238815&amp;amp;page=3" &gt;
+			&lt;span class="position"&gt;.NET Developer - MVC - Financial Services - Fintech&lt;/span&gt;
+				&lt;span&gt;&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;4 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J69BF543CD3A2B8C7" &gt;
+		&lt;a href="/gb/en/mob/job/69BF543CD3A2B8C7?shid=37B6233495B9238815&amp;amp;page=3" &gt;
+			&lt;span class="position"&gt;.Net Developer - EPiserver - CMS Developer - EPiserver Developer - C#&lt;/span&gt;
+				&lt;span&gt;&amp;#163;300 - 350 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;4 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J3813551E46CE7D3D" &gt;
+		&lt;a href="/gb/en/mob/job/3813551E46CE7D3D?shid=37B6233495B9238815&amp;amp;page=3" &gt;
+			&lt;span class="position"&gt;.Net C# Developer - Contract - 6 months £350 p/day&lt;/span&gt;
+				&lt;span&gt;&amp;#163;350 p/Day&lt;/span&gt;
+				&lt;span&gt;Wokingham&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;4 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JD6966BC5C0CB1B12" &gt;
+		&lt;a href="/gb/en/mob/job/D6966BC5C0CB1B12?shid=37B6233495B9238815&amp;amp;page=3" &gt;
+			&lt;span class="position"&gt;Software Developer C#/EPiServer - 1 month Contract - London&lt;/span&gt;
+				&lt;span&gt;&amp;#163;350 - 450 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;4 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J45A8BB423B6F1BB1" &gt;
+		&lt;a href="/gb/en/mob/job/45A8BB423B6F1BB1?shid=37B6233495B9238815&amp;amp;page=3" &gt;
+			&lt;span class="position"&gt;Technical Analyst/Developer - Insurance - URGENT&lt;/span&gt;
+				&lt;span&gt;&amp;#163;450-500 per day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;4 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JFBB136EA39C412C1" &gt;
+		&lt;a href="/gb/en/mob/job/FBB136EA39C412C1?shid=37B6233495B9238815&amp;amp;page=3" &gt;
+			&lt;span class="position"&gt;SC Cleared SharePoint Developers - London - Contract&lt;/span&gt;
+				&lt;span&gt;Market Rates&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;4 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+
+		&lt;/ul&gt;
+		&lt;div class="pager"&gt;
+		&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=2" class="prev"&gt;« Prev&lt;/a&gt;
+	&lt;span class="pages"&gt;
+					&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=1"&gt;1&lt;/a&gt;
+			&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=2"&gt;2&lt;/a&gt;
+			&lt;span class="current"&gt;3&lt;/span&gt;
+			&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=4"&gt;4&lt;/a&gt;
+			&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=5"&gt;5&lt;/a&gt;
+	&lt;/span&gt;
+		&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=4" class="next"&gt;Next »&lt;/a&gt;
+&lt;/div&gt;
+
+	&lt;/div&gt;
+
+		&lt;/div&gt;
+&lt;footer id="foot"&gt;
+		&lt;nav&gt;
+&lt;ul class="navlinks"&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/home"&gt;&lt;span&gt;Home&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/Candidate/Settings?returnUrl=%2fgb%2fen%2fmob%2fjobsearch%2fresults%2f37B6233495B9238815%3fPage%3d3"&gt;&lt;span&gt;Settings&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/Content/Contact"&gt;&lt;span&gt;Contact Us&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/Content/Legal"&gt;&lt;span&gt;Legal&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+		&lt;/nav&gt;
+	&lt;div class="flinks"&gt;&lt;a href="/gb/en/mob/Content/Help"&gt;Help&lt;/a&gt; &lt;a href="/gb/en/mob/Home/RequestDesktop"&gt;Desktop Site&lt;/a&gt;&lt;/div&gt;
+	&lt;div class="copy"&gt;Copyright &amp;#169; 2016 JobServe Ltd.&lt;/div&gt;
+&lt;/footer&gt;
+	&lt;/div&gt;
+	
+	&lt;script src="/scripts/jquery-1.9.1.min.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;script src="/scripts/mob/mob.min.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;script src="/scripts/utils.min.js" type="text/javascript"&gt;&lt;/script&gt;
+		
+
+	&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="ResultPage4" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="utf-8" /&gt;
+	&lt;title&gt;JobServe - Find your next job&lt;/title&gt;
+	
+		&lt;meta name="viewport" content="width=device-width" /&gt;
+	&lt;link rel="canonical" href="/gb/en/JobListing.aspx?shid=37B6233495B9238815" /&gt;
+	&lt;link rel="apple-touch-icon" href="http://az274887.vo.msecnd.net/images/apple-touch-icon.png" /&gt;
+	&lt;link rel="apple-touch-icon-precomposed" href="http://az274887.vo.msecnd.net/images/apple-touch-icon.png" /&gt;
+	&lt;link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" /&gt;
+	&lt;link type="text/css" rel="stylesheet" href="/gb/en/css/mob/layout.min.css" /&gt;
+	&lt;link type="text/css" rel="stylesheet" href="/gb/en/css/mob/style.min.css?v=1.0.60415.1101" /&gt;
+	
+	
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;div id="page"&gt;
+
+		
+
+
+&lt;header id="hdr"&gt;
+	&lt;div&gt;&lt;a href="/gb/en/mob" class="logo"&gt;&amp;nbsp;&lt;/a&gt;&lt;/div&gt;
+&lt;div class="user"&gt;
+&lt;a href="/gb/en/mob/Home/EnableCookie?returnUrl=%2Fgb%2Fen%2Fmob%2Fjobsearch%2Fresults%2F37B6233495B9238815%3Fpage%3D4" id="useraction"&gt;Allow cookies&lt;/a&gt;&lt;/div&gt;
+&lt;div class="basket"&gt;&lt;a ID="basket" class="icon bask" href="/gb/en/mob/jobbasket"&gt;0&lt;/a&gt;&lt;/div&gt;
+
+&lt;div id="ntfy" class="hide"&gt;
+	&lt;span class="icon ntfy" style="display:none"&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;/header&gt;
+
+
+						&lt;div id="titlebar"&gt;
+	&lt;h3&gt;Search Results&lt;/h3&gt;
+&lt;/div&gt;
+					&lt;div id="actionbar"&gt;
+	&lt;a class="acn" href="/gb/en/mob/jobsearch/37B6233495B9238815"&gt;Refine Search&lt;/a&gt;&lt;a class="acn" href="/gb/en/mob/JobSavedSearch/Add/37B6233495B9238815?returnUrl=%2Fgb%2Fen%2Fmob%2Fjobsearch%2Fresults%2F37B6233495B9238815%3Fpage%3D4"&gt;Save Search&lt;/a&gt;
+&lt;/div&gt;
+		&lt;div id="cnt"&gt;
+			
+	&lt;div class="results jsr paged"&gt;
+		&lt;div class="summary"&gt;
+			&lt;span class='resultnumber'&gt;137&lt;/span&gt; jobs found for &lt;span class='searchval'&gt;C#&lt;/span&gt; in &lt;span class='searchval'&gt;London&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;div class="pager"&gt;
+		&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=3" class="prev"&gt;« Prev&lt;/a&gt;
+	&lt;span class="pages"&gt;
+			&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=1"&gt;1&lt;/a&gt;&lt;span&gt;...&lt;/span&gt;
+					&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=3"&gt;3&lt;/a&gt;
+			&lt;span class="current"&gt;4&lt;/span&gt;
+			&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=5"&gt;5&lt;/a&gt;
+	&lt;/span&gt;
+		&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=5" class="next"&gt;Next »&lt;/a&gt;
+&lt;/div&gt;
+
+		&lt;ul&gt;
+				
+
+	&lt;li id="J3FC7AB1D99342B1A" &gt;
+		&lt;a href="/gb/en/mob/job/3FC7AB1D99342B1A?shid=37B6233495B9238815&amp;amp;page=4" &gt;
+			&lt;span class="position"&gt;Solution Architect (.Net/WCF)&lt;/span&gt;
+				&lt;span&gt;Attractive - Dependent on Experience&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;4 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J17ADBE02FD603A54" &gt;
+		&lt;a href="/gb/en/mob/job/17ADBE02FD603A54?shid=37B6233495B9238815&amp;amp;page=4" &gt;
+			&lt;span class="position"&gt;C# Application Developer - eTrading&lt;/span&gt;
+				&lt;span&gt;&amp;#163;500.00 - &amp;#163;600.00 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;4 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JDE9B7524A8CABDBA" &gt;
+		&lt;a href="/gb/en/mob/job/DE9B7524A8CABDBA?shid=37B6233495B9238815&amp;amp;page=4" &gt;
+			&lt;span class="position"&gt;Web Developer (Angular JS/HTML/CSS/C#/MVC 4)&lt;/span&gt;
+				&lt;span&gt;&amp;#163;300-&amp;#163;370 per day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;4 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J635B6781358824D8" &gt;
+		&lt;a href="/gb/en/mob/job/635B6781358824D8?shid=37B6233495B9238815&amp;amp;page=4" &gt;
+			&lt;span class="position"&gt;Application Implementation Specialist - CRM&lt;/span&gt;
+				&lt;span&gt;&amp;#163;400 - &amp;#163;430 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;4 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JF6F6E98F308772EE" &gt;
+		&lt;a href="/gb/en/mob/job/F6F6E98F308772EE?shid=37B6233495B9238815&amp;amp;page=4" &gt;
+			&lt;span class="position"&gt;SharePoint Developer - .Net, C#&lt;/span&gt;
+				&lt;span&gt;&amp;#163;350 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;4 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J9F9F43FD39DCF00D" &gt;
+		&lt;a href="/gb/en/mob/job/9F9F43FD39DCF00D?shid=37B6233495B9238815&amp;amp;page=4" &gt;
+			&lt;span class="position"&gt;.Net Developer&lt;/span&gt;
+				&lt;span&gt;&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;4 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J9E9A39E3081B6236" &gt;
+		&lt;a href="/gb/en/mob/job/9E9A39E3081B6236?shid=37B6233495B9238815&amp;amp;page=4" &gt;
+			&lt;span class="position"&gt;Developer ETL&lt;/span&gt;
+				&lt;span&gt;&amp;#163;Negotiable on Experience&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;4 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J1B13B230117E8D71" &gt;
+		&lt;a href="/gb/en/mob/job/1B13B230117E8D71?shid=37B6233495B9238815&amp;amp;page=4" &gt;
+			&lt;span class="position"&gt;DevOps Lead, Azure, Staines to £600 daily&lt;/span&gt;
+				&lt;span&gt;Up to &amp;#163;600 daily&lt;/span&gt;
+				&lt;span&gt;Staines&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;4 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J625ACF29A4578C4C" &gt;
+		&lt;a href="/gb/en/mob/job/625ACF29A4578C4C?shid=37B6233495B9238815&amp;amp;page=4" &gt;
+			&lt;span class="position"&gt;Contract CRM Developer (Integration)&lt;/span&gt;
+				&lt;span&gt;&amp;#163;450 - &amp;#163;600 per Day&lt;/span&gt;
+				&lt;span&gt;Surrey&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;4 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J80C1C83952DAF754" &gt;
+		&lt;a href="/gb/en/mob/job/80C1C83952DAF754?shid=37B6233495B9238815&amp;amp;page=4" &gt;
+			&lt;span class="position"&gt;MS Dynamics CRM Consultant&lt;/span&gt;
+				&lt;span&gt;&amp;#163;400 - &amp;#163;500 per Day&lt;/span&gt;
+				&lt;span&gt;City of London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;4 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J473AEDB4B175DEFD" &gt;
+		&lt;a href="/gb/en/mob/job/473AEDB4B175DEFD?shid=37B6233495B9238815&amp;amp;page=4" &gt;
+			&lt;span class="position"&gt;Umbraco Developer&lt;/span&gt;
+				&lt;span&gt;&amp;#163;350 - &amp;#163;400 per Day&lt;/span&gt;
+				&lt;span&gt;City of London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;4 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JD54D3E1C0F8C9915" &gt;
+		&lt;a href="/gb/en/mob/job/D54D3E1C0F8C9915?shid=37B6233495B9238815&amp;amp;page=4" &gt;
+			&lt;span class="position"&gt;C# Developer - Visual Studio - DV Clearance (Essential)&lt;/span&gt;
+				&lt;span&gt;&amp;#163;340-&amp;#163;400 Per Day&lt;/span&gt;
+				&lt;span&gt;Hook, Hampshire&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;4 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JB76AB8ED3D838F20" &gt;
+		&lt;a href="/gb/en/mob/job/B76AB8ED3D838F20?shid=37B6233495B9238815&amp;amp;page=4" &gt;
+			&lt;span class="position"&gt;Build Engineer - DV clearance is essential&lt;/span&gt;
+				&lt;span&gt;&amp;#163;300 - &amp;#163;350 per Day&lt;/span&gt;
+				&lt;span&gt;Basingstoke&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;4 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J8DC001384BFBA219" &gt;
+		&lt;a href="/gb/en/mob/job/8DC001384BFBA219?shid=37B6233495B9238815&amp;amp;page=4" &gt;
+			&lt;span class="position"&gt;Junior .NET Developer&lt;/span&gt;
+				&lt;span&gt;&amp;#163;250 - &amp;#163;300 Per Week&lt;/span&gt;
+				&lt;span&gt;West London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JF4E1554442C4A6C6" &gt;
+		&lt;a href="/gb/en/mob/job/F4E1554442C4A6C6?shid=37B6233495B9238815&amp;amp;page=4" &gt;
+			&lt;span class="position"&gt;C#.Net/AngularJS Developer&lt;/span&gt;
+				&lt;span&gt;&amp;#163;300 - &amp;#163;350 per Day&lt;/span&gt;
+				&lt;span&gt;West London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J1879F9C4FECCDA46" &gt;
+		&lt;a href="/gb/en/mob/job/1879F9C4FECCDA46?shid=37B6233495B9238815&amp;amp;page=4" &gt;
+			&lt;span class="position"&gt;Senior C# Developer&lt;/span&gt;
+				&lt;span&gt;&amp;#163;750-&amp;#163;950/Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JECAB7DB27A0EAEC0" &gt;
+		&lt;a href="/gb/en/mob/job/ECAB7DB27A0EAEC0?shid=37B6233495B9238815&amp;amp;page=4" &gt;
+			&lt;span class="position"&gt;C# Developer - Front Office&lt;/span&gt;
+				&lt;span&gt;&amp;#163;750-&amp;#163;950 Per Day&lt;/span&gt;
+				&lt;span&gt;London, United Kingdom&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J4ED84AD224038540" &gt;
+		&lt;a href="/gb/en/mob/job/4ED84AD224038540?shid=37B6233495B9238815&amp;amp;page=4" &gt;
+			&lt;span class="position"&gt;C# ASP.NET Front Office Developer/C# RAD Developer/Rapid Application developer/Software Engineer&lt;/span&gt;
+				&lt;span&gt;700-900 per day&lt;/span&gt;
+				&lt;span&gt;London, Paris, Hong Kong, New York&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J7D02E7C813BD8C2A" &gt;
+		&lt;a href="/gb/en/mob/job/7D02E7C813BD8C2A?shid=37B6233495B9238815&amp;amp;page=4" &gt;
+			&lt;span class="position"&gt;.Net Developer FX Trading Systems&lt;/span&gt;
+				&lt;span&gt;&amp;#163;420 - &amp;#163;425 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JA7157AEED5008534" &gt;
+		&lt;a href="/gb/en/mob/job/A7157AEED5008534?shid=37B6233495B9238815&amp;amp;page=4" &gt;
+			&lt;span class="position"&gt;.Net Developer (C#, ASP.NET, AWS, TDD, Cloud)&lt;/span&gt;
+				&lt;span&gt;&amp;#163;400 - &amp;#163;550 per Day&lt;/span&gt;
+				&lt;span&gt;City of London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J7854C8E64A2787BC" &gt;
+		&lt;a href="/gb/en/mob/job/7854C8E64A2787BC?shid=37B6233495B9238815&amp;amp;page=4" &gt;
+			&lt;span class="position"&gt;Software Developer - ASP.NET C#&lt;/span&gt;
+				&lt;span&gt;&amp;#163;350 Per Day&lt;/span&gt;
+				&lt;span&gt;City of London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J5E31A2C954D2CDFF" &gt;
+		&lt;a href="/gb/en/mob/job/5E31A2C954D2CDFF?shid=37B6233495B9238815&amp;amp;page=4" &gt;
+			&lt;span class="position"&gt;Senior Frontend HTML5 Agile Developer JavaScript, TypeScript, Angular, Finance, Banking&lt;/span&gt;
+				&lt;span&gt;Highly Competitive Daily Rate - Please Quote&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J8D33AD715378BEE7" &gt;
+		&lt;a href="/gb/en/mob/job/8D33AD715378BEE7?shid=37B6233495B9238815&amp;amp;page=4" &gt;
+			&lt;span class="position"&gt;Quantitative Developer/Quant Dev/Software Developer/Python Developer - London&lt;/span&gt;
+				&lt;span&gt;700-900 Per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JAF2AEC314D2B3B56" &gt;
+		&lt;a href="/gb/en/mob/job/AF2AEC314D2B3B56?shid=37B6233495B9238815&amp;amp;page=4" &gt;
+			&lt;span class="position"&gt;C# Developer&lt;/span&gt;
+				&lt;span&gt;&amp;#163;600 per day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JF5A0FB8A0BC798D2" &gt;
+		&lt;a href="/gb/en/mob/job/F5A0FB8A0BC798D2?shid=37B6233495B9238815&amp;amp;page=4" &gt;
+			&lt;span class="position"&gt;.Net Developer with strong XML Schema exp&lt;/span&gt;
+				&lt;span&gt;Market&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+
+		&lt;/ul&gt;
+		&lt;div class="pager"&gt;
+		&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=3" class="prev"&gt;« Prev&lt;/a&gt;
+	&lt;span class="pages"&gt;
+			&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=1"&gt;1&lt;/a&gt;&lt;span&gt;...&lt;/span&gt;
+					&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=3"&gt;3&lt;/a&gt;
+			&lt;span class="current"&gt;4&lt;/span&gt;
+			&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=5"&gt;5&lt;/a&gt;
+	&lt;/span&gt;
+		&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=5" class="next"&gt;Next »&lt;/a&gt;
+&lt;/div&gt;
+
+	&lt;/div&gt;
+
+		&lt;/div&gt;
+&lt;footer id="foot"&gt;
+		&lt;nav&gt;
+&lt;ul class="navlinks"&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/home"&gt;&lt;span&gt;Home&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/Candidate/Settings?returnUrl=%2fgb%2fen%2fmob%2fjobsearch%2fresults%2f37B6233495B9238815%3fPage%3d4"&gt;&lt;span&gt;Settings&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/Content/Contact"&gt;&lt;span&gt;Contact Us&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/Content/Legal"&gt;&lt;span&gt;Legal&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+		&lt;/nav&gt;
+	&lt;div class="flinks"&gt;&lt;a href="/gb/en/mob/Content/Help"&gt;Help&lt;/a&gt; &lt;a href="/gb/en/mob/Home/RequestDesktop"&gt;Desktop Site&lt;/a&gt;&lt;/div&gt;
+	&lt;div class="copy"&gt;Copyright &amp;#169; 2016 JobServe Ltd.&lt;/div&gt;
+&lt;/footer&gt;
+	&lt;/div&gt;
+	
+	&lt;script src="/scripts/jquery-1.9.1.min.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;script src="/scripts/mob/mob.min.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;script src="/scripts/utils.min.js" type="text/javascript"&gt;&lt;/script&gt;
+		
+
+	&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="ResultPage5" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="utf-8" /&gt;
+	&lt;title&gt;JobServe - Find your next job&lt;/title&gt;
+	
+		&lt;meta name="viewport" content="width=device-width" /&gt;
+	&lt;link rel="canonical" href="/gb/en/JobListing.aspx?shid=37B6233495B9238815" /&gt;
+	&lt;link rel="apple-touch-icon" href="http://az274887.vo.msecnd.net/images/apple-touch-icon.png" /&gt;
+	&lt;link rel="apple-touch-icon-precomposed" href="http://az274887.vo.msecnd.net/images/apple-touch-icon.png" /&gt;
+	&lt;link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" /&gt;
+	&lt;link type="text/css" rel="stylesheet" href="/gb/en/css/mob/layout.min.css" /&gt;
+	&lt;link type="text/css" rel="stylesheet" href="/gb/en/css/mob/style.min.css?v=1.0.60415.1101" /&gt;
+	
+	
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;div id="page"&gt;
+
+		
+
+
+&lt;header id="hdr"&gt;
+	&lt;div&gt;&lt;a href="/gb/en/mob" class="logo"&gt;&amp;nbsp;&lt;/a&gt;&lt;/div&gt;
+&lt;div class="user"&gt;
+&lt;a href="/gb/en/mob/Home/EnableCookie?returnUrl=%2Fgb%2Fen%2Fmob%2Fjobsearch%2Fresults%2F37B6233495B9238815%3Fpage%3D5" id="useraction"&gt;Allow cookies&lt;/a&gt;&lt;/div&gt;
+&lt;div class="basket"&gt;&lt;a ID="basket" class="icon bask" href="/gb/en/mob/jobbasket"&gt;0&lt;/a&gt;&lt;/div&gt;
+
+&lt;div id="ntfy" class="hide"&gt;
+	&lt;span class="icon ntfy" style="display:none"&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;/header&gt;
+
+
+						&lt;div id="titlebar"&gt;
+	&lt;h3&gt;Search Results&lt;/h3&gt;
+&lt;/div&gt;
+					&lt;div id="actionbar"&gt;
+	&lt;a class="acn" href="/gb/en/mob/jobsearch/37B6233495B9238815"&gt;Refine Search&lt;/a&gt;&lt;a class="acn" href="/gb/en/mob/JobSavedSearch/Add/37B6233495B9238815?returnUrl=%2Fgb%2Fen%2Fmob%2Fjobsearch%2Fresults%2F37B6233495B9238815%3Fpage%3D5"&gt;Save Search&lt;/a&gt;
+&lt;/div&gt;
+		&lt;div id="cnt"&gt;
+			
+	&lt;div class="results jsr paged"&gt;
+		&lt;div class="summary"&gt;
+			&lt;span class='resultnumber'&gt;137&lt;/span&gt; jobs found for &lt;span class='searchval'&gt;C#&lt;/span&gt; in &lt;span class='searchval'&gt;London&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;div class="pager"&gt;
+		&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=4" class="prev"&gt;« Prev&lt;/a&gt;
+	&lt;span class="pages"&gt;
+			&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=1"&gt;1&lt;/a&gt;&lt;span&gt;...&lt;/span&gt;
+					&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=4"&gt;4&lt;/a&gt;
+			&lt;span class="current"&gt;5&lt;/span&gt;
+			&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=6"&gt;6&lt;/a&gt;
+	&lt;/span&gt;
+		&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=6" class="next"&gt;Next »&lt;/a&gt;
+&lt;/div&gt;
+
+		&lt;ul&gt;
+				
+
+	&lt;li id="J31893002A3EC47EA" &gt;
+		&lt;a href="/gb/en/mob/job/31893002A3EC47EA?shid=37B6233495B9238815&amp;amp;page=5" &gt;
+			&lt;span class="position"&gt;Senior .NET Developer&lt;/span&gt;
+				&lt;span&gt;&amp;#163;350 - &amp;#163;400 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J5DDB7BFFB394C8CB" &gt;
+		&lt;a href="/gb/en/mob/job/5DDB7BFFB394C8CB?shid=37B6233495B9238815&amp;amp;page=5" &gt;
+			&lt;span class="position"&gt;.Net Developer/C#, MVC, SQL&lt;/span&gt;
+				&lt;span&gt;&amp;#163;280 - &amp;#163;325 per Day&lt;/span&gt;
+				&lt;span&gt;Buckinghamshire&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JD1BC94D983E9C39D" &gt;
+		&lt;a href="/gb/en/mob/job/D1BC94D983E9C39D?shid=37B6233495B9238815&amp;amp;page=5" &gt;
+			&lt;span class="position"&gt;DevOps Specialist - Distribution IT&lt;/span&gt;
+				&lt;span&gt;&lt;/span&gt;
+				&lt;span&gt;City of London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J35EEEAADF77F558C" &gt;
+		&lt;a href="/gb/en/mob/job/35EEEAADF77F558C?shid=37B6233495B9238815&amp;amp;page=5" &gt;
+			&lt;span class="position"&gt;Quality Control Lead&lt;/span&gt;
+				&lt;span&gt;&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J474E3EA7D57B8126" &gt;
+		&lt;a href="/gb/en/mob/job/474E3EA7D57B8126?shid=37B6233495B9238815&amp;amp;page=5" &gt;
+			&lt;span class="position"&gt;Umbraco Developer - .NET/CMS/MVC/WebAPI/TDD&lt;/span&gt;
+				&lt;span&gt;&amp;#163;350 - &amp;#163;400 per Day&lt;/span&gt;
+				&lt;span&gt;Central London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JCFEAF170D98D9AF5" &gt;
+		&lt;a href="/gb/en/mob/job/CFEAF170D98D9AF5?shid=37B6233495B9238815&amp;amp;page=5" &gt;
+			&lt;span class="position"&gt;C++ C# Developer - low latency Real Time eFX trading - Investment Bank&lt;/span&gt;
+				&lt;span&gt;&amp;#163;600 - &amp;#163;700 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JF5FD98AABF200F4F" &gt;
+		&lt;a href="/gb/en/mob/job/F5FD98AABF200F4F?shid=37B6233495B9238815&amp;amp;page=5" &gt;
+			&lt;span class="position"&gt;C# Developer - eFX low latency Algo Trading - Investment Bank&lt;/span&gt;
+				&lt;span&gt;&amp;#163;600 - &amp;#163;650 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JCA750C6F0062BB56" &gt;
+		&lt;a href="/gb/en/mob/job/CA750C6F0062BB56?shid=37B6233495B9238815&amp;amp;page=5" &gt;
+			&lt;span class="position"&gt;Full Stack .NET Developer&lt;/span&gt;
+				&lt;span&gt;&amp;#163;400-500/Day&lt;/span&gt;
+				&lt;span&gt;City of London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J988AE884AAF9B7F1" &gt;
+		&lt;a href="/gb/en/mob/job/988AE884AAF9B7F1?shid=37B6233495B9238815&amp;amp;page=5" &gt;
+			&lt;span class="position"&gt;Full Stack .NET Developer&lt;/span&gt;
+				&lt;span&gt;&amp;#163;400-500/Day&lt;/span&gt;
+				&lt;span&gt;City of London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J153024E19FDD73A0" &gt;
+		&lt;a href="/gb/en/mob/job/153024E19FDD73A0?shid=37B6233495B9238815&amp;amp;page=5" &gt;
+			&lt;span class="position"&gt;Episerver Developer - Aylesbury, Bucks EPi6 R2 or EPi7 or EPi8&lt;/span&gt;
+				&lt;span&gt;&amp;#163;500 - &amp;#163;520 per Day&lt;/span&gt;
+				&lt;span&gt;Aylesbury Buckinghamshire&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J265E555B18276E4A" &gt;
+		&lt;a href="/gb/en/mob/job/265E555B18276E4A?shid=37B6233495B9238815&amp;amp;page=5" &gt;
+			&lt;span class="position"&gt;Lead Automation Developer in Test (C# .NET Skills a must)&lt;/span&gt;
+				&lt;span&gt;&amp;#163;350 - &amp;#163;410 per Day&lt;/span&gt;
+				&lt;span&gt;Surrey&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JAC39A71E22202453" &gt;
+		&lt;a href="/gb/en/mob/job/AC39A71E22202453?shid=37B6233495B9238815&amp;amp;page=5" &gt;
+			&lt;span class="position"&gt;Automation Developer in Test (C# .NET SKills a must)&lt;/span&gt;
+				&lt;span&gt;&amp;#163;340 - &amp;#163;375 per Day&lt;/span&gt;
+				&lt;span&gt;Surrey&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J20672DB20EEA8E67" &gt;
+		&lt;a href="/gb/en/mob/job/20672DB20EEA8E67?shid=37B6233495B9238815&amp;amp;page=5" &gt;
+			&lt;span class="position"&gt;Software Application Architect&lt;/span&gt;
+				&lt;span&gt;&amp;#163;400 - &amp;#163;495 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J5FF9D37F69AAE076" &gt;
+		&lt;a href="/gb/en/mob/job/5FF9D37F69AAE076?shid=37B6233495B9238815&amp;amp;page=5" &gt;
+			&lt;span class="position"&gt;Lead Java/Java Developers&lt;/span&gt;
+				&lt;span&gt;&lt;/span&gt;
+				&lt;span&gt;Basildon, Essex&lt;/span&gt;
+				&lt;span&gt;Contract/Permanent&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J1B8788E6D9FE77A3" &gt;
+		&lt;a href="/gb/en/mob/job/1B8788E6D9FE77A3?shid=37B6233495B9238815&amp;amp;page=5" &gt;
+			&lt;span class="position"&gt;Agile Software Engineer/Evangelist&lt;/span&gt;
+				&lt;span&gt;&amp;#163;550 - &amp;#163;650 per Day + depending on experience&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J905D5C2902AE3B48" &gt;
+		&lt;a href="/gb/en/mob/job/905D5C2902AE3B48?shid=37B6233495B9238815&amp;amp;page=5" &gt;
+			&lt;span class="position"&gt;QA Engineer - JavaScript, C#, Jasmine, Mocha, Protractor&lt;/span&gt;
+				&lt;span&gt;&amp;#163;400 Per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J01D3C6A2C3AA31D4" &gt;
+		&lt;a href="/gb/en/mob/job/01D3C6A2C3AA31D4?shid=37B6233495B9238815&amp;amp;page=5" &gt;
+			&lt;span class="position"&gt;SharePoint Developer - SharePoint 2013&lt;/span&gt;
+				&lt;span&gt;&amp;#163;400-450 per Day&lt;/span&gt;
+				&lt;span&gt;London, Greater London, England&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JAAA53C0F00B2BE31" &gt;
+		&lt;a href="/gb/en/mob/job/AAA53C0F00B2BE31?shid=37B6233495B9238815&amp;amp;page=5" &gt;
+			&lt;span class="position"&gt;Microsoft Dynamics CRM Developer&lt;/span&gt;
+				&lt;span&gt;&amp;#163;550-&amp;#163;650 per day&lt;/span&gt;
+				&lt;span&gt;Essex, England&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J199FDC244362864E" &gt;
+		&lt;a href="/gb/en/mob/job/199FDC244362864E?shid=37B6233495B9238815&amp;amp;page=5" &gt;
+			&lt;span class="position"&gt;C# Web Developer&lt;/span&gt;
+				&lt;span&gt;&amp;#163;600.00 - &amp;#163;650.00 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JB3C054630959DEED" &gt;
+		&lt;a href="/gb/en/mob/job/B3C054630959DEED?shid=37B6233495B9238815&amp;amp;page=5" &gt;
+			&lt;span class="position"&gt;C# Web Developer&lt;/span&gt;
+				&lt;span&gt;&amp;#163;600.00 - &amp;#163;650.00 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J20A960A932A2D214" &gt;
+		&lt;a href="/gb/en/mob/job/20A960A932A2D214?shid=37B6233495B9238815&amp;amp;page=5" &gt;
+			&lt;span class="position"&gt;SENIOR C# WPF DEVELOPER&lt;/span&gt;
+				&lt;span&gt;&amp;#163;450 - &amp;#163;550 per Day&lt;/span&gt;
+				&lt;span&gt;Surrey&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J67129716D91181D7" &gt;
+		&lt;a href="/gb/en/mob/job/67129716D91181D7?shid=37B6233495B9238815&amp;amp;page=5" &gt;
+			&lt;span class="position"&gt;C# Developer - DV Cleared or Eligible&lt;/span&gt;
+				&lt;span&gt;&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;5 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="JEB631FE9BD30811C" &gt;
+		&lt;a href="/gb/en/mob/job/EB631FE9BD30811C?shid=37B6233495B9238815&amp;amp;page=5" &gt;
+			&lt;span class="position"&gt;C# Developer - .Net, MVC, WCF, Agile, TDD&lt;/span&gt;
+				&lt;span&gt;&amp;#163;450 - &amp;#163;500 per Day&lt;/span&gt;
+				&lt;span&gt;London&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;6 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J4AE550C3B03A6A73" &gt;
+		&lt;a href="/gb/en/mob/job/4AE550C3B03A6A73?shid=37B6233495B9238815&amp;amp;page=5" &gt;
+			&lt;span class="position"&gt;.Net Developer - .Net, ASP, SQL, AWS&lt;/span&gt;
+				&lt;span&gt;&amp;#163;350-450 per Day&lt;/span&gt;
+				&lt;span&gt;London, Greater London, England&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;6 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+
+	&lt;li id="J89D56DEF77465B98" &gt;
+		&lt;a href="/gb/en/mob/job/89D56DEF77465B98?shid=37B6233495B9238815&amp;amp;page=5" &gt;
+			&lt;span class="position"&gt;Senior Software Development Engineer in Test - C#, Ant/Maven&lt;/span&gt;
+				&lt;span&gt;&lt;/span&gt;
+				&lt;span&gt;Luton, Bedfordshire&lt;/span&gt;
+				&lt;span&gt;Contract&lt;/span&gt;
+				&lt;span class="etime"&gt;6 days ago&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+
+		&lt;/ul&gt;
+		&lt;div class="pager"&gt;
+		&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=4" class="prev"&gt;« Prev&lt;/a&gt;
+	&lt;span class="pages"&gt;
+			&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=1"&gt;1&lt;/a&gt;&lt;span&gt;...&lt;/span&gt;
+					&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=4"&gt;4&lt;/a&gt;
+			&lt;span class="current"&gt;5&lt;/span&gt;
+			&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=6"&gt;6&lt;/a&gt;
+	&lt;/span&gt;
+		&lt;a href="/gb/en/mob/jobsearch/results/37B6233495B9238815?Page=6" class="next"&gt;Next »&lt;/a&gt;
+&lt;/div&gt;
+
+	&lt;/div&gt;
+
+		&lt;/div&gt;
+&lt;footer id="foot"&gt;
+		&lt;nav&gt;
+&lt;ul class="navlinks"&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/home"&gt;&lt;span&gt;Home&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/Candidate/Settings?returnUrl=%2fgb%2fen%2fmob%2fjobsearch%2fresults%2f37B6233495B9238815%3fPage%3d5"&gt;&lt;span&gt;Settings&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/Content/Contact"&gt;&lt;span&gt;Contact Us&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="/gb/en/mob/Content/Legal"&gt;&lt;span&gt;Legal&lt;/span&gt;&lt;span class="navarrow"&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+		&lt;/nav&gt;
+	&lt;div class="flinks"&gt;&lt;a href="/gb/en/mob/Content/Help"&gt;Help&lt;/a&gt; &lt;a href="/gb/en/mob/Home/RequestDesktop"&gt;Desktop Site&lt;/a&gt;&lt;/div&gt;
+	&lt;div class="copy"&gt;Copyright &amp;#169; 2016 JobServe Ltd.&lt;/div&gt;
+&lt;/footer&gt;
+	&lt;/div&gt;
+	
+	&lt;script src="/scripts/jquery-1.9.1.min.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;script src="/scripts/mob/mob.min.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;script src="/scripts/utils.min.js" type="text/javascript"&gt;&lt;/script&gt;
+		
+
+	&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+</root>
