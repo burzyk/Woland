@@ -7,5 +7,7 @@
         string ConnectionString { get; }
 
         TimeSpan WebClientDelay { get; }
+
+        int ProgressiveImporterDelta { get; }
     }
 }

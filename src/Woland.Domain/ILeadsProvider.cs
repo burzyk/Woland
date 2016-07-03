@@ -5,6 +5,8 @@
 
     public interface ILeadsProvider
     {
+        string Name { get; }
+
         IEnumerable<JobLead> GetLatestLeads(string keyword, string location, int index, int count);
     }
 }

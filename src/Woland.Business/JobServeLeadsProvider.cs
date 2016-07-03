@@ -12,8 +12,6 @@
 
     public class JobServeLeadsProvider : ILeadsProvider
     {
-        private const string ProviderName = "JobServe";
-
         private const string JobServeAddress = "http://www.jobserve.com/";
 
         private readonly IWebClient webClient;
@@ -25,6 +23,8 @@
             this.webClient = webClient;
             this.log = log;
         }
+
+        public string Name => "JobServe";
 
         public IEnumerable<JobLead> GetLatestLeads(string keyword, string location, int index, int count)
         {
@@ -68,12 +68,9 @@
 
             foreach (var lead in leads)
             {
-                lead.SearchDetails = new SearchDetails
-                {
-                    Keywords = keyword,
-                    Location = location
-                };
-                lead.SourceName = ProviderName;
+                lead.SearchKeywords = keyword;
+                lead.SearchLocation = location;
+                lead.SourceName = this.Name;
             }
 
             return leads;

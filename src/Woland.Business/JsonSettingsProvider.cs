@@ -36,11 +36,15 @@
 
         public TimeSpan WebClientDelay => TimeSpan.FromMilliseconds(this.settings.Value.WebClientDelay);
 
+        public int ProgressiveImporterDelta => this.settings.Value.ProgressiveImporterDelta;
+
         private class InternalSettings
         {
             public string ConnectionString { get; set; }
 
             public int WebClientDelay { get; set; } = 3000;
+
+            public int ProgressiveImporterDelta { get; set; } = 10;
         }
     }
 }

@@ -14,7 +14,9 @@
             this.context = context;
         }
 
-        public IQueryable<WebRequestLog> WebRequestLogs { get; set; }
+        public IQueryable<WebRequestLog> WebRequestLogs => this.context.WebRequestLogs;
+
+        public IQueryable<JobLead> JobLeads => this.context.JobLeads;
 
         public IRepositoryTransaction BeginTransaction()
         {

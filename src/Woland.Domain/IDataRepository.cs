@@ -7,6 +7,8 @@
     {
         IQueryable<WebRequestLog> WebRequestLogs { get; }
 
+        IQueryable<JobLead> JobLeads { get; }
+
         IRepositoryTransaction BeginTransaction();
 
         T Add<T>(T entity) where T : class;

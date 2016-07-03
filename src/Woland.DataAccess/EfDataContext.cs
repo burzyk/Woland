@@ -1,5 +1,6 @@
 ﻿namespace Woland.DataAccess
 {
+    using System.Linq;
     using Domain;
     using Domain.Entities;
     using Microsoft.EntityFrameworkCore;
@@ -20,6 +21,8 @@
         }
 
         public DbSet<WebRequestLog> WebRequestLogs { get; set; }
+
+        public DbSet<JobLead> JobLeads { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

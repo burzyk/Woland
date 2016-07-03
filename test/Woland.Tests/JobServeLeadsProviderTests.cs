@@ -10,7 +10,7 @@
     using Microsoft.Practices.Unity;
     using Xunit;
 
-    public class JobServeLeadsProviderTest : BaseTest
+    public class JobServeLeadsProviderTests : BaseTest
     {
         [Fact]
         public void GetTopThreeJobs()
@@ -29,8 +29,8 @@
                 Assert.Equal(500, result[0].MaxRate);
                 Assert.Equal(400, result[0].MinRate);
                 Assert.Equal(new DateTime(2016, 07, 01, 22, 17, 25), result[0].PostedTimestamp);
-                Assert.Equal("C#", result[0].SearchDetails.Keywords);
-                Assert.Equal("London", result[0].SearchDetails.Location);
+                Assert.Equal("C#", result[0].SearchKeywords);
+                Assert.Equal("London", result[0].SearchLocation);
                 Assert.Equal("http://www.jobserve.com/Enpzg", result[0].SourceUrl);
                 Assert.Equal("01273 774738", result[0].Telephone);
                 Assert.Equal("IT Business/Solutions Analyst - London - £400 - 500 p/day", result[0].Title);
@@ -42,8 +42,8 @@
                 Assert.Equal(null, result[1].MaxRate);
                 Assert.Equal(null, result[1].MinRate);
                 Assert.Equal(new DateTime(2016, 07, 01, 20, 10, 02), result[1].PostedTimestamp);
-                Assert.Equal("C#", result[1].SearchDetails.Keywords);
-                Assert.Equal("London", result[1].SearchDetails.Location);
+                Assert.Equal("C#", result[1].SearchKeywords);
+                Assert.Equal("London", result[1].SearchLocation);
                 Assert.Equal("http://www.jobserve.com/Enpue", result[1].SourceUrl);
                 Assert.Equal(null, result[1].Telephone);
                 Assert.Equal("Technical Lead Developer - Cognos", result[1].Title);
@@ -55,8 +55,8 @@
                 Assert.Equal(550, result[2].MaxRate);
                 Assert.Equal(500, result[2].MinRate);
                 Assert.Equal(new DateTime(2016, 07, 01, 18, 46, 57), result[2].PostedTimestamp);
-                Assert.Equal("C#", result[2].SearchDetails.Keywords);
-                Assert.Equal("London", result[2].SearchDetails.Location);
+                Assert.Equal("C#", result[2].SearchKeywords);
+                Assert.Equal("London", result[2].SearchLocation);
                 Assert.Equal("http://www.jobserve.com/Eno7L", result[2].SourceUrl);
                 Assert.Equal("020 3167 3167", result[2].Telephone);
                 Assert.Equal("Application Security Analyst (Security Developer)", result[2].Title);

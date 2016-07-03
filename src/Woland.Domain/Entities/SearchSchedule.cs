@@ -8,6 +8,9 @@
         public DateTime? LastExecuted { get; set; }
 
         [Required]
-        public SearchDetails SearchDetails { get; set; }
+        public string SearchLocation { get; set; }
+
+        [Required]
+        public string SearchKeywords { get; set; }
     }
 }

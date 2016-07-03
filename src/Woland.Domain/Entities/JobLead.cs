@@ -3,7 +3,7 @@ namespace Woland.Domain.Entities
     using System;
     using System.ComponentModel.DataAnnotations;
 
-    public class JobLead
+    public class JobLead : BaseEntity
     {
         [Required]
         public string SourceName { get; set; }
@@ -36,6 +36,9 @@ namespace Woland.Domain.Entities
         public string AgencyName { get; set; }
 
         [Required]
-        public SearchDetails SearchDetails { get; set; }
+        public string SearchLocation { get; set; }
+
+        [Required]
+        public string SearchKeywords { get; set; }
     }
 }
