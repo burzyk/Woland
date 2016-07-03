@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-*",
+  "version": "1.0.0",
   "buildOptions": {
     "emitEntryPoint": false,
     "xmlDoc": false
@@ -7,7 +7,7 @@
   "dependencies": {
     "Microsoft.NETCore.App": {
       "type": "platform",
-      "version": "1.0.0-rc2-3002702"
+      "version": "1.0.0"
     },
     "StyleCop.Analyzers": {
       "version": "1.0.0",
