@@ -21,10 +21,10 @@
             this.importDelta = settings.ImporterDelta;
         }
 
+        public DateTime LatestLeadDate { get; set; } = DateTime.MaxValue;
+
         public void Import(string keyword, string location, IList<ILeadsProvider> providers)
         {
-            this.log.Info("Starting import ...");
-
             foreach (var provider in providers)
             {
                 try
@@ -45,6 +45,7 @@
         {
             var lastLead = this.repository.JobLeads
                 .Where(x => x.SourceName == provider.Name)
+                .Where(x => x.PostedTimestamp < this.LatestLeadDate)
                 .OrderByDescending(x => x.PostedTimestamp)
                 .FirstOrDefault() ?? new JobLead();
             this.log.Info($"Last available lead: {lastLead.Title ?? "N/A"}");
@@ -54,6 +55,7 @@
 
             do
             {
+                this.log.Info($"Getting leads -> index: {i}, pageSize: {this.importDelta}");
                 var delta = provider.GetLatestLeads(keyword, location, i, this.importDelta).ToList();
                 var filtred = delta.TakeWhile(x => !this.LeadsEqual(x, lastLead)).ToList();
 
@@ -68,6 +70,8 @@
                 i += this.importDelta;
                 importDone = !delta.Any() || delta.Count != filtred.Count;
             } while (!importDone);
+
+
         }
 
         private bool LeadsEqual(JobLead first, JobLead second)

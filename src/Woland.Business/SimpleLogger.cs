@@ -10,6 +10,10 @@ namespace Woland.Business
             this.Log("ERROR", message);
         }
 
+        public void Debug(string message)
+        {
+        }
+
         public void Info(string message)
         {
             this.Log("INFO", message);

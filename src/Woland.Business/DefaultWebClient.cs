@@ -86,12 +86,12 @@
 
             protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
             {
-                this.log.Info("Sending request ...");
+                this.log.Debug("Sending request ...");
                 var response = await base.SendAsync(request, cancellationToken);
 
                 try
                 {
-                    this.log.Info("Saving the request details into the database...");
+                    this.log.Debug("Saving the request details into the database...");
                     var logEntry = new WebRequestLog
                     {
                         Url = request.RequestUri.ToString(),
@@ -110,7 +110,7 @@
                         tx.Commit();
                     }
 
-                    this.log.Info("Request logged");
+                    this.log.Debug("Request logged");
                 }
                 catch (Exception ex)
                 {

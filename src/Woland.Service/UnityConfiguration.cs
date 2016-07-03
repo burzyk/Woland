@@ -20,6 +20,7 @@ namespace Woland.Service
 
             container.RegisterType<IWebClient, DefaultWebClient>();
             container.RegisterType<ITimeProvider, UtcTimeProvider>();
+            container.RegisterType<ILeadsImporter, LatestLeadsImporter>();
         }
     }
 }

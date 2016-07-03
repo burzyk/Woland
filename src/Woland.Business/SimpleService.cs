@@ -6,14 +6,22 @@
     {
         private readonly JobServeLeadsProvider leadsProvider;
 
-        public SimpleService(JobServeLeadsProvider leadsProvider)
+        private readonly ILeadsImporter importer;
+
+        private readonly ILog log;
+
+        public SimpleService(JobServeLeadsProvider leadsProvider, ILeadsImporter importer, ILog log)
         {
             this.leadsProvider = leadsProvider;
+            this.importer = importer;
+            this.log = log;
         }
 
         public void Start()
         {
-            this.leadsProvider.GetLatestLeads("C#", "London", 0, 3);
+            this.log.Info("Starting import ...");
+            this.importer.Import("C#", "London", new[] { this.leadsProvider });
+            this.log.Info("Import finished");
         }
     }
 }
