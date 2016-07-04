@@ -1,5 +1,6 @@
 ﻿namespace Woland.Tests
 {
+    using System;
     using System.Collections.Generic;
     using System.Linq;
     using Business;
@@ -30,7 +31,13 @@
         {
             var leads = this.ImporterSimpleTest(new List<JobLead>
             {
-                new JobLead { Title = "test8", Body = "body8", SourceName = "StaticLeadsProvider" }
+                new JobLead
+                {
+                    Title = "test8",
+                    Body = "body8",
+                    SourceName = "StaticLeadsProvider",
+                    PostedTimestamp = new DateTime(2016, 01, 13)
+                }
             });
 
             Assert.Equal(8, leads.Count);
@@ -66,20 +73,20 @@
             {
                 var leads = new[]
                 {
-                    new JobLead { Title = "test1", Body = "body1" },
-                    new JobLead { Title = "test2", Body = "body2" },
-                    new JobLead { Title = "test3", Body = "body3" },
-                    new JobLead { Title = "test4", Body = "body4" },
-                    new JobLead { Title = "test5", Body = "body5" },
-                    new JobLead { Title = "test6", Body = "body6" },
-                    new JobLead { Title = "test7", Body = "body7" },
-                    new JobLead { Title = "test8", Body = "body8" },
-                    new JobLead { Title = "test9", Body = "body9" },
-                    new JobLead { Title = "test10", Body = "body10" },
-                    new JobLead { Title = "test11", Body = "body11" },
-                    new JobLead { Title = "test12", Body = "body12" },
-                    new JobLead { Title = "test13", Body = "body13" },
-                    new JobLead { Title = "test14", Body = "body14" }
+                    new JobLead { Title = "test1", Body = "body1", PostedTimestamp = new DateTime(2016, 01, 20) },
+                    new JobLead { Title = "test2", Body = "body2", PostedTimestamp = new DateTime(2016, 01, 19) },
+                    new JobLead { Title = "test3", Body = "body3", PostedTimestamp = new DateTime(2016, 01, 18) },
+                    new JobLead { Title = "test4", Body = "body4", PostedTimestamp = new DateTime(2016, 01, 17)},
+                    new JobLead { Title = "test5", Body = "body5", PostedTimestamp = new DateTime(2016, 01, 16) },
+                    new JobLead { Title = "test6", Body = "body6", PostedTimestamp = new DateTime(2016, 01, 15) },
+                    new JobLead { Title = "test7", Body = "body7", PostedTimestamp = new DateTime(2016, 01, 14) },
+                    new JobLead { Title = "test8", Body = "body8", PostedTimestamp = new DateTime(2016, 01, 13) },
+                    new JobLead { Title = "test9", Body = "body9", PostedTimestamp = new DateTime(2016, 01, 12) },
+                    new JobLead { Title = "test10", Body = "body10", PostedTimestamp = new DateTime(2016, 01, 11) },
+                    new JobLead { Title = "test11", Body = "body11", PostedTimestamp = new DateTime(2016, 01, 10) },
+                    new JobLead { Title = "test12", Body = "body12", PostedTimestamp = new DateTime(2016, 01, 9) },
+                    new JobLead { Title = "test13", Body = "body13", PostedTimestamp = new DateTime(2016, 01, 8) },
+                    new JobLead { Title = "test14", Body = "body14", PostedTimestamp = new DateTime(2016, 01, 7) }
                 };
 
                 return leads.Skip(index).Take(count).ToList();

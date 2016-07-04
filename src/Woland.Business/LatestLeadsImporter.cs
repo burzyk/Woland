@@ -57,21 +57,19 @@
             {
                 this.log.Info($"Getting leads -> index: {i}, pageSize: {this.importDelta}");
                 var delta = provider.GetLatestLeads(keyword, location, i, this.importDelta).ToList();
-                var filtred = delta.TakeWhile(x => !this.LeadsEqual(x, lastLead)).ToList();
+                var filtered = delta.TakeWhile(x => !this.LeadsEqual(x, lastLead) && x.PostedTimestamp > lastLead.PostedTimestamp).ToList();
 
                 using (var tx = this.repository.BeginTransaction())
                 {
                     this.log.Info("Saving leads to the repository ...");
-                    filtred.ForEach(x => this.repository.Add(x));
+                    filtered.ForEach(x => this.repository.Add(x));
 
                     tx.Commit();
                 }
 
                 i += this.importDelta;
-                importDone = !delta.Any() || delta.Count != filtred.Count;
+                importDone = !delta.Any() || delta.Count != filtered.Count;
             } while (!importDone);
-
-
         }
 
         private bool LeadsEqual(JobLead first, JobLead second)

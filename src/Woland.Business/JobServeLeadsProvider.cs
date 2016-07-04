@@ -106,7 +106,7 @@
                     "dd/MM/yyyy HH:mm:ss",
                     CultureInfo.InvariantCulture,
                     DateTimeStyles.None,
-                    out timestamp) ? timestamp : null as DateTime?,
+                    out timestamp) ? timestamp : default(DateTime),
                 Telephone = this.GetSiblingsByLabel(jobPage, "Telephone")
                     .Select(x => x.NextSibling?.InnerText)
                     .SingleOrDefault(),

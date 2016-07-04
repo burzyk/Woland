@@ -21,7 +21,8 @@ namespace Woland.Domain.Entities
 
         public decimal? MaxRate { get; set; }
 
-        public DateTime? PostedTimestamp { get; set; }
+        [Required]
+        public DateTime PostedTimestamp { get; set; }
 
         [StringLength(128)]
         public string FullName { get; set; }

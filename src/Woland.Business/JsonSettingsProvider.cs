@@ -42,7 +42,7 @@
         {
             public string ConnectionString { get; set; }
 
-            public int WebClientDelay { get; set; } = 3000;
+            public int WebClientDelay { get; set; } = 3;
 
             public int ImporterDelta { get; set; } = 10;
         }
