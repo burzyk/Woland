@@ -3,11 +3,11 @@ namespace Woland.Business
     using System;
     using Domain;
 
-    public class ConsoleLogger : ILog
+    public class ConsoleLog : ILog
     {
         private readonly ITimeProvider timeProvider;
 
-        public ConsoleLogger(ITimeProvider timeProvider)
+        public ConsoleLog(ITimeProvider timeProvider)
         {
             this.timeProvider = timeProvider;
         }

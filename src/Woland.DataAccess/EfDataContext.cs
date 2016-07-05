@@ -3,6 +3,7 @@
     using System.Linq;
     using Domain;
     using Domain.Entities;
+    using Logging;
     using Microsoft.EntityFrameworkCore;
 
     public class EfDataContext : DbContext
@@ -25,6 +26,8 @@
         public DbSet<JobLead> JobLeads { get; set; }
 
         public DbSet<ImportTask> ImportTasks { get; set; }
+
+        public DbSet<LogEntry> LogEntries { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
