@@ -1,5 +1,7 @@
 namespace Woland.Service
 {
+    using System;
+    using System.Collections.Generic;
     using Business;
     using DataAccess;
     using Domain;
@@ -18,6 +20,8 @@ namespace Woland.Service
             container.RegisterType<IDataRepository, EfDataRepository>(new HierarchicalLifetimeManager());
             container.RegisterType<EfDataContext>(new HierarchicalLifetimeManager());
 
+            container.RegisterType<Func<IList<ILeadsProvider>>>(
+                new InjectionFactory(x => new Func<IList<ILeadsProvider>>(() => new ILeadsProvider[] { x.Resolve<JobServeLeadsProvider>() })));
             container.RegisterType<IWebClient, DefaultWebClient>();
             container.RegisterType<ITimeProvider, UtcTimeProvider>();
             container.RegisterType<ILeadsImporter, LatestLeadsImporter>();
