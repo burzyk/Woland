@@ -56,6 +56,12 @@
             }
 
             this.log.Info("All tasks executed");
+
+            using (var tx = this.repository.BeginTransaction())
+            {
+                importTasks.ForEach(x => x.LastExecuted = this.timeProvider.Now);
+                tx.Commit();
+            }
         }
     }
 }
