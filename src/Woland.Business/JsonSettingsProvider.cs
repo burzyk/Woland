@@ -45,7 +45,7 @@
 
             public int ImporterDelta { get; set; } = 10;
 
-            public int ImportIntervalMinutes { get; set; } = 30;
+            public int ImportIntervalMinutes { get; set; } = 60 * 10;
         }
     }
 }

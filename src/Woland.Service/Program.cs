@@ -35,7 +35,7 @@
                         log.Error($"Unhandled exception when running importer: {ex}");
                     }
 
-                    Thread.Sleep(TimeSpan.FromHours(10));
+                    Thread.Sleep(TimeSpan.FromHours(1));
                 }
             }
         }
