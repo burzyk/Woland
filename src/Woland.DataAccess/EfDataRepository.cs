@@ -18,6 +18,8 @@
 
         public IQueryable<JobLead> JobLeads => this.context.JobLeads;
 
+        public IQueryable<ImportTask> ImportTasks => this.context.ImportTasks;
+
         public IRepositoryTransaction BeginTransaction()
         {
             return new Transaction(this.context);

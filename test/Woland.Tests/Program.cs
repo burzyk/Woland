@@ -4,7 +4,7 @@
     {
         public static void Main(string[] args)
         {
-            new LatestLeadsImporterTests().ImporterWithEmptyRepoTest();
+            new TaskBasedImportManagerTests().NotExecutedYetTaskTest();
         }
     }
 }

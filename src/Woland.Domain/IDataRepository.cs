@@ -9,6 +9,8 @@
 
         IQueryable<JobLead> JobLeads { get; }
 
+        IQueryable<ImportTask> ImportTasks { get; }
+
         IRepositoryTransaction BeginTransaction();
 
         T Add<T>(T entity) where T : class;

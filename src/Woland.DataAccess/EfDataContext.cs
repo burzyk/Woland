@@ -24,6 +24,8 @@
 
         public DbSet<JobLead> JobLeads { get; set; }
 
+        public DbSet<ImportTask> ImportTasks { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(this.connectionString);

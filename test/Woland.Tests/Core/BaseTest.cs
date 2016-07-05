@@ -6,7 +6,7 @@
 
     public abstract class BaseTest
     {
-        public IUnityContainer CreateContainer()
+        public virtual IUnityContainer CreateContainer()
         {
             var container = new UnityContainer();
             UnityConfiguration.ConfigureBindings(container);

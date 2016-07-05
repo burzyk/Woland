@@ -3,7 +3,7 @@
     using System;
     using System.ComponentModel.DataAnnotations;
 
-    public class SearchSchedule : BaseEntity
+    public class ImportTask : BaseEntity
     {
         public DateTime? LastExecuted { get; set; }
 

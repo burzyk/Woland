@@ -12,13 +12,13 @@
             this.log = log;
         }
 
-        public byte[] ReadFile(string fileName)
+        public string ReadFile(string fileName)
         {
             this.log.Info($"Reading file: '{fileName}'");
-            return File.ReadAllBytes(fileName);
+            return File.ReadAllText(fileName);
         }
 
-        public void SaveFile(string fileName, byte[] content)
+        public void SaveFile(string fileName, string content)
         {
             this.log.Info($"Saving file: '{fileName}'");
             var directory = Path.GetDirectoryName(fileName);
@@ -29,7 +29,7 @@
                 Directory.CreateDirectory(directory);
             }
 
-            File.WriteAllBytes(fileName, content);
+            File.WriteAllText(fileName, content);
         }
     }
 }

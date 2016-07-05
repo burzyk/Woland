@@ -2,8 +2,8 @@
 {
     public interface IFileSystem
     {
-        byte[] ReadFile(string fileName);
+        string ReadFile(string fileName);
 
-        void SaveFile(string fileName, byte[] content);
+        void SaveFile(string fileName, string content);
     }
 }

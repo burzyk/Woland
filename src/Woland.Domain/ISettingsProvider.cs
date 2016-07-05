@@ -9,5 +9,7 @@
         TimeSpan WebClientDelay { get; }
 
         int ImporterDelta { get; }
+
+        TimeSpan ImportInterval { get; }
     }
 }
