@@ -1,6 +1,7 @@
 ﻿namespace Woland.Service
 {
     using System;
+    using System.Threading;
     using Domain;
     using Microsoft.Practices.Unity;
 
@@ -14,15 +15,28 @@
             {
                 UnityConfiguration.ConfigureBindings(container);
                 var log = container.Resolve<ILog>();
-                var service = container.Resolve<IService>();
 
                 log.Info("========== Initializing service ==========");
-                service.Start();
 
-                log.Info("Waiting for termination");
-                Console.ReadKey();
+                while (true)
+                {
+                    try
+                    {
+                        using (var scope = container.CreateChildContainer())
+                        {
+                            var manager = scope.Resolve<IImportManager>();
 
-                log.Info("========== Service shutting down ==========");
+                            log.Info("Running importer");
+                            manager.Import();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        log.Error($"Unhandled exception when running importer: {ex}");
+                    }
+
+                    Thread.Sleep(TimeSpan.FromHours(10));
+                }
             }
         }
     }
