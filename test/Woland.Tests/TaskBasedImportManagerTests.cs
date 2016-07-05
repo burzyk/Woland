@@ -18,9 +18,16 @@
         [Fact]
         public void NotExecutedYetTaskTest()
         {
+            var tasks = new[] {new ImportTask {SearchLocation = "London", SearchKeywords = "Java"}};
+
             BaseManagerTest(
-                new[] { new ImportTask { SearchLocation = "London", SearchKeywords = "Java" } },
-                (i, p) => i.Verify(x => x.Import("Java", "London", p), Times.Once));
+                tasks,
+                (i, p) =>
+                {
+                    i.Verify(x => x.Import("Java", "London", p), Times.Once);
+
+                    Assert.Equal(new DateTime(2013, 3, 20), tasks[0].LastExecuted.Value);
+                });
         }
 
         [Fact]
@@ -48,6 +55,8 @@
                 {
                     i.Verify(x => x.Import("Java", "London", p), Times.Once);
                     i.Verify(x => x.Import("dotnet", "London", p), Times.Never);
+
+                    Assert.Equal(new DateTime(2013, 3, 20), tasks[0].LastExecuted.Value);
                 });
         }
 
@@ -76,6 +85,9 @@
                 {
                     i.Verify(x => x.Import("Java", "London", p), Times.Once);
                     i.Verify(x => x.Import("dotnet", "London", p), Times.Once);
+
+                    Assert.Equal(new DateTime(2013, 3, 20), tasks[0].LastExecuted.Value);
+                    Assert.Equal(new DateTime(2013, 3, 20), tasks[1].LastExecuted.Value);
                 });
         }
 
@@ -135,13 +147,18 @@
                     i.Verify(x => x.Import("Java", "London", p), Times.Once);
                     i.Verify(x => x.Import("dotnet", "London", p), Times.Never);
                     i.Verify(x => x.Import("SCADA", "London", p), Times.Never);
+
+                    Assert.Equal(new DateTime(2013, 3, 20), tasks[0].LastExecuted.Value);
                 });
         }
 
-        private static void BaseManagerTest(IEnumerable<ImportTask> tasks, Action<Mock<ILeadsImporter>, IList<ILeadsProvider>> verifyCallback)
+        private static void BaseManagerTest(IList<ImportTask> tasks, Action<Mock<ILeadsImporter>, IList<ILeadsProvider>> verifyCallback)
         {
+            var tx = new Mock<IRepositoryTransaction>();
+
             var repo = new Mock<IDataRepository>();
             repo.Setup(x => x.ImportTasks).Returns(tasks.AsQueryable());
+            repo.Setup(x => x.BeginTransaction()).Returns(tx.Object);
 
             var timeProvider = new Mock<ITimeProvider>();
             timeProvider.Setup(x => x.Now).Returns(new DateTime(2013, 3, 20));
@@ -161,6 +178,8 @@
                 providers,
                 settings.Object);
             manager.Import();
+
+            tx.Verify(x => x.Commit(), Times.Once);
 
             verifyCallback(importer, providers);
         }
