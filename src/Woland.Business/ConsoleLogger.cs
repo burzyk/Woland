@@ -3,8 +3,15 @@ namespace Woland.Business
     using System;
     using Domain;
 
-    public class SimpleLogger : ILog
+    public class ConsoleLogger : ILog
     {
+        private readonly ITimeProvider timeProvider;
+
+        public ConsoleLogger(ITimeProvider timeProvider)
+        {
+            this.timeProvider = timeProvider;
+        }
+
         public void Error(string message)
         {
             this.Log("ERROR", message);
@@ -23,7 +30,7 @@ namespace Woland.Business
         {
             Console.WriteLine(
                 "{0:yyyy-MM-dd HH:mm:ss.ms} [{1}]: {2}",
-                DateTime.Now,
+                this.timeProvider.Now,
                 level,
                 message);
         }

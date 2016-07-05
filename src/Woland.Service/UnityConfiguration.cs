@@ -18,11 +18,13 @@ namespace Woland.Service
 
             container.RegisterType<IList<ILeadsProvider>>(
                 new InjectionFactory(x => new ILeadsProvider[] { x.Resolve<JobServeLeadsProvider>() }));
+            container.RegisterType<IList<ILog>>(
+                new InjectionFactory(x => new ILog[] { x.Resolve<ConsoleLogger>() }));
             container.RegisterType<IWebClient, DefaultWebClient>();
             container.RegisterType<ITimeProvider, UtcTimeProvider>();
             container.RegisterType<ILeadsImporter, LatestLeadsImporter>();
             container.RegisterType<IImportManager, TaskBasedImportManager>();
-            container.RegisterType<ILog, SimpleLogger>();
+            container.RegisterType<ILog, AggregateLog>();
             container.RegisterType<IDataRepository, EfDataRepository>();
             container.RegisterType<IFileSystem, HddFileSystem>();
         }
