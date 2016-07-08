@@ -6,7 +6,6 @@
   },
   "dependencies": {
     "Microsoft.NETCore.App": {
-      "type": "platform",
       "version": "1.0.0"
     },
     "StyleCop.Analyzers": {
@@ -25,5 +24,10 @@
         "portable-net45+win8"
       ]
     }
+  },
+  "runtimes": {
+    "win10-x64": {},
+    "osx.10.11-x64": {},
+    "debian.8-x64": {}
   }
 }
