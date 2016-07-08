@@ -1,21 +1,12 @@
 require 'rake'
 require 'fileutils'
-require 'open-uri'
-require 'zlib'
-require 'rubygems/package'
-require 'rubygems/package'
 
-CONFIGURATION="Release"
 RUNTIME="osx.10.11-x64"
 BUILD_DIR="build"
-DOTNET_DOWNLOAD_URL="https://go.microsoft.com/fwlink/?LinkID=809128"
-#osx "https://go.microsoft.com/fwlink/?LinkID=809128"
-#deb "https://go.microsoft.com/fwlink/?LinkID=809119"
-DOTNET_TAR_FILE=BUILD_DIR + "/dotnet.tar"
-DOTNET_EXE=BUILD_DIR + "/dotnet"
+DOTNET_EXE="dotnet"
 APPLICATION_OUTPUT=BUILD_DIR + "/app"
 
-task :default => [:download_dotnet, :build] 
+task :default => [:build_dev, :build_release] 
 
 task :init do
     puts "Initializing build ..."
@@ -24,43 +15,29 @@ task :init do
     Dir.mkdir(BUILD_DIR)
 end
 
-task :download_dotnet do 
-    puts "downloading .NET ..."
-
-    unless File.exists?(DOTNET_TAR_FILE) 
-        source = open(DOTNET_DOWNLOAD_URL)
-        gz = Zlib::GzipReader.new(source) 
-        result = gz.read
-        File.write(DOTNET_TAR_FILE, result)
-    end
-
-    puts "extracting .NET ..."
-
-    File.open(DOTNET_TAR_FILE, "r") do |f|
-        Gem::Package::TarReader.new(f) do |tar|
-            tar.each do |entry| 
-                path = BUILD_DIR + entry.full_name[1, 256]                
-                if entry.directory?()
-                    Dir.mkdir(path) if !Dir.exists?(path)
-                else 
-                    File.write(path, entry.read())
-                end
-            end
-        end
-    end
-    
-    FileUtils.chmod("a+x", DOTNET_EXE)
+task :restore_packages do
+    puts "Restoring packages ..."
+    run_cmd(DOTNET_EXE + " restore")
 end
 
-task :build do
-    puts "Building application ..."
-
-    run_cmd(DOTNET_EXE + " restore")
+task :tests => :restore_packages do
+    puts "Running tests ..."
     run_cmd(DOTNET_EXE + " test test/Woland.Tests")
-    run_cmd(DOTNET_EXE + " publish src/Woland.Service --runtime #{RUNTIME} --configuration #{CONFIGURATION}")
+end
+
+task :build_dev => :restore_packages do
+    run_cmd(DOTNET_EXE + " build src/Woland.Service")
+    FileUtils.cp("src/Woland.Service/config.json", "src/Woland.Service/bin/Debug/netcoreapp1.0/config.json")
+end
+
+task :build_release => [:init, :tests, :restore_packages] do
+    configuration = "Release"
+
+    puts "Building application ..."
+    run_cmd(DOTNET_EXE + " publish src/Woland.Service --runtime #{RUNTIME} --configuration #{configuration}")
 
     puts "Getting application ..."
-    FileUtils.copy_entry("src/Woland.Service/bin/#{CONFIGURATION}/netcoreapp1.0/#{RUNTIME}/publish", APPLICATION_OUTPUT)
+    FileUtils.copy_entry("src/Woland.Service/bin/#{configuration}/netcoreapp1.0/#{RUNTIME}/publish", APPLICATION_OUTPUT)
 
     puts "Getting config file ..."
     FileUtils.cp("src/Woland.Service/config.json", APPLICATION_OUTPUT)
