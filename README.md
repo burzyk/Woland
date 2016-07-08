@@ -1,4 +1,4 @@
-# Woland
+# Woland ![Travis badge](https://travis-ci.org/burzyk/Woland.svg?branch=master)
 ETL service to integrate information form different job sites into a single database for "your own personal use only".
 
 # Installation
