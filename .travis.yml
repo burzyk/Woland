@@ -8,3 +8,7 @@ before_install:
   - sudo apt-key adv --keyserver apt-mo.trafficmanager.net --recv-keys 417A0893
   - sudo apt-get update
   - sudo apt-get -y install dotnet-dev-1.0.0-preview2-003121
+
+env:
+  global:
+    secure: u8nR2H/txOFh3H97zmAj+P0taWr4KuEToWC/d8pze145H7W9baTBAo//IlS/ZHyQa8wjDSJ25XKNA56C8tJPqR5Fr1ENn+TnYK5tDOb589nK89oxlUwlzzVxVvNR6/ZHfseDjRiPuT/o7Tp2oueFU/5Zr28cxiDOpc+wcSKw8x0hPil+XRY1xJ8313u2Lb4H4GFhhOkKjS/TBaL66gewrtzzp9HWptDvGiBIJ21Lkogs8oS5snWid1ILmNM7OIwOsaWyrjYWwD0J6DEQvEwOqRfcTzNlV0EwC7g3Qp6gf1/lOe4NLSsDuXPuYreKlpvremg9XH7VGNU0BKqsNuecotp7TSshMlVGzDHcl/yNNAq49omGfU/Y+f+COONC0rUBylTwY4RJ2xMrkWzHPvnV05OqcER1Z/Kl4nRGwQirCRPurI+MxnNt4Wwi/yalH4t6CU6aeqzQrKXvBFzjit9GhGpJ0Xl4PaMhNWJ/Tga8IoixMyIUtw9WfUED3Vi/O11359Fhf4WO/tgHgoOtk6KbVdSg16Z2Ur8aG2+tzqOhJqwuuek8cXFFDiTtWfZjGEA02czNBidWo0b39cmytE6yaW0vJ7FdgKul5w1iGrQRxTwSI8t2A6omf8OXbn9LgW4+t0Lq/QgkztFkqmCQaOREvzSpYrhmVEwLswjdr0JXP/E=
