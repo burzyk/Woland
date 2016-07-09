@@ -30,6 +30,7 @@ namespace Woland.Service
             container.RegisterType<ILog, AggregateLog>();
             container.RegisterType<IDataRepository, EfDataRepository>();
             container.RegisterType<IFileSystem, HddFileSystem>();
+            container.RegisterType<ICommandLineArgumentsProvider, EnvironmentArgumentsProvider>();
         }
     }
 }

@@ -4,7 +4,7 @@
     {
         public static void Main(string[] args)
         {
-            new TaskBasedImportManagerTests().NotExecutedYetTaskTest();
+            new JsonSettingsProviderTests().ValidOverrideInvalidCasingTest();
         }
     }
 }
