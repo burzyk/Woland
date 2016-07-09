@@ -4,6 +4,7 @@
     using System.Net;
     using Domain;
     using Domain.Entities;
+    using Microsoft.EntityFrameworkCore;
 
     public class EfDataRepository : IDataRepository
     {
@@ -12,6 +13,7 @@
         public EfDataRepository(EfDataContext context)
         {
             this.context = context;
+            this.context.Database.Migrate();
         }
 
         public IQueryable<WebRequestLog> WebRequestLogs => this.context.WebRequestLogs;

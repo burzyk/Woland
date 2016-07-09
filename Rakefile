@@ -1,7 +1,26 @@
 require 'rake'
 require 'fileutils'
 
-RUNTIME="debian.8-x64"
+module OS
+    def OS.windows?
+        (/cygwin|mswin|mingw|bccwin|wince|emx/ =~ RUBY_PLATFORM) != nil
+    end
+
+    def OS.mac?
+        (/darwin/ =~ RUBY_PLATFORM) != nil
+    end
+
+    def OS.linux?
+        OS.unix? and not OS.mac?
+    end
+end
+
+DEBIAN_RUNTIME="debian.8-x64"
+WINDOWS_RUNTIME="win10-x64"
+OSX_RUNTIME="osx.10.11-x64"
+
+DOCKER_IMAGE_RUNTIME=DEBIAN_RUNTIME
+RUNTIME=OS.windows? ? WINDOWS_RUNTIME : OS.mac? ? OSX_RUNTIME : DEBIAN_RUNTIME
 BUILD_DIR="build"
 DOTNET_EXE="dotnet"
 APPLICATION_OUTPUT=BUILD_DIR + "/app"
@@ -28,16 +47,17 @@ end
 task :build_dev => :restore_packages do
     run_cmd(DOTNET_EXE + " build src/Woland.Service")
     FileUtils.cp("src/Woland.Service/config.json", "src/Woland.Service/bin/Debug/netcoreapp1.0/config.json")
+    FileUtils.cp("src/Woland.Service/config.json", "src/Woland.Service/bin/Debug/netcoreapp1.0/#{RUNTIME}/config.json")
 end
 
 task :build_release => [:init, :tests, :restore_packages] do
     configuration = "Release"
 
     puts "Building application ..."
-    run_cmd(DOTNET_EXE + " publish src/Woland.Service --runtime #{RUNTIME} --configuration #{configuration}")
+    run_cmd(DOTNET_EXE + " publish src/Woland.Service --runtime #{DOCKER_IMAGE_RUNTIME} --configuration #{configuration}")
 
     puts "Getting application ..."
-    FileUtils.copy_entry("src/Woland.Service/bin/#{configuration}/netcoreapp1.0/#{RUNTIME}/publish", APPLICATION_OUTPUT)
+    FileUtils.copy_entry("src/Woland.Service/bin/#{configuration}/netcoreapp1.0/#{DOCKER_IMAGE_RUNTIME}/publish", APPLICATION_OUTPUT)
 
     puts "Getting config file ..."
     FileUtils.cp("src/Woland.Service/config.json", APPLICATION_OUTPUT)

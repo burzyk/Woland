@@ -18,7 +18,7 @@
         public EfDataContext()
         {
             // This is for migrations
-            this.connectionString = @"Server=DESKTOP-L481L6R\SQLEXPRESS;Database=Woland;User Id=woland;Password=woland";
+            this.connectionString = @"Server=.\SQLEXPRESS;Database=Woland;User Id=woland;Password=woland";
         }
 
         public DbSet<WebRequestLog> WebRequestLogs { get; set; }
