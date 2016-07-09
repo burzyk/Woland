@@ -2,15 +2,48 @@
 {
     using System;
     using System.Threading;
+    using System.Threading.Tasks;
     using Domain;
     using Microsoft.Practices.Unity;
 
     using Business;
 
-    public static class Program
+    public class Program : IDisposable
     {
+        private readonly Thread workerThread = new Thread(WorkerRoutine);
+
+        private readonly CancellationTokenSource source = new CancellationTokenSource();
+
         public static void Main(string[] args)
         {
+            using (var program = new Program())
+            {
+                Console.WriteLine(@"|                    _                 _      |");
+                Console.WriteLine(@"|     __      _____ | | __ _ _ __   __| |     |");
+                Console.WriteLine(@"|     \ \ /\ / / _ \| |/ _` | '_ \ / _` |     |");
+                Console.WriteLine(@"|      \ V  V / (_) | | (_| | | | | (_| |     |");
+                Console.WriteLine(@"|       \_/\_/ \___/|_|\__,_|_| |_|\__,_|     |");
+                Console.WriteLine(@"|                                             |");
+
+                Console.WriteLine(@"Press any key to exit");
+
+                program.workerThread.Start(program.source.Token);
+
+                Console.ReadKey();
+            }
+        }
+
+        public void Dispose()
+        {
+            this.source.Cancel();
+            this.workerThread.Join();
+            this.source.Dispose();
+        }
+
+        private static void WorkerRoutine(object arg)
+        {
+            var token = (CancellationToken)arg;
+
             using (var container = new UnityContainer())
             {
                 UnityConfiguration.ConfigureBindings(container);
@@ -18,7 +51,7 @@
 
                 log.Info("========== Initializing service ==========");
 
-                while (true)
+                while (!token.IsCancellationRequested)
                 {
                     try
                     {
@@ -35,7 +68,13 @@
                         log.Error($"Unhandled exception when running importer: {ex}");
                     }
 
-                    Thread.Sleep(TimeSpan.FromHours(1));
+                    try
+                    {
+                        Task.WaitAll(Task.Delay(TimeSpan.FromHours(1), token));
+                    }
+                    catch (AggregateException)
+                    {
+                    }
                 }
             }
         }
