@@ -34,7 +34,7 @@ task :build_release => [:init, :tests, :restore_packages] do
     configuration = "Release"
 
     puts "Building application ..."
-    run_cmd(DOTNET_EXE + " publish src/Woland.Service --runtime #{RUNTIME} --configuration #{configuration}")
+    run_cmd(DOTNET_EXE + " publish src/Woland.Servicel --runtime #{RUNTIME} --configuration #{configuration}")
 
     puts "Getting application ..."
     FileUtils.copy_entry("src/Woland.Service/bin/#{configuration}/netcoreapp1.0/#{RUNTIME}/publish", APPLICATION_OUTPUT)
@@ -53,9 +53,9 @@ task :build_image => :build_release do
 end
 
 def run_cmd(cmd)
-    puts %x{ #{cmd} }
+    status = system(cmd)
 
-    if $?.exitstatus != 0
+    if !status
         raise cmd + " exited with non zero code"
     end
 end
