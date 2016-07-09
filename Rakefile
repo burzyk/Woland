@@ -46,7 +46,7 @@ end
 task :build_image => :build_release do
     puts "Building image ..."
     run_cmd("docker build -t burzyk/woland .")
-    run_cmd("docker login -u burzykci -p $DOCKER_PASSWORD")
+    run_cmd("docker login -u burzykci -p $DOCKER_PASSWORD -e p.k.burzynski+burzykci@gmail.com")
 
     puts "Pushing image to docker hub (this may take a while) ..."
     run_cmd("docker push burzyk/woland")
