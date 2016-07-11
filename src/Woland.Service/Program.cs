@@ -29,7 +29,7 @@
 
                 program.workerThread.Start(program.source.Token);
 
-                Console.ReadKey();
+                Console.ReadLine();
             }
         }
 
