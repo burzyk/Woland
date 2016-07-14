@@ -11,6 +11,8 @@ To start the application in the interactive mode, please run `/opt/woland/Woland
 
 To start the application in the background mode, please run `docker run -td burzyk/woland /opt/woland/Woland.Service --p:connectionString CONNECTION_STRING`
 
+If you do not wish to specify the connection string every time the application is started you may choose to save it in the `/opt/woland/config.json` configuration file.
+
 # Development
 
 In order to install and configure the service for developent please follow these simple steps.
