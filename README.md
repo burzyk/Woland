@@ -1,9 +1,19 @@
 # Woland ![Travis badge](https://travis-ci.org/burzyk/Woland.svg?branch=master)
 ETL service to integrate information form different job sites into a single database for "your own personal use only".
 
-# Installation
+# Getting Started
 
-In order to install and configure the service please follow these simple steps.
+The easiest way to get started with this application is to install [docker](https://docs.docker.com/engine/installation/) and then get the `burzyk/woland` container from the [docker hub](https://hub.docker.com/r/burzyk/woland/).
+
+To get the container please execute `docker pull burzyk/woland` and then `docker run -it burzyk/woland`. This will start the container and a bash terminal inside. 
+
+To start the application in the interactive mode, please run `/opt/woland/Woland.Service --p:connectionString CONNECTION_STRING` and replace `CONNECTION_STRING` with a valid MSSQL connection string value. Please note that the database specified must exist and in order for the tables to be created the user should have the DDL change permissions granted. Once the database is initialized the regular R/W permissions are sufficient.
+
+To start the application in the background mode, please run `docker run -td burzyk/woland /opt/woland/Woland.Service --p:connectionString CONNECTION_STRING`
+
+# Development
+
+In order to install and configure the service for developent please follow these simple steps.
 
 * First, get the [dotnet SDK](https://www.microsoft.com/net/core).
 When it's complete please open the configuration file `src/Woland.Service/config.json` and modify the connection string to point to an MSSQL Server database, for example:
