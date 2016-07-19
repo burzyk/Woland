@@ -3,9 +3,13 @@
     using System;
     using System.ComponentModel.DataAnnotations;
 
-    public class ImportTask : BaseEntity
+    public class ImportSchedule : BaseEntity
     {
-        public DateTime? LastExecuted { get; set; }
+        public int Hour { get; set; }
+
+        public int Minute { get; set; }
+
+        public DateTime? NextRunDate { get; set; }
 
         [Required]
         public string SearchLocation { get; set; }

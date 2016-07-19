@@ -25,7 +25,7 @@
 
         public DbSet<JobLead> JobLeads { get; set; }
 
-        public DbSet<ImportTask> ImportTasks { get; set; }
+        public DbSet<ImportSchedule> ImportSchedules { get; set; }
 
         public DbSet<LogEntry> LogEntries { get; set; }
 

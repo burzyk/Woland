@@ -9,7 +9,7 @@
 
         IQueryable<JobLead> JobLeads { get; }
 
-        IQueryable<ImportTask> ImportTasks { get; }
+        IQueryable<ImportSchedule> ImportSchedules { get; }
 
         IRepositoryTransaction BeginTransaction();
 

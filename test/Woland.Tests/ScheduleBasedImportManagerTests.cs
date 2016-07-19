@@ -11,157 +11,172 @@
     using Moq;
     using Xunit;
 
-    public class TaskBasedImportManagerTests : BaseTest
+    public class ScheduleBasedImportManagerTests : BaseTest
     {
-
-
         [Fact]
-        public void NotExecutedYetTaskTest()
+        public void NoNextExecuteDate()
         {
-            var tasks = new[] {new ImportTask {SearchLocation = "London", SearchKeywords = "Java"}};
-
-            BaseManagerTest(
-                tasks,
-                (i, p) =>
-                {
-                    i.Verify(x => x.Import("Java", "London", p), Times.Once);
-
-                    Assert.Equal(new DateTime(2013, 3, 20), tasks[0].LastExecuted.Value);
-                });
-        }
-
-        [Fact]
-        public void OneTaskToExecuteOneToOmitTest()
-        {
-            var tasks = new[]
+            var schedules = new[]
             {
-                new ImportTask
+                new ImportSchedule
                 {
                     SearchLocation = "London",
-                    SearchKeywords = "Java",
-                    LastExecuted = new DateTime(2012, 1, 1)
-                },
-                new ImportTask
-                {
-                    SearchLocation = "London",
-                    SearchKeywords = "dotnet",
-                    LastExecuted = new DateTime(2014, 1, 1)
+                    SearchKeywords = "Java"
                 }
             };
 
             BaseManagerTest(
-                tasks,
+                schedules,
+                (i, p) =>
+                {
+                    i.Verify(x => x.Import("Java", "London", p), Times.Never);
+
+                    Assert.Equal(null, schedules[0].NextRunDate);
+                });
+        }
+
+        [Fact]
+        public void OneScheduleToExecuteOneToOmitTest()
+        {
+            var schedules = new[]
+            {
+                new ImportSchedule
+                {
+                    SearchLocation = "London",
+                    SearchKeywords = "Java",
+                    Hour = 13,
+                    Minute = 45,
+                    NextRunDate = new DateTime(2012, 1, 1, 12, 45, 45)
+                },
+                new ImportSchedule
+                {
+                    SearchLocation = "London",
+                    SearchKeywords = "dotnet",
+                    Hour = 14,
+                    Minute = 11,
+                    NextRunDate = new DateTime(2014, 1, 1, 15, 43, 23)
+                }
+            };
+
+            BaseManagerTest(
+                schedules,
                 (i, p) =>
                 {
                     i.Verify(x => x.Import("Java", "London", p), Times.Once);
                     i.Verify(x => x.Import("dotnet", "London", p), Times.Never);
 
-                    Assert.Equal(new DateTime(2013, 3, 20), tasks[0].LastExecuted.Value);
+                    Assert.Equal(new DateTime(2013, 3, 21, 13, 45, 0), schedules[0].NextRunDate.Value);
                 });
         }
 
         [Fact]
-        public void TwoTasksToExecuteTest()
+        public void TwoSchedulesToExecuteTest()
         {
-            var tasks = new[]
+            var schedules = new[]
             {
-                new ImportTask
+                 new ImportSchedule
                 {
                     SearchLocation = "London",
                     SearchKeywords = "Java",
-                    LastExecuted = new DateTime(2012, 1, 1)
+                    Hour = 13,
+                    Minute = 45,
+                    NextRunDate = new DateTime(2013, 3, 20, 12, 14, 54)
                 },
-                new ImportTask
+                new ImportSchedule
                 {
                     SearchLocation = "London",
                     SearchKeywords = "dotnet",
-                    LastExecuted = new DateTime(2012, 10, 1)
+                    Hour = 14,
+                    Minute = 11,
+                    NextRunDate = new DateTime(2013, 3, 19, 15, 43, 23)
                 }
             };
 
             BaseManagerTest(
-                tasks,
+                schedules,
                 (i, p) =>
                 {
                     i.Verify(x => x.Import("Java", "London", p), Times.Once);
                     i.Verify(x => x.Import("dotnet", "London", p), Times.Once);
 
-                    Assert.Equal(new DateTime(2013, 3, 20), tasks[0].LastExecuted.Value);
-                    Assert.Equal(new DateTime(2013, 3, 20), tasks[1].LastExecuted.Value);
+                    Assert.Equal(new DateTime(2013, 3, 21, 13, 45, 0), schedules[0].NextRunDate.Value);
+                    Assert.Equal(new DateTime(2013, 3, 21, 14, 11, 0), schedules[1].NextRunDate.Value);
                 });
         }
 
         [Fact]
-        public void NoTasksToExecuteTest()
+        public void NoSchedulesToExecuteTest()
         {
-            var tasks = new[]
+            var schedules = new[]
             {
-                new ImportTask
+                new ImportSchedule
                 {
                     SearchLocation = "London",
                     SearchKeywords = "Java",
-                    LastExecuted = new DateTime(2014, 1, 1)
+                    NextRunDate = new DateTime(2014, 1, 1)
                 },
-                new ImportTask
+                new ImportSchedule
                 {
                     SearchLocation = "London",
                     SearchKeywords = "dotnet",
-                    LastExecuted = new DateTime(2014, 10, 1)
+                    NextRunDate = new DateTime(2014, 10, 1)
                 }
             };
 
             BaseManagerTest(
-                tasks,
+                schedules,
                 (i, p) => i.Verify(x => x.Import(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<IList<ILeadsProvider>>()), Times.Never));
         }
 
         [Fact]
         public void IntervalTestWithOnePassedOneNotAndOneOutsideIntervalTest()
         {
-            var tasks = new[]
+            var schedules = new[]
             {
-                new ImportTask
+                new ImportSchedule
                 {
                     SearchLocation = "London",
                     SearchKeywords = "Java",
-                    LastExecuted = new DateTime(2013, 3, 1)
+                    Hour = 14,
+                    Minute = 11,
+                    NextRunDate = new DateTime(2013, 3, 19)
                 },
-                new ImportTask
+                new ImportSchedule
                 {
                     SearchLocation = "London",
                     SearchKeywords = "dotnet",
-                    LastExecuted = new DateTime(2014, 3, 20)
+                    NextRunDate = new DateTime(2013, 3, 20, 12, 14, 55)
                 },
-                new ImportTask
+                new ImportSchedule
                 {
                     SearchLocation = "London",
                     SearchKeywords = "SCADA",
-                    LastExecuted = new DateTime(2014, 3, 17)
+                    NextRunDate = new DateTime(2014, 3, 17)
                 }
             };
 
             BaseManagerTest(
-                tasks,
+                schedules,
                 (i, p) =>
                 {
                     i.Verify(x => x.Import("Java", "London", p), Times.Once);
                     i.Verify(x => x.Import("dotnet", "London", p), Times.Never);
                     i.Verify(x => x.Import("SCADA", "London", p), Times.Never);
 
-                    Assert.Equal(new DateTime(2013, 3, 20), tasks[0].LastExecuted.Value);
+                    Assert.Equal(new DateTime(2013, 3, 21, 14, 11, 0), schedules[0].NextRunDate.Value);
                 });
         }
 
-        private static void BaseManagerTest(IList<ImportTask> tasks, Action<Mock<ILeadsImporter>, IList<ILeadsProvider>> verifyCallback)
+        private static void BaseManagerTest(IList<ImportSchedule> schedules, Action<Mock<ILeadsImporter>, IList<ILeadsProvider>> verifyCallback)
         {
             var tx = new Mock<IRepositoryTransaction>();
 
             var repo = new Mock<IDataRepository>();
-            repo.Setup(x => x.ImportTasks).Returns(tasks.AsQueryable());
+            repo.Setup(x => x.ImportSchedules).Returns(schedules.AsQueryable());
             repo.Setup(x => x.BeginTransaction()).Returns(tx.Object);
 
             var timeProvider = new Mock<ITimeProvider>();
-            timeProvider.Setup(x => x.Now).Returns(new DateTime(2013, 3, 20));
+            timeProvider.Setup(x => x.Now).Returns(new DateTime(2013, 3, 20, 12, 14, 55));
 
             var providers = new[] { new Mock<ILeadsProvider>().Object };
 
@@ -170,7 +185,7 @@
 
             var importer = new Mock<ILeadsImporter>();
 
-            var manager = new TaskBasedImportManager(
+            var manager = new ScheduleBasedImportManager(
                 repo.Object,
                 new NullLog(),
                 timeProvider.Object,

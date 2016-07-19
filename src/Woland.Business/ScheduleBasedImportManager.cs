@@ -5,7 +5,7 @@
     using System.Linq;
     using Domain;
 
-    public class TaskBasedImportManager : IImportManager
+    public class ScheduleBasedImportManager : IImportManager
     {
         private readonly IDataRepository repository;
 
@@ -19,7 +19,7 @@
 
         private readonly ISettingsProvider settings;
 
-        public TaskBasedImportManager(
+        public ScheduleBasedImportManager(
             IDataRepository repository,
             ILog log,
             ITimeProvider timeProvider,
@@ -37,17 +37,17 @@
 
         public void Import()
         {
-            var threshold = this.timeProvider.Now - this.settings.ImportInterval;
-            var importTasks = this.repository.ImportTasks.Where(x => x.LastExecuted == null || x.LastExecuted < threshold).ToList();
+            var now = this.timeProvider.Now;
+            var importSchedules = this.repository.ImportSchedules.Where(x => x.NextRunDate != null && x.NextRunDate < now).ToList();
 
-            this.log.Info($"Found: {importTasks.Count} import tasks to execute");
+            this.log.Info($"Found: {importSchedules.Count} import schedules to execute");
 
-            foreach (var task in importTasks)
+            foreach (var schedule in importSchedules)
             {
                 try
                 {
-                    this.log.Info($"Executing import for: {task.SearchKeywords} in {task.SearchLocation}");
-                    this.leadsImporter.Import(task.SearchKeywords, task.SearchLocation, this.providers);
+                    this.log.Info($"Executing import for: {schedule.SearchKeywords} in {schedule.SearchLocation}");
+                    this.leadsImporter.Import(schedule.SearchKeywords, schedule.SearchLocation, this.providers);
                 }
                 catch (Exception ex)
                 {
@@ -55,11 +55,16 @@
                 }
             }
 
-            this.log.Info("All tasks executed");
+            this.log.Info("All schedules executed");
 
             using (var tx = this.repository.BeginTransaction())
             {
-                importTasks.ForEach(x => x.LastExecuted = this.timeProvider.Now);
+                foreach (var x in importSchedules.Where(x => x.NextRunDate != null))
+                {
+                    var tomorrow = now.AddDays(1);
+                    x.NextRunDate = new DateTime(tomorrow.Year, tomorrow.Month, tomorrow.Day, x.Hour, x.Minute, 0);
+                }
+
                 tx.Commit();
             }
         }

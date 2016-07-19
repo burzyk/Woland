@@ -20,7 +20,7 @@
 
         public IQueryable<JobLead> JobLeads => this.context.JobLeads;
 
-        public IQueryable<ImportTask> ImportTasks => this.context.ImportTasks;
+        public IQueryable<ImportSchedule> ImportSchedules => this.context.ImportSchedules;
 
         public IRepositoryTransaction BeginTransaction()
         {

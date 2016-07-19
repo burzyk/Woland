@@ -26,7 +26,7 @@ namespace Woland.Service
             container.RegisterType<IWebClient, DefaultWebClient>();
             container.RegisterType<ITimeProvider, UtcTimeProvider>();
             container.RegisterType<ILeadsImporter, LatestLeadsImporter>();
-            container.RegisterType<IImportManager, TaskBasedImportManager>();
+            container.RegisterType<IImportManager, ScheduleBasedImportManager>();
             container.RegisterType<ILog, AggregateLog>();
             container.RegisterType<IDataRepository, EfDataRepository>();
             container.RegisterType<IFileSystem, HddFileSystem>();
