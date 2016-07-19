@@ -61,8 +61,6 @@
 
         public int ImporterDelta => this.settings.Value.ImporterDelta;
 
-        public TimeSpan ImportInterval => TimeSpan.FromMinutes(this.settings.Value.ImportIntervalMinutes);
-
         private class InternalSettings
         {
             public string ConnectionString { get; set; }
@@ -70,8 +68,6 @@
             public int WebClientDelay { get; set; } = 3;
 
             public int ImporterDelta { get; set; } = 10;
-
-            public int ImportIntervalMinutes { get; set; } = 60 * 10;
         }
     }
 }

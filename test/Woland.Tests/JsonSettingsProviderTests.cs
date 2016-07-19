@@ -26,7 +26,6 @@
             Assert.Equal("kama", settings.ConnectionString);
             Assert.Equal(TimeSpan.FromMilliseconds(10), settings.WebClientDelay);
             Assert.Equal(88, settings.ImporterDelta);
-            Assert.Equal(TimeSpan.FromMinutes(34), settings.ImportInterval);
         }
 
         [Fact]

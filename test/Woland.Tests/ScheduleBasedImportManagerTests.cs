@@ -181,8 +181,6 @@
             var providers = new[] { new Mock<ILeadsProvider>().Object };
 
             var settings = new Mock<ISettingsProvider>();
-            settings.Setup(x => x.ImportInterval).Returns(TimeSpan.FromDays(3));
-
             var importer = new Mock<ILeadsImporter>();
 
             var manager = new ScheduleBasedImportManager(
