@@ -12,7 +12,8 @@
     "StyleCop.Analyzers": {
       "version": "1.0.0",
       "type": "build"
-    }
+    },
+    "Microsoft.EntityFrameworkCore": "1.0.0"
   },
   "frameworks": {
     "netcoreapp1.0": {

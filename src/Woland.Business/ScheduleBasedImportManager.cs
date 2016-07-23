@@ -40,6 +40,17 @@
             var now = this.timeProvider.Now;
             var importSchedules = this.repository.ImportSchedules.Where(x => x.NextRunDate != null && x.NextRunDate < now).ToList();
 
+            using (var tx = this.repository.BeginTransaction())
+            {
+                foreach (var x in importSchedules)
+                {
+                    var tomorrow = now.AddDays(1);
+                    x.NextRunDate = new DateTime(tomorrow.Year, tomorrow.Month, tomorrow.Day, x.Hour, x.Minute, 0);
+                }
+
+                tx.Commit();
+            }
+
             this.log.Info($"Found: {importSchedules.Count} import schedules to execute");
 
             foreach (var schedule in importSchedules)
@@ -56,17 +67,6 @@
             }
 
             this.log.Info("All schedules executed");
-
-            using (var tx = this.repository.BeginTransaction())
-            {
-                foreach (var x in importSchedules.Where(x => x.NextRunDate != null))
-                {
-                    var tomorrow = now.AddDays(1);
-                    x.NextRunDate = new DateTime(tomorrow.Year, tomorrow.Month, tomorrow.Day, x.Hour, x.Minute, 0);
-                }
-
-                tx.Commit();
-            }
         }
     }
 }
