@@ -14,6 +14,13 @@
     public class ScheduleBasedImportManagerTests : BaseTest
     {
         [Fact]
+        public void ToDoImplement()
+        {
+            throw new NotImplementedException();
+        }
+
+        /*
+        [Fact]
         public void NoNextExecuteDate()
         {
             var schedules = new[]
@@ -196,5 +203,7 @@
 
             verifyCallback(importer, providers);
         }
+
+        */
     }
 }

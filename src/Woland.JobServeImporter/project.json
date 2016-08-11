@@ -1,22 +1,22 @@
 {
   "version": "1.0.0",
   "buildOptions": {
-    "emitEntryPoint": true,
+    "emitEntryPoint": false,
     "xmlDoc": false
   },
   "dependencies": {
     "Microsoft.NETCore.App": {
+      "type": "platform",
       "version": "1.0.0"
     },
     "StyleCop.Analyzers": {
       "version": "1.0.0",
       "type": "build"
     },
-    "Woland.Business": "1.0.0",
     "Woland.Domain": "1.0.0",
-    "Woland.DataAccess": "1.0.0",
-    "Woland.JobServeImporter": "1.0.0",
-    "Unity": "4.0.1"
+    "HtmlAgilityPack": "1.4.9",
+    "Newtonsoft.Json": "8.0.3",
+    "System.Runtime.Serialization.Primitives": "4.0.10"
   },
   "frameworks": {
     "netcoreapp1.0": {
@@ -25,11 +25,5 @@
         "portable-net45+win8"
       ]
     }
-  },
-  "runtimes": {
-    "win10-x64": {},
-    "osx.10.11-x64": {},
-    "debian.8-x64": {},
-    "ubuntu.14.04-x64": {}
   }
 }

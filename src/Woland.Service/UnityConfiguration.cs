@@ -19,13 +19,13 @@ namespace Woland.Service
             container.RegisterType<Func<EfDataContext>>(
                 new InjectionFactory(x => new Func<EfDataContext>(() => new EfDataContext(x.Resolve<ISettingsProvider>()))));
 
-            container.RegisterType<IList<ILeadsProvider>>(
-                new InjectionFactory(x => new ILeadsProvider[] { x.Resolve<JobServeLeadsProvider>() }));
+            // container.RegisterType<IList<ILeadsProvider>>(
+            //     new InjectionFactory(x => new ILeadsProvider[] { x.Resolve<JobServeLeadsProvider>() }));
             container.RegisterType<IList<ILog>>(
                 new InjectionFactory(x => new ILog[] { x.Resolve<ConsoleLog>(), x.Resolve<DbBasedLog>() }));
             container.RegisterType<IWebClient, DefaultWebClient>();
             container.RegisterType<ITimeProvider, UtcTimeProvider>();
-            container.RegisterType<ILeadsImporter, LatestLeadsImporter>();
+            // container.RegisterType<ILeadsImporter, LatestLeadsImporter>();
             container.RegisterType<IImportManager, ScheduleBasedImportManager>();
             container.RegisterType<ILog, AggregateLog>();
             container.RegisterType<IDataRepository, EfDataRepository>();

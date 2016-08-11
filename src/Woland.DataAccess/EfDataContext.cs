@@ -23,9 +23,9 @@
 
         public DbSet<WebRequestLog> WebRequestLogs { get; set; }
 
-        public DbSet<JobLead> JobLeads { get; set; }
-
         public DbSet<ImportSchedule> ImportSchedules { get; set; }
+
+        public DbSet<ImportResult> ImportResults { get; set; }
 
         public DbSet<LogEntry> LogEntries { get; set; }
 

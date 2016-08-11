@@ -18,7 +18,7 @@
 
         public IQueryable<WebRequestLog> WebRequestLogs => this.context.WebRequestLogs;
 
-        public IQueryable<JobLead> JobLeads => this.context.JobLeads;
+        public IQueryable<ImportResult> ImportResults => this.context.ImportResults;
 
         public IQueryable<ImportSchedule> ImportSchedules => this.context.ImportSchedules;
 

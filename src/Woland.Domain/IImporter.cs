@@ -1,7 +1,9 @@
 ﻿namespace Woland.Domain
 {
-    public interface IImporter<in T>
+    using Entities;
+
+    public interface IImporter
     {
-        void Import(T details);
+        void Import(ImportSchedule schedule);
     }
 }

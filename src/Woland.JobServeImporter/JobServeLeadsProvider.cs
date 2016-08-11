@@ -1,4 +1,4 @@
-﻿namespace Woland.Business
+﻿namespace Woland.JobServeImporter
 {
     using System;
     using System.Collections.Generic;
@@ -7,7 +7,7 @@
     using System.Net.Http;
     using System.Text.RegularExpressions;
     using Domain;
-    using Domain.Entities;
+    using Entities;
     using HtmlAgilityPack;
 
     public class JobServeLeadsProvider : ILeadsProvider
@@ -23,8 +23,6 @@
             this.webClient = webClient;
             this.log = log;
         }
-
-        public string Name => "JobServe";
 
         public IEnumerable<JobLead> GetLatestLeads(string keyword, string location, int index, int count)
         {
@@ -70,7 +68,6 @@
             {
                 lead.SearchKeywords = keyword;
                 lead.SearchLocation = location;
-                lead.SourceName = this.Name;
             }
 
             return leads;

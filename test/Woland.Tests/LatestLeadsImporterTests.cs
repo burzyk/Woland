@@ -7,6 +7,8 @@
     using Core;
     using Domain;
     using Domain.Entities;
+    using JobServeImporter;
+    using JobServeImporter.Entities;
     using Moq;
     using Xunit;
 
@@ -15,52 +17,56 @@
         [Fact]
         public void ImporterWithEmptyRepoTest()
         {
-            var leads = this.ImporterSimpleTest(new List<JobLead>());
+            var schedule = new ImportSchedule();
+            schedule.SaveDetails(new JobImportDetails { SearchKeywords = "C#", SearchLocation = "London" });
+            var leads = this.ImporterSimpleTest(schedule, new List<ImportResult>());
 
             Assert.Equal(14, leads.Count);
 
-            Assert.Equal("test1", leads[0].Title);
-            Assert.Equal("test10", leads[9].Title);
+            Assert.Equal("test1", leads[0].GetDetails<JobLead>().Title);
+            Assert.Equal("test10", leads[9].GetDetails<JobLead>().Title);
 
-            Assert.Equal("body1", leads[0].Body);
-            Assert.Equal("body10", leads[9].Body);
+            Assert.Equal("body1", leads[0].GetDetails<JobLead>().Body);
+            Assert.Equal("body10", leads[9].GetDetails<JobLead>().Body);
         }
 
         [Fact]
         public void ImporterWithNonEmptyRepoTest()
         {
-            var leads = this.ImporterSimpleTest(new List<JobLead>
+            var schedule = new ImportSchedule();
+            schedule.SaveDetails(new JobImportDetails { SearchKeywords = "C#", SearchLocation = "London" });
+
+            var r1 = new ImportResult
             {
-                new JobLead
-                {
-                    Title = "test8",
-                    Body = "body8",
-                    SourceName = "StaticLeadsProvider",
-                    PostedTimestamp = new DateTime(2016, 01, 13)
-                }
-            });
+                ImportSchedule = schedule,
+                Timestamp = new DateTime(2016, 01, 13)
+            };
+            r1.SaveDetails(new JobLead { Title = "test8", Body = "body8" });
+
+            var leads = this.ImporterSimpleTest(schedule, new List<ImportResult> { r1 });
 
             Assert.Equal(8, leads.Count);
 
-            Assert.Equal("test1", leads[1].Title);
-            Assert.Equal("test5", leads[5].Title);
+            Assert.Equal("test1", leads[1].GetDetails<JobLead>().Title);
+            Assert.Equal("test5", leads[5].GetDetails<JobLead>().Title);
 
-            Assert.Equal("body1", leads[1].Body);
-            Assert.Equal("body5", leads[5].Body);
+            Assert.Equal("body1", leads[1].GetDetails<JobLead>().Body);
+            Assert.Equal("body5", leads[5].GetDetails<JobLead>().Body);
         }
 
-        private IList<JobLead> ImporterSimpleTest(List<JobLead> originalLeads)
+        private IList<ImportResult> ImporterSimpleTest(ImportSchedule schedule, List<ImportResult> originalLeads)
         {
             var repo = new Mock<IDataRepository>();
-            repo.Setup(x => x.JobLeads).Returns(originalLeads.AsQueryable());
+            repo.Setup(x => x.ImportResults).Returns(originalLeads.AsQueryable());
             repo.Setup(x => x.BeginTransaction()).Returns(new Mock<IRepositoryTransaction>().Object);
-            repo.Setup(x => x.Add(It.IsAny<JobLead>())).Callback<JobLead>(originalLeads.Add).Returns<JobLead>(x => x);
+            repo.Setup(x => x.Add(It.IsAny<ImportResult>())).Callback<ImportResult>(originalLeads.Add).Returns<ImportResult>(x => x);
 
             var settings = new Mock<ISettingsProvider>();
             settings.Setup(x => x.ImporterDelta).Returns(3);
 
-            var importer = new LatestLeadsImporter(new NullLog(), repo.Object, settings.Object);
-            importer.Import("C#", "London", new[] { new StaticLeadsProvider() });
+            var importer = new LatestLeadsImporter(new NullLog(), repo.Object, settings.Object, new StaticLeadsProvider());
+
+            importer.Import(schedule);
 
             return originalLeads;
         }

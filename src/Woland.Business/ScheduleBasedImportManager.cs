@@ -7,36 +7,10 @@
 
     public class ScheduleBasedImportManager : IImportManager
     {
-        private readonly IDataRepository repository;
-
-        private readonly ILog log;
-
-        private readonly ITimeProvider timeProvider;
-
-        private readonly ILeadsImporter leadsImporter;
-
-        private readonly IList<ILeadsProvider> providers;
-
-        private readonly ISettingsProvider settings;
-
-        public ScheduleBasedImportManager(
-            IDataRepository repository,
-            ILog log,
-            ITimeProvider timeProvider,
-            ILeadsImporter leadsImporter,
-            IList<ILeadsProvider> providers,
-            ISettingsProvider settings)
-        {
-            this.repository = repository;
-            this.log = log;
-            this.timeProvider = timeProvider;
-            this.leadsImporter = leadsImporter;
-            this.providers = providers;
-            this.settings = settings;
-        }
-
         public void Import()
         {
+            throw new NotImplementedException();
+            /*
             var now = this.timeProvider.Now;
             var importSchedules = this.repository.ImportSchedules.Where(x => x.NextRunDate != null && x.NextRunDate < now).ToList();
 
@@ -67,6 +41,7 @@
             }
 
             this.log.Info("All schedules executed");
+            */
         }
     }
 }

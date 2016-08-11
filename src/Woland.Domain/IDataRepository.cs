@@ -7,7 +7,7 @@
     {
         IQueryable<WebRequestLog> WebRequestLogs { get; }
 
-        IQueryable<JobLead> JobLeads { get; }
+        IQueryable<ImportResult> ImportResults { get; }
 
         IQueryable<ImportSchedule> ImportSchedules { get; }
 
