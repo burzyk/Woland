@@ -1,16 +1,20 @@
 ﻿namespace Woland.Service
 {
     using System;
+    using System.IO;
     using System.Threading;
     using System.Threading.Tasks;
     using Domain;
     using Microsoft.Practices.Unity;
 
     using Business;
+    using Microsoft.AspNetCore.Hosting;
 
     public class Program : IDisposable
     {
         private readonly Thread workerThread = new Thread(WorkerRoutine);
+
+        private readonly Thread apiThread = new Thread(ApiRoutine);
 
         private readonly CancellationTokenSource source = new CancellationTokenSource();
 
@@ -27,9 +31,14 @@
 
                 Console.WriteLine(@"Press any key to exit");
 
-                program.workerThread.Start(program.source.Token);
+                // program.workerThread.Start(program.source.Token);
+                program.apiThread.Start(program.source.Token);
 
                 Console.ReadLine();
+                program.source.Cancel();
+
+                program.apiThread.Join();
+                // program.workerThread.Join();
             }
         }
 
@@ -38,6 +47,18 @@
             this.source.Cancel();
             this.workerThread.Join();
             this.source.Dispose();
+        }
+
+        private static void ApiRoutine(object arg)
+        {
+            var token = (CancellationToken)arg;
+
+            var host = new WebHostBuilder()
+                .UseKestrel()
+                .UseStartup<Startup>()
+                .Build();
+
+            host.Run(token);
         }
 
         private static void WorkerRoutine(object arg)
