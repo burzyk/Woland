@@ -7,7 +7,6 @@
     using Core;
     using Domain;
     using Domain.Entities;
-    using Microsoft.Practices.Unity;
     using Moq;
     using Xunit;
 

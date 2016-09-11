@@ -2,9 +2,12 @@
 {
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
+    using Microsoft.AspNetCore.Mvc.Controllers;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;
+
+    using Ninject;
 
     public class Startup
     {
@@ -23,6 +26,7 @@
         {
             // Add framework services.
             services.AddMvc();
+            services.AddTransient<IControllerActivator>(x => new NinjectControllerActivator(x.GetService<IReadOnlyKernel>()));
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)

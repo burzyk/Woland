@@ -2,7 +2,8 @@
   "version": "1.0.0",
   "buildOptions": {
     "emitEntryPoint": true,
-    "xmlDoc": false
+    "xmlDoc": false,
+    "additionalArguments": [ "/additionalfile:stylecop.json" ]
   },
   "dependencies": {
     "Microsoft.NETCore.App": {
@@ -15,7 +16,6 @@
     "Woland.Business": "1.0.0",
     "Woland.Domain": "1.0.0",
     "Woland.DataAccess": "1.0.0",
-    "Unity": "4.0.1",
     "Microsoft.AspNetCore.Mvc": "1.0.0",
     "Microsoft.AspNetCore.Server.Kestrel": "1.0.0",
     "Microsoft.Extensions.Configuration.EnvironmentVariables": "1.0.0",

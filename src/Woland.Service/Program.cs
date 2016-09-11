@@ -1,23 +1,51 @@
 ﻿namespace Woland.Service
 {
     using System;
-    using System.IO;
     using System.Threading;
     using System.Threading.Tasks;
     using Domain;
-    using Microsoft.Practices.Unity;
-
-    using Business;
     using Microsoft.AspNetCore.Hosting;
+    using Microsoft.Extensions.DependencyInjection;
+    using Ninject;
 
+    /// <summary>
+    /// The main application class.
+    /// </summary>
     public class Program : IDisposable
     {
-        private readonly Thread workerThread = new Thread(WorkerRoutine);
+        /// <summary>
+        /// The worker thread
+        /// </summary>
+        private readonly Thread workerThread;
 
-        private readonly Thread apiThread = new Thread(ApiRoutine);
+        /// <summary>
+        /// The API thread.
+        /// </summary>
+        private readonly Thread apiThread;
 
+        /// <summary>
+        /// The source
+        /// </summary>
         private readonly CancellationTokenSource source = new CancellationTokenSource();
 
+        /// <summary>
+        /// The dependency injection kernel.
+        /// </summary>
+        private readonly WolandKernel kernel = new WolandKernel(new ApplicationNinjectModule());
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Program"/> class.
+        /// </summary>
+        public Program()
+        {
+            this.apiThread = new Thread(this.ApiRoutine);
+            this.workerThread = new Thread(this.WorkerRoutine);
+        }
+
+        /// <summary>
+        /// Application entry point.
+        /// </summary>
+        /// <param name="args">The arguments.</param>
         public static void Main(string[] args)
         {
             using (var program = new Program())
@@ -35,67 +63,77 @@
                 program.apiThread.Start(program.source.Token);
 
                 Console.ReadLine();
-                program.source.Cancel();
-
-                program.apiThread.Join();
-                // program.workerThread.Join();
             }
         }
 
+        /// <summary>
+        /// Cleans up all worker threads.
+        /// </summary>
         public void Dispose()
         {
             this.source.Cancel();
-            this.workerThread.Join();
+
+            // this.workerThread.Join();
+            this.apiThread.Join();
+
             this.source.Dispose();
+            this.kernel.Dispose();
         }
 
-        private static void ApiRoutine(object arg)
+        /// <summary>
+        /// The API routine.
+        /// </summary>
+        /// <param name="arg">The argument.</param>
+        private void ApiRoutine(object arg)
         {
             var token = (CancellationToken)arg;
 
             var host = new WebHostBuilder()
                 .UseKestrel()
                 .UseStartup<Startup>()
+                .ConfigureServices(x => x.AddTransient(typeof(IReadOnlyKernel), sp => this.kernel))
                 .Build();
 
             host.Run(token);
         }
 
-        private static void WorkerRoutine(object arg)
+        /// <summary>
+        /// The worker routine.
+        /// </summary>
+        /// <param name="arg"> The argument.</param>
+        private void WorkerRoutine(object arg)
         {
             var token = (CancellationToken)arg;
 
-            using (var container = new UnityContainer())
+            var log = this.kernel.Get<ILog>();
+            log.Info("========== Initializing service ==========");
+
+            while (!token.IsCancellationRequested)
             {
-                UnityConfiguration.ConfigureBindings(container);
-                var log = container.Resolve<ILog>();
+                IImportManager manager = null;
 
-                log.Info("========== Initializing service ==========");
-
-                while (!token.IsCancellationRequested)
+                try
                 {
-                    try
-                    {
-                        using (var scope = container.CreateChildContainer())
-                        {
-                            var manager = scope.Resolve<IImportManager>();
+                    manager = this.kernel.Get<IImportManager>(new WolandKernel.OncePerCallParameter());
 
-                            log.Info("Running importer");
-                            manager.Import();
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        log.Error($"Unhandled exception when running importer: {ex}");
-                    }
+                    log.Info("Running importer");
+                    manager.Import();
+                }
+                catch (Exception ex)
+                {
+                    log.Error($"Unhandled exception when running importer: {ex}");
+                }
+                finally
+                {
+                    this.kernel.Release(manager);
+                }
 
-                    try
-                    {
-                        Task.WaitAll(Task.Delay(TimeSpan.FromHours(1), token));
-                    }
-                    catch (AggregateException)
-                    {
-                    }
+                try
+                {
+                    Task.Delay(TimeSpan.FromHours(1), token).Wait(token);
+                }
+                catch (TaskCanceledException)
+                {
                 }
             }
         }
